@@ -311,19 +311,10 @@ class FieldSeeder extends Seeder
             //eleventh group field
             [
                 'id' => 40,
-                'name' => 'Einmalige oder wiederkehrende Zahlungen *',
-                'type' => 'select',
-                'required' => true,
-                'group_id' => 11
-            ],
-
-            //twelfth group field
-            [
-                'id' => 41,
                 'name' => 'Datum *',
                 'type' => 'date',
                 'required' => true,
-                'group_id' => 12
+                'group_id' => 11
             ],
         ];
 

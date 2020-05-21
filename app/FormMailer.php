@@ -33,7 +33,7 @@ class FormMailer extends Model implements IMailer
 
         if($customer_notification['customer_notification'] == true)
         {
-            Mail::to('last2828@gmail.com')->send(new UserMail($user));
+            Mail::send(new UserMail($user));
         }
     }
 }

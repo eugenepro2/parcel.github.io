@@ -357,13 +357,6 @@ class OptionSeeder extends Seeder
                 'field_id' => 30,
             ],
 
-            //
-            [
-                'id' => 67,
-                'name' => 'wiederkehrende Zahlungen',
-                'field_id' => 40,
-            ],
-
             //parcel volume
             [
                 'id' => 68,

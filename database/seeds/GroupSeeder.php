@@ -64,7 +64,7 @@ class GroupSeeder extends Seeder
             //fifth step groups
             [
                 'id' => 9,
-                'name' => 'Name und Anschrift des Zahlers',
+                'name' => 'Name und Anschrift des Kontoinhabers',
                 'step_id' => 5
             ],
             [
@@ -72,15 +72,10 @@ class GroupSeeder extends Seeder
                 'name' => 'Details zur Bank',
                 'step_id' => 5
             ],
-            [
-                'id' => 11,
-                'name' => 'Details zum Mandat',
-                'step_id' => 5
-            ],
 
             //sixth step group
             [
-                'id' => 12,
+                'id' => 11,
                 'name' => 'Angebotsdatum',
                 'step_id' => 6
             ]
