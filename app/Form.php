@@ -18,11 +18,19 @@ class Form extends Model implements IForm
         return $this->hasMany(Field::class, 'id', 'field_id');
     }
 
-    public function getFormFields($step_id)
+    public function getFormFields(IFormChecking $checking, $step_id)
     {
-        $step = Step::where('id', $step_id)->with('group.field.option')->first();
-        $data = Form::where('user_id', Auth::id())->get();
-        return view('step.index', compact(['step', 'data']));
+        $check_step = $checking->checkStepId();
+
+        if($check_step == 7)
+        {
+            return redirect()->route('go-live');
+        }else{
+            $step = Step::where('id', $step_id)->with('group.field.option')->first();
+            $data = Form::where('user_id', Auth::id())->get();
+            return view('step.index', compact(['step', 'data']));
+        }
+
     }
 
     public function saveFormFields($data)

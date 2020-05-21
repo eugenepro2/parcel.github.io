@@ -19,7 +19,7 @@ class FormController extends Controller
 {
     public function index(IForm $form, $step_id)
     {
-        return $form->getFormFields($step_id);
+        return $form->getFormFields(new FormChecking, $step_id);
     }
 
     public function store(FormValidator $request, $id, IForm $form)
