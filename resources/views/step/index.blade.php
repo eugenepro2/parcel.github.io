@@ -20,9 +20,8 @@
       <div class="group">
         <h3>{{$group['name']}}</h3>
         @foreach ($group['field'] as $field)
-          @include('step.components.field', ['title' => $field['name'], 'required' => $field['required'], 'id' => $field['id'], 'type' => $field['type'], 'options' => $field['option'], 'field' => $field])
+            @include('step.components.field', ['title' => $field['name'], 'required' => $field['required'], 'id' => $field['id'], 'type' => $field['type'], 'options' => $field['option']])
         @endforeach
-
       </div>
       @endforeach
       
