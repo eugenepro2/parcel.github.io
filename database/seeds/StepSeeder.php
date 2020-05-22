@@ -31,7 +31,7 @@ class StepSeeder extends Seeder
             ],
             [
                 'id' => 5,
-                'name' => 'Basis-Lastschrift-Mandat erteilen'
+                'name' => 'Lastschrift-Mandat erteilen'
             ],
             [
                 'id' => 6,

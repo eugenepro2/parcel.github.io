@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\FormChecking;
 use App\FormMailer;
+use App\IFormChecking;
 use App\IMailer;
 use App\IForm;
 use App\Http\Requests\FormValidator;
@@ -16,9 +17,9 @@ use Illuminate\Support\Facades\Mail;
 
 class FormController extends Controller
 {
-    public function index(IForm $form)
+    public function index(IForm $form, $step_id)
     {
-        return $form->getFormFields(new FormChecking());
+        return $form->getFormFields(new FormChecking, $step_id);
     }
 
     public function store(FormValidator $request, $id, IForm $form)
@@ -28,15 +29,23 @@ class FormController extends Controller
         if($id == 6){
 
             $user = Auth::user();
-            
+
             $mailer = new FormMailer();
             $mailer->sendEmailFormToUser($user);
             $mailer->sendEmailFormToAdmin($user);
 
 //            SendMail::dispatch()->delay(now()->addMinutes(10));
+            return redirect()->route('go-live');
         }
 
-        return redirect()->route('step');
+        $id = $id+1;
+
+        return redirect()->route('step', $id);
+    }
+
+    public function endSteps()
+    {
+        return view('step.go-live');
     }
 
 }

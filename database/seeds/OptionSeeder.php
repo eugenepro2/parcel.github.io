@@ -28,11 +28,6 @@ class OptionSeeder extends Seeder
                 'name' => 'Nach Kilotarif (LETTER Plus)',
                 'field_id' => 16,
             ],
-            [
-                'id' => 4,
-                'name' => 'Zalando-Workflow',
-                'field_id' => 16,
-            ],
 
             //
             [
@@ -94,7 +89,7 @@ class OptionSeeder extends Seeder
             ],
             [
                 'id' => 16,
-                'name' => 'PARCEL als Eco',
+                'name' => 'PARCEL als Basic',
                 'field_id' => 18,
             ],
 
@@ -360,13 +355,6 @@ class OptionSeeder extends Seeder
                 'id' => 66,
                 'name' => '6+',
                 'field_id' => 30,
-            ],
-
-            //
-            [
-                'id' => 67,
-                'name' => 'wiederkehrende Zahlungen',
-                'field_id' => 40,
             ],
 
             //parcel volume

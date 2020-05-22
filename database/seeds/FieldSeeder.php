@@ -44,16 +44,16 @@ class FieldSeeder extends Seeder
             ],
             [
                 'id' => 5,
-                'name' => 'Geschäftsführer *',
+                'name' => 'Geschäftsführer',
                 'type' => 'text',
-                'required' => true,
+                'required' => false,
                 'group_id' => 1
             ],
             [
                 'id' => 6,
-                'name' => 'Ust.-ID Nr. *',
+                'name' => 'Ust.-ID Nr.',
                 'type' => 'text',
-                'required' => true,
+                'required' => false,
                 'group_id' => 1
             ],
 
@@ -159,7 +159,7 @@ class FieldSeeder extends Seeder
             [
                 'id' => 20,
                 'name' => 'vein',
-                'name' => 'Veinbarte Mindestmenge in Stück/Monat *',
+                'name' => 'Vereinbarte Mindestmenge in Stück/Monat *',
                 'type' => 'number',
                 'required' => false,
                 'group_id' => 5
@@ -311,19 +311,10 @@ class FieldSeeder extends Seeder
             //eleventh group field
             [
                 'id' => 40,
-                'name' => 'Einmalige oder wiederkehrende Zahlungen *',
-                'type' => 'select',
-                'required' => true,
-                'group_id' => 11
-            ],
-
-            //twelfth group field
-            [
-                'id' => 41,
                 'name' => 'Datum *',
                 'type' => 'date',
                 'required' => true,
-                'group_id' => 12
+                'group_id' => 11
             ],
         ];
 

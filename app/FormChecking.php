@@ -29,7 +29,7 @@ class FormChecking extends Model implements IFormChecking
                     case '34':
                         $step_id = 6;
                         break;
-                    case '41':
+                    case '40':
                         $step_id = 7;
                         break;
                     default:

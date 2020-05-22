@@ -4,7 +4,6 @@
 <div class="login">
 	<form method="POST" action="{{ route('login') }}">
 		@csrf
-
 		@error('email')
 			<div class="badge">
 				Dieser Benutzer ist nicht registriert.
@@ -17,7 +16,7 @@
 		@enderror
 		@if (session('message'))
 			<div class="badge">
-				{{session('message')}}
+				{!! session('message') !!}
 			</div>
 		@endif
 

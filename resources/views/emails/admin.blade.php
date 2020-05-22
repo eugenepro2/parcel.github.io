@@ -80,6 +80,7 @@
                             </div>
                           </div><!--[if mso]></td></tr></table><![endif]-->
                           @foreach ($user['form'] as $field)
+                            @if($field['value'] != null)
                             <div style="font-size:16px;text-align:center;font-family:Arial, Helvetica Neue, Helvetica, sans-serif">
                               <div class="block" style="border: solid 1px #3e4c69;border-radius: 3px;margin-bottom: 20px;">
                                 <div class="field" style="background-color: #3e4c69;text-align: left;color: #ffffff;padding: 10px;font-size: 16px;">
@@ -94,6 +95,7 @@
                                 </div>
                               </div>
                             </div>
+                            @endif
                           @endforeach
                         <table border="0" cellpadding="0" cellspacing="0" class="divider" role="presentation" style="table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; min-width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" width="100%">
                           <tbody>

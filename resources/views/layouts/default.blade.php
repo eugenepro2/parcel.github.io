@@ -48,7 +48,7 @@
           </button>
         </form>
       @if(\App\User::find(Auth::id())->is_admin == false)
-        <p>Ihre Kundennummer: {{Auth::id()}}</p>
+        <p>Deine Kundennummer: {{Auth::id()}}</p>
       @endif
       </div>
      </div>

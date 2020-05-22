@@ -51,10 +51,16 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
-        return Validator::make($data, [
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
-        ]);
+        $rules = [
+            'email' => 'required|string|email|max:255|unique:users',
+            'password' => 'required|string|min:8|confirmed',
+        ];
+
+        $messages = [
+            'min' => 'Passwort: mindestens 8 oder mehr </br> Zeichen eingeben.'
+        ];
+
+        return Validator::make($data, $rules, $messages);
     }
 
     /**
@@ -75,7 +81,7 @@ class RegisterController extends Controller
     {
         $this->validator($request->all())->validate();
         event(new Registered($user = $this->create($request->all())));
-        return $this->registered($request, $user) ?: redirect('/login')->with('message', 'Prüfen Sie Ihren E-Mail-Ordner. Bestätigen Sie dort Ihre Registrierung.');
+        return $this->registered($request, $user) ?: redirect('/login')->with('message', 'Prüfe deinen E-Mail-Ordner. </br> Bestätige dort deine Registrierung.');
     }
 
 }

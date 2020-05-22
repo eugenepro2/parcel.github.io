@@ -44,7 +44,7 @@ class LoginController extends Controller
         if($user->is_admin == true){
             return redirect('/admin');
         }else{
-            return redirect('/registrierung');
+            return redirect('/registrierung/1');
         }
     }
 }
