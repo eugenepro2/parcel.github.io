@@ -47,7 +47,7 @@ class MyNotification extends Notification
 
         return (new MailMessage)
             ->from('info@parcel.one', 'PARCEL.ONE-Team')
-            ->subject('Bitte bestätigen Sie Ihr parcel.one-Konto')
+            ->subject('Bitte bestätige dein PARCEL.ONE-Konto')
             ->view('emails.verify', compact('url'));
     }
 

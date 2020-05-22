@@ -43,8 +43,8 @@
                           <div style="color:#3e4c69;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;line-height:1.2;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;">
                             <div style="line-height: 1.2; font-size: 12px; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #3e4c69; mso-line-height-alt: 14px;">
                               <p style="font-size: 28px; line-height: 1.2; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; word-break: break-word; mso-line-height-alt: 34px; margin: 0;">
-                                <span style="font-size: 28px;">Danke, dass Sie sich bei parcel.one</span><br>
-                                <span style="font-size: 28px;">angemeldet haben!</span>
+                                <span style="font-size: 28px;">Danke, dass Du Dich bei PARCEL.ONE</span><br>
+                                <span style="font-size: 28px;">angemeldet hast!</span>
                               </p>
                             </div>
                           </div><!--[if mso]></td></tr></table><![endif]-->
