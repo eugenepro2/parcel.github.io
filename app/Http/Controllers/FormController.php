@@ -17,14 +17,37 @@ use Illuminate\Support\Facades\Mail;
 
 class FormController extends Controller
 {
-    public function index(IForm $form, $step_id)
+    public function index(IForm $form, $id)
     {
-        return $form->getFormFields(new FormChecking, $step_id);
+
+        return $form->getFormFields(new FormChecking, $id);
+
     }
 
     public function store(FormValidator $request, $id, IForm $form)
     {
         $form->saveFormFields($request->except(['_token', 'checkbox']));
+
+        if($id == 6){
+
+            $user = Auth::user();
+
+            $mailer = new FormMailer();
+            $mailer->sendEmailFormToUser($user);
+            $mailer->sendEmailFormToAdmin($user);
+
+//            SendMail::dispatch()->delay(now()->addMinutes(10));
+            return redirect()->route('go-live');
+        }
+
+        $id = $id+1;
+
+        return redirect()->route('step', $id);
+    }
+
+    public function update(FormValidator $request, $id, IForm $form)
+    {
+        $form->updateFormFields($request->except(['_token', 'checkbox']));
 
         if($id == 6){
 

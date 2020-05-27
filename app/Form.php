@@ -18,17 +18,23 @@ class Form extends Model implements IForm
         return $this->hasMany(Field::class, 'id', 'field_id');
     }
 
-    public function getFormFields(IFormChecking $checking, $step_id)
+    public function getFormFields(IFormChecking $checking, $id)
     {
-        $check_step = $checking->checkStepId();
+        $step_id = $checking->checkStepId();
 
-        if($check_step == 7)
+        if($step_id == $id and $step_id == 7)
         {
             return redirect()->route('go-live');
-        }else{
-            $step = Step::where('id', $step_id)->with('group.field.option')->first();
+        }
+        elseif($step_id >= $id)
+        {
+            $step = Step::where('id', $id)->with('group.field.option')->first();
             $data = Form::where('user_id', Auth::id())->get();
             return view('step.index', compact(['step', 'data']));
+        }
+        elseif($step_id < $id)
+        {
+            return redirect()->route('step', $step_id);
         }
 
     }
@@ -42,6 +48,16 @@ class Form extends Model implements IForm
                 'field_id' => $field_id[1],
                 'user_id' => Auth::id()
             ]);
+        }
+
+        return true;
+    }
+
+    public function updateFormFields($data)
+    {
+        foreach($data as $key => $value) {
+        $field_id = explode('-', $key);
+        self::where('field_id', $field_id[1])->update(['value' =>  $value]);
         }
 
         return true;

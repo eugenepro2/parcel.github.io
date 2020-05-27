@@ -6,7 +6,8 @@
     <li>{{$error}}</li>
   @endforeach
 </ul>
-<form method="POST" action="{{route('send', $step['id'])}}">
+
+<form method="POST" action="{{(isset($data)) ? route('update', $step['id']) : route('send', $step['id'])}}">
   @csrf
   
 

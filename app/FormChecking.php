@@ -33,7 +33,6 @@ class FormChecking extends Model implements IFormChecking
                         $step_id = 7;
                         break;
                     default:
-                        # code...
                         break;
                 }
             }
