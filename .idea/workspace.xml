@@ -87,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/emails/admin.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="90" column="74" selection-start-line="90" selection-start-column="74" selection-end-line="90" selection-end-column="74" />
+            <state relative-caret-position="488">
+              <caret line="94" column="47" selection-start-line="94" selection-start-column="47" selection-end-line="94" selection-end-column="47" />
               <folding>
                 <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
@@ -126,11 +126,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/emails/user.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="87" column="38" selection-start-line="87" selection-start-column="38" selection-end-line="87" selection-end-column="38" />
+            <state relative-caret-position="355">
+              <caret line="89" column="34" selection-start-line="89" selection-start-column="34" selection-end-line="94" selection-end-column="47" />
               <folding>
                 <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
@@ -181,7 +181,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
+            <state relative-caret-position="258">
               <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
             </state>
           </provider>
@@ -299,8 +299,8 @@
         <option value="$PROJECT_DIR$/app/Interfaces/IForm.php" />
         <option value="$PROJECT_DIR$/app/Form.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/FormController.php" />
-        <option value="$PROJECT_DIR$/resources/views/emails/admin.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/emails/user.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/emails/admin.blade.php" />
       </list>
     </option>
   </component>
@@ -520,12 +520,12 @@
       <workItem from="1589620999475" duration="595000" />
       <workItem from="1589706713455" duration="65000" />
       <workItem from="1590055450325" duration="10557000" />
-      <workItem from="1590492653603" duration="12444000" />
+      <workItem from="1590492653603" duration="12629000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117469000" />
+    <option name="totallyTimeSpent" value="117654000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -876,13 +876,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FormController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1022">
@@ -897,10 +890,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/emails/admin.blade.php">
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="90" column="74" selection-start-line="90" selection-start-column="74" selection-end-line="90" selection-end-column="74" />
+        <state relative-caret-position="258">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/emails/user.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="89" column="34" selection-start-line="89" selection-start-column="34" selection-end-line="94" selection-end-column="47" />
           <folding>
             <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
@@ -915,6 +915,7 @@
             <element signature="n#style#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
@@ -934,10 +935,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/emails/user.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/emails/admin.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="87" column="38" selection-start-line="87" selection-start-column="38" selection-end-line="87" selection-end-column="38" />
+        <state relative-caret-position="488">
+          <caret line="94" column="47" selection-start-line="94" selection-start-column="47" selection-end-line="94" selection-end-column="47" />
           <folding>
             <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
@@ -952,7 +953,6 @@
             <element signature="n#style#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
