@@ -10,7 +10,8 @@ class Form extends Model implements IForm
     protected $fillable = [
         'value',
         'field_id',
-        'user_id'
+        'user_id',
+        'step_id'
     ];
 
     public function field()
@@ -26,34 +27,39 @@ class Form extends Model implements IForm
         {
             return redirect()->route('go-live');
         }
-        elseif($step_id >= $id)
+        elseif($step_id != 7 and $step_id >= $id)
         {
             $step = Step::where('id', $id)->with('group.field.option')->first();
-            $data = Form::where('user_id', Auth::id())->get();
+            $data = Form::where('user_id', Auth::id())->where('step_id', $id)->get();
             return view('step.index', compact(['step', 'data']));
         }
         elseif($step_id < $id)
         {
             return redirect()->route('step', $step_id);
         }
+        else
+        {
+            return abort(404);
+        }
 
     }
 
-    public function saveFormFields($data)
+    public function saveFormFields($data, $step_id)
     {
         foreach($data as $key => $value) {
             $field_id = explode('-', $key);
             self::create([
                 'value' =>  $value,
                 'field_id' => $field_id[1],
-                'user_id' => Auth::id()
+                'user_id' => Auth::id(),
+                'step_id' => $step_id
             ]);
         }
 
         return true;
     }
 
-    public function updateFormFields($data)
+    public function updateFormFields($data, $step_id)
     {
         foreach($data as $key => $value) {
         $field_id = explode('-', $key);

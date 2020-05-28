@@ -26,7 +26,7 @@ class FormController extends Controller
 
     public function store(FormValidator $request, $id, IForm $form)
     {
-        $form->saveFormFields($request->except(['_token', 'checkbox']));
+        $form->saveFormFields($request->except(['_token', 'checkbox']), $id);
 
         if($id == 6){
 
@@ -47,7 +47,7 @@ class FormController extends Controller
 
     public function update(FormValidator $request, $id, IForm $form)
     {
-        $form->updateFormFields($request->except(['_token', 'checkbox']));
+        $form->updateFormFields($request->except(['_token', 'checkbox', '_method']), $id);
 
         if($id == 6){
 
