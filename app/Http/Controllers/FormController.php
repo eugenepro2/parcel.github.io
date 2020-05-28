@@ -83,7 +83,7 @@ class FormController extends Controller
     public function endSteps(IFormChecking $checking)
     {
         $step_id = $checking->checkStepId();
-        
+
         if($step_id == 7){
             return view('step.go-live');
         }else{

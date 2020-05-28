@@ -88,7 +88,7 @@
                                 </div>
                                 <div class="text">
                                   @if($field->field->first()['type'] == 'select')
-                                    {{$field->field->first()->option->first()['name']}}
+                                    {{$field->field->first()->option->name}}
                                   @else
                                     {{$field['value']}}
                                   @endif
