@@ -23,7 +23,7 @@ class Form extends Model implements IForm
     {
         $step_id = $checking->checkStepId();
 
-        if($step_id == $id and $step_id == 7)
+        if($step_id == 7 and $step_id >= $id)
         {
             return redirect()->route('go-live');
         }
@@ -33,13 +33,9 @@ class Form extends Model implements IForm
             $data = Form::where('user_id', Auth::id())->where('step_id', $id)->get();
             return view('step.index', compact(['step', 'data']));
         }
-        elseif($step_id < $id)
+        elseif($step_id != 7 and $step_id < $id)
         {
             return redirect()->route('step', $step_id);
-        }
-        else
-        {
-            return abort(404);
         }
 
     }
