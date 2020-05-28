@@ -17,10 +17,24 @@ use Illuminate\Support\Facades\Mail;
 
 class FormController extends Controller
 {
-    public function index(IForm $form, $id)
+    public function index(IForm $form, IFormChecking $checking, $id)
     {
+        $step_id = $checking->checkStepId();
 
-        return $form->getFormFields(new FormChecking, $id);
+        if($step_id == 7 and $step_id >= $id)
+        {
+            return redirect()->route('go-live');
+        }
+        elseif($step_id != 7 and $step_id >= $id)
+        {
+            $data = $form->getFormFields($id);
+            return view('step.index', $data);
+        }
+        elseif($step_id != 7 and $step_id < $id)
+        {
+            return redirect()->route('step', $step_id);
+        }
+
 
     }
 
@@ -66,9 +80,15 @@ class FormController extends Controller
         return redirect()->route('step', $id);
     }
 
-    public function endSteps()
+    public function endSteps(IFormChecking $checking)
     {
-        return view('step.go-live');
+        $step_id = $checking->checkStepId();
+        
+        if($step_id == 7){
+            return view('step.go-live');
+        }else{
+            return redirect()->route('step', $step_id);
+        }
     }
 
 }

@@ -19,25 +19,11 @@ class Form extends Model implements IForm
         return $this->hasMany(Field::class, 'id', 'field_id');
     }
 
-    public function getFormFields(IFormChecking $checking, $id)
+    public function getFormFields($id)
     {
-        $step_id = $checking->checkStepId();
-
-        if($step_id == 7 and $step_id >= $id)
-        {
-            return redirect()->route('go-live');
-        }
-        elseif($step_id != 7 and $step_id >= $id)
-        {
-            $step = Step::where('id', $id)->with('group.field.option')->first();
-            $data = Form::where('user_id', Auth::id())->where('step_id', $id)->get();
-            return view('step.index', compact(['step', 'data']));
-        }
-        elseif($step_id != 7 and $step_id < $id)
-        {
-            return redirect()->route('step', $step_id);
-        }
-
+        $step = Step::where('id', $id)->with('group.field.option')->first();
+        $data = Form::where('user_id', Auth::id())->where('step_id', $id)->get();
+        return compact(['step', 'data']);
     }
 
     public function saveFormFields($data, $step_id)
