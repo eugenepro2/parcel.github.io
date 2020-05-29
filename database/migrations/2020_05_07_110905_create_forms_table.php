@@ -18,6 +18,7 @@ class CreateFormsTable extends Migration
             $table->string('value')->nullable();
             $table->integer('field_id');
             $table->integer('user_id');
+            $table->integer('step_id');
             $table->timestamps();
         });
     }

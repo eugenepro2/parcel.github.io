@@ -88,7 +88,11 @@
                                 </div>
                                 <div class="text">
                                   @if($field->field->first()['type'] == 'select')
-                                    {{$field->field->first()->option->first()['name']}}
+                                    @foreach($field->field->first()->option as $option)
+                                      @if($option->id == $field['value'])
+                                        {{$option->name}}
+                                      @endif
+                                    @endforeach
                                   @else
                                     {{$field['value']}}
                                   @endif
