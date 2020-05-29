@@ -34,6 +34,7 @@ $steps = [
 
 <div class="steps">
   @foreach ($steps as $step)
+  <a href="{{($step['id'] <= 6) ? route('step', $step['id']) : route('go-live')}}" style="text-decoration: none">
     <div class="block @if($current == $step['id']) current @endif">
       <div class="circle @if($current == $step['id']) current @endif">
         @if ($current <= $step['id'])
@@ -44,5 +45,6 @@ $steps = [
       </div>
       <p>{{$step['name']}}</p>
     </div>
+  </a>
   @endforeach
 </div>

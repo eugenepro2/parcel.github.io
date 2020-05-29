@@ -17,14 +17,30 @@ use Illuminate\Support\Facades\Mail;
 
 class FormController extends Controller
 {
-    public function index(IForm $form, $step_id)
+    public function index(IForm $form, IFormChecking $checking, $id)
     {
-        return $form->getFormFields(new FormChecking, $step_id);
+        $step_id = $checking->checkStepId();
+
+        if($step_id == 7 and $step_id >= $id)
+        {
+            return redirect()->route('go-live');
+        }
+        elseif($step_id != 7 and $step_id >= $id)
+        {
+            $data = $form->getFormFields($id);
+            return view('step.index', $data);
+        }
+        elseif($step_id != 7 and $step_id < $id)
+        {
+            return redirect()->route('step', $step_id);
+        }
+
+
     }
 
     public function store(FormValidator $request, $id, IForm $form)
     {
-        $form->saveFormFields($request->except(['_token', 'checkbox']));
+        $form->saveFormFields($request->except(['_token', 'checkbox']), $id);
 
         if($id == 6){
 
@@ -43,9 +59,36 @@ class FormController extends Controller
         return redirect()->route('step', $id);
     }
 
-    public function endSteps()
+    public function update(FormValidator $request, $id, IForm $form)
     {
-        return view('step.go-live');
+        $form->updateFormFields($request->except(['_token', 'checkbox', '_method']), $id);
+
+        if($id == 6){
+
+            $user = Auth::user();
+
+            $mailer = new FormMailer();
+            $mailer->sendEmailFormToUser($user);
+            $mailer->sendEmailFormToAdmin($user);
+
+//            SendMail::dispatch()->delay(now()->addMinutes(10));
+            return redirect()->route('go-live');
+        }
+
+        $id = $id+1;
+
+        return redirect()->route('step', $id);
+    }
+
+    public function endSteps(IFormChecking $checking)
+    {
+        $step_id = $checking->checkStepId();
+
+        if($step_id == 7){
+            return view('step.go-live');
+        }else{
+            return redirect()->route('step', $step_id);
+        }
     }
 
 }
