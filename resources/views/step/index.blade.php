@@ -6,6 +6,7 @@
     <li>{{$error}}</li>
   @endforeach
 </ul>
+{{dd($step)}}
 <form method="POST" action="{{route('send', $step['id'])}}">
   @csrf
   
