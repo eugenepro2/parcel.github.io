@@ -244,6 +244,10 @@
   padding: 50px;
 }
 
+.steps a {
+  color: inherit;
+}
+
 @media (max-width: 767px) {
   .steps {
     justify-content: center;

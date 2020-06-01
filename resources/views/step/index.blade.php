@@ -6,7 +6,6 @@
     <li>{{$error}}</li>
   @endforeach
 </ul>
-
 <form method="POST" action="{{(isset($data[1])) ? route('update', $step['id']) : route('send', $step['id'])}}">
   @if((isset($data[1])))
     @method('PUT')
