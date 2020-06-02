@@ -21,6 +21,7 @@ class Form extends Model implements IForm
 
     public function getFormFields($id)
     {
+//        dd($id);
         $step = Step::where('id', $id)->with('group.field.option')->first();
         $data = Form::where('user_id', Auth::id())->where('step_id', $id)->get();
         return compact(['step', 'data']);

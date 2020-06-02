@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\FormChecking;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
@@ -44,7 +45,9 @@ class LoginController extends Controller
         if($user->is_admin == true){
             return redirect('/admin');
         }else{
-            return redirect('/registrierung/1');
+            $checking = new FormChecking;
+            $step_id = $checking->checkStepId();
+            return redirect()->route('step', $step_id);
         }
     }
 }
