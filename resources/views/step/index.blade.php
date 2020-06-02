@@ -49,7 +49,7 @@
               <label for="checkbox"></label>
             </div>
             <label class="label" for="checkbox">
-              Hiermit beauftrage ich die PARCEL.ONE GmbH für die Abwicklung des Versandes. Ich stimme den Konditionen und den Richtlinien des Angebotes zu. Ich habe die aktuell gültigen <a href="https://parcel.one/wp-content/uploads/2020/03/P1-Versandbedingungen-AGB.pdf" style="text-decoration:none;" target="_blank"><b>AGB</b></a> der PARCEL.ONE GmbH gelesen, verstanden und stimme diesen zu.
+              Hiermit beauftrage ich die PARCEL.ONE GmbH für die Abwicklung des Versandes. Ich stimme den Konditionen und den Richtlinien des Angebotes zu. Ich habe die aktuell gültigen <a href="https://parcel.one/wp-content/uploads/2020/03/P1-Versandbedingungen-AGB.pdf" style="text-decoration:none; color: #3E4C69" target="_blank"><b>AGB</b></a> der PARCEL.ONE GmbH gelesen, verstanden und stimme diesen zu.
             </label>
           </div>
         </div>
@@ -77,7 +77,7 @@
       @endif
       <button class="btn btn-submit">
         @if ($step['id'] == 5)
-          Basis-Lastschrift-MANDAT ERTEILEN
+          Basis-Lastschrift-MANDAT erteilen
         @else
           Absenden
         @endif

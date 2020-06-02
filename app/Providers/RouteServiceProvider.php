@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\FormChecking;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Route;
 
