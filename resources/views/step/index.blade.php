@@ -54,14 +54,14 @@
           </div>
         </div>
       @elseif($step['id'] == 5)
-        <div class="grey">
+        <div class="grey group">
+          <h3 class="group">SEPA-Basis-Lastschrift-Mandat an den Zahlungsempfänger für wiederkehrende Zahlungen</h3>
           <div class="flex">
             <div class="checkbox" style="margin-top: 18px">
               <input type="checkbox" name="checkbox" id="checkbox" required>
               <label for="checkbox"></label>
             </div>
             <label class="label" for="checkbox">
-              <h4>SEPA-Basis-Lastschrift-Mandat an den Zahlungsempfänger</h4>
               <p><b>Gläubiger-Identifikationsnummer des Zahlungsempfängers:</b> DE67ONE00002014326</p>
 
               <p><b>Mandatsreferenz:</b> KD{{Auth::id()}}</p>
