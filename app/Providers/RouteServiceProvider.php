@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\FormChecking;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Route;
 
@@ -22,7 +23,7 @@ class RouteServiceProvider extends ServiceProvider
      * @var string
      */
 
-    public const HOME = '/registrierung/1';
+    public const HOME = '/registrierung/6';
 
     /**
      * Define your route model bindings, pattern filters, etc.

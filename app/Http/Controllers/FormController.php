@@ -19,20 +19,21 @@ class FormController extends Controller
 {
     public function index(IForm $form, IFormChecking $checking, $id)
     {
-        $step_id = $checking->checkStepId();
 
-        if($step_id == 7 and $step_id >= $id)
+        $step_id = $checking->checkStepId();
+        if($step_id == 7 and $step_id > $id)
         {
             return redirect()->route('go-live');
         }
-        elseif($step_id != 7 and $step_id >= $id)
+        elseif($step_id != 7 and $step_id <= $id)
+        {
+            $data = $form->getFormFields($step_id);
+            return view('step.index', $data);
+        }
+        elseif($step_id != 7 and $step_id > $id)
         {
             $data = $form->getFormFields($id);
             return view('step.index', $data);
-        }
-        elseif($step_id != 7 and $step_id < $id)
-        {
-            return redirect()->route('step', $step_id);
         }
 
 
