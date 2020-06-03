@@ -455,7 +455,7 @@
   line-height: 1.33;
   text-align: center;
   color: #ffffff;
-  margin-top: 50px;
+  margin-bottom: 20px;
   border: none;
   border-radius: 3px;
   cursor: pointer;
@@ -470,6 +470,10 @@
   background-color: #ffffff;
   color: #661600;
   border: 1px solid #661600;
+}
+
+.step .btn-mt50 {
+  margin-top: 50px;
 }
 
 .step .btn-mt20 {
@@ -488,7 +492,9 @@
 .step #field-25,
 .step #field-28,
 .step #field-29,
-.step #field-30 {
+.step #field-30,
+.step #field-38,
+.step #field-39 {
   display: none;
 }
 

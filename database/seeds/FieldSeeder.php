@@ -288,21 +288,21 @@ class FieldSeeder extends Seeder
             //tenth group fields
             [
                 'id' => 37,
-                'name' => 'Zahlungsdienstleister *',
-                'type' => 'text',
-                'required' => true,
-                'group_id' => 10
-            ],
-            [
-                'id' => 38,
                 'name' => 'IBAN *',
                 'type' => 'text',
                 'required' => true,
                 'group_id' => 10
             ],
             [
-                'id' => 39,
+                'id' => 38,
                 'name' => 'BIC *',
+                'type' => 'text',
+                'required' => true,
+                'group_id' => 10
+            ],
+            [
+                'id' => 39,
+                'name' => 'Zahlungsdienstleister *',
                 'type' => 'text',
                 'required' => true,
                 'group_id' => 10

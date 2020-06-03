@@ -74,7 +74,7 @@
           </div>
         </div>
       @endif
-      <button class="btn btn-submit">
+      <button class="btn btn-submit mt-50">
         @if ($step['id'] == 5)
           Basis-Lastschrift-MANDAT erteilen
         @else
