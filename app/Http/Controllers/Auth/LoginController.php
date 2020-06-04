@@ -47,7 +47,14 @@ class LoginController extends Controller
         }else{
             $checking = new FormChecking;
             $step_id = $checking->checkStepId();
-            return redirect()->route('step', $step_id);
+            
+            if($step_id < 7){
+                return redirect()->route('step', $step_id);
+            }else{
+
+                return redirect()->route('go-live');
+            }
         }
     }
+
 }
