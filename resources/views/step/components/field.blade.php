@@ -13,11 +13,11 @@
     <input type="{{$type}}" id="{{$id}}" name="field-{{$id}}" @if ($required) required @endif
     class="@if ($errors->has(`field-{$id}`)) error @endif" value="{{(isset($value) ? $value : '')}}">
   </div>
-  @if ($title == 'IBAN *')
+  {{-- @if ($title == 'IBAN *')
     <button class="btn btn-submit iban">
       IBAN prüfen
     </button>      
-  @endif
+  @endif --}}
 @elseif($type == 'select')
   <div class="field" id="field-{{$id}}">
     <label for="{{$id}}">{{$title}}</label>

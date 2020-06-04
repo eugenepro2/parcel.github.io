@@ -35,7 +35,7 @@ class UserMail extends Mailable
         $user = $this->user;
         return $this
                 ->to($user->email)
-                ->subject("Neue Kunden-Registrierung (Kunden-Nr.: $user->id)")
+                ->subject("Deine Registrierung bei PARCEL.ONE (Kunden-Nr.: $user->id)")
                 ->from('info@parcel.io', 'PARCEL.ONE-Team')
                 ->view('emails.user', compact('user'));
     }

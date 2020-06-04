@@ -26,7 +26,6 @@
   line-height: 1.56;
   color: #3e4c69;
   display: flex;
-  justify-content: center;
   margin-bottom: 10px;
   border-radius: 3px;
 }
@@ -80,6 +79,10 @@
 
 .auth .mb-50 {
   margin-bottom: 50px;
+}
+
+.auth .mt-50 {
+  margin-top: 50px;
 }
 
 .auth .password-reset {
@@ -395,11 +398,16 @@
   }
 }
 
+.step .grey h4 {
+  font-size: 20px;
+  color: #661600;
+}
+
 .step .grey b {
   font-weight: 700;
 }
 
-.step .grey b a {
+.step .grey a {
   color: #3e4c69;
 }
 
@@ -492,9 +500,7 @@
 .step #field-25,
 .step #field-28,
 .step #field-29,
-.step #field-30,
-.step #field-38,
-.step #field-39 {
+.step #field-30 {
   display: none;
 }
 

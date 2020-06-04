@@ -184,7 +184,7 @@ class FieldSeeder extends Seeder
                 'id' => 23,
                 'name' => 'Wawi/ERP System Bezeichnung *',
                 'type' => 'text',
-                'required' => true,
+                'required' => false,
                 'group_id' => 6
             ],
             [
@@ -198,7 +198,7 @@ class FieldSeeder extends Seeder
                 'id' => 25,
                 'name' => 'Shopsystem Bezeichnung *',
                 'type' => 'text',
-                'required' => true,
+                'required' => false,
                 'group_id' => 6
             ],
             [
