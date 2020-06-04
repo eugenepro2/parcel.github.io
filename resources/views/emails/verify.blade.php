@@ -40,26 +40,25 @@
                         <div style="border-top:0px solid transparent; border-left:0px solid transparent; border-bottom:0px solid transparent; border-right:0px solid transparent; padding-top:30px; padding-bottom:30px; padding-right: 50px; padding-left: 50px;">
                           <!--<![endif]-->
                           <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; font-family: Arial, sans-serif"><![endif]-->
-                          <div style="color:#3e4c69;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;line-height:1.2;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;">
-                            <div style="line-height: 1.2; font-size: 12px; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #3e4c69; mso-line-height-alt: 14px;">
-                              <p style="font-size: 28px; line-height: 1.2; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; word-break: break-word; mso-line-height-alt: 34px; margin: 0;">
+                          <div style="color:#3e4c69;font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.2;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;">
+                            <div style="line-height: 1.2; font-size: 14px; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; color: #3e4c69; mso-line-height-alt: 14px;">
+                              <p style="text-align: center; font-size: 28px; line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: 34px; margin: 0;">
                                 <span style="font-size: 28px;">Danke, dass Du Dich bei PARCEL.ONE</span><br>
                                 <span style="font-size: 28px;">angemeldet hast!</span>
                               </p>
                             </div>
                           </div><!--[if mso]></td></tr></table><![endif]-->
-                          <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; font-family: 'Trebuchet MS', Tahoma, sans-serif"><![endif]-->
-                          <div style="color:#555555;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;line-height:1.2;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;">
-                            <div style="line-height: 1.2; font-size: 12px; font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; color: #555555; mso-line-height-alt: 14px;">
-                              <p style="line-height: 1.2; font-family: Montserrat, 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
-                                Wir freuen uns, Sie bei uns begrüßen zu dürfen.
+                          <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif"><![endif]-->
+                          <div style="color:#555555;font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.2;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;">
+                            <div style="line-height: 1.2; font-size: 14px; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; color: #555555; mso-line-height-alt: 14px;">
+                              <p style="text-align: center; line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
+                                Wir freuen uns, Dich als neuen Kunden begrüßen zu dürfen.
                               </p>
-                              <p style="line-height: 1.2; font-family: Montserrat, 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
+                              <p style="text-align: center; line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
                                 &nbsp;
                               </p>
-                              <p style="line-height: 1.2; font-family: Montserrat, 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
-                                Bevor Sie loslegen können, klicken Sie bitte auf den untenstehenden Link um Ihre<br>
-                                E-Mail-Adresse zu bestätigen.
+                              <p style="text-align: center; line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
+                                Bevor du loslegen kannst, bestätige bitte deine E-Mail-Adresse.
                               </p>
                             </div>
                           </div><!--[if mso]></td></tr></table><![endif]-->
@@ -82,8 +81,8 @@
                           </table>
                           <div align="center" class="button-container" style="padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;">
                             <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;"><tr><td style="padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px" align="center"><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="" style="height:34.5pt; width:222pt; v-text-anchor:middle;" arcsize="7%" stroke="false" fillcolor="#661600"><w:anchorlock/><v:textbox inset="0,0,0,0"><center style="color:#ffffff; font-family:Arial, sans-serif; font-size:18px"><![endif]-->
-                            <div style="text-decoration:none;display:inline-block;color:#ffffff;background-color:#661600;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;width:auto; width:auto;;border-top:1px solid #661600;border-right:1px solid #661600;border-bottom:1px solid #661600;border-left:1px solid #661600;padding-top:5px;padding-bottom:5px;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;text-align:center;mso-border-alt:none;word-break:keep-all;">
-                              <a href="{{$url}}" style="-webkit-text-size-adjust: none; text-decoration: none; display: inline-block; color: #ffffff; background-color: #661600; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; width: auto; width: auto; border-top: 1px solid #661600; border-right: 1px solid #661600; border-bottom: 1px solid #661600; border-left: 1px solid #661600; padding-top: 5px; padding-bottom: 5px; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; text-align: center; mso-border-alt: none; word-break: keep-all;" target="_blank"><span style="padding-left:60px;padding-right:60px;font-size:18px;display:inline-block;"><span style="font-size: 16px; line-height: 2; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; word-break: break-word; mso-line-height-alt: 32px;"><span data-mce-style="font-size: 18px; line-height: 36px;" style="font-size: 18px; line-height: 36px;">E-Mail-Adresse bestätigen</span></span></span></a>
+                            <div style="text-decoration:none;display:inline-block;color:#ffffff;background-color:#661600;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;width:auto; width:auto;;border-top:1px solid #661600;border-right:1px solid #661600;border-bottom:1px solid #661600;border-left:1px solid #661600;padding-top:5px;padding-bottom:5px;font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;text-align:center;mso-border-alt:none;word-break:keep-all;">
+                              <a href="{{$url}}" style="-webkit-text-size-adjust: none; text-decoration: none; display: inline-block; color: #ffffff; background-color: #661600; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; width: auto; width: auto; border-top: 1px solid #661600; border-right: 1px solid #661600; border-bottom: 1px solid #661600; border-left: 1px solid #661600; padding-top: 5px; padding-bottom: 5px; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: center; mso-border-alt: none; word-break: keep-all;" target="_blank"><span style="padding-left:60px;padding-right:60px;font-size:18px;display:inline-block;"><span style="font-size: 16px; line-height: 2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: 32px;"><span data-mce-style="font-size: 18px; line-height: 36px;" style="font-size: 18px; line-height: 36px;">E-Mail-Adresse bestätigen</span></span></span></a>
                             </div><!--[if mso]></center></v:textbox></v:roundrect></td></tr></table><![endif]-->
                           </div>
                           <table border="0" cellpadding="0" cellspacing="0" class="divider" role="presentation" style="table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; min-width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" width="100%">
@@ -102,23 +101,24 @@
                                 </td>
                               </tr>
                             </tbody>
-                          </table><!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; font-family: 'Trebuchet MS', Tahoma, sans-serif"><![endif]-->
-                          <div style="color:#555555;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;line-height:1.2;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;">
-                            <div style="line-height: 1.2; font-size: 12px; font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; color: #555555; mso-line-height-alt: 14px;">
-                              <p style="line-height: 1.2; font-family: Montserrat, 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
-                                Wir wünschen Ihnen viel Erfolg.
+                          </table><!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif"><![endif]-->
+                          <div style="color:#555555;font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.2;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;">
+                            <div style="line-height: 1.2; font-size: 14px; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; color: #555555; mso-line-height-alt: 14px;">
+                              <p style="text-align: center; line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
+                                Alternativ kannst du deine Registrierung über diesen Link bestätigen:<br>
+                                <a href="{{$url}}">{{$url}}</a>
                               </p>
-                              <p style="line-height: 1.2; font-family: Montserrat, 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
+                              <p style="line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
                                 &nbsp;
                               </p>
-                              <p style="line-height: 1.2; font-family: Montserrat, 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
-                                Mit freundlichen Grüßen,
+                              <p style="text-align: center; line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
+                                Viele Grüße
                               </p>
-                              <p style="line-height: 1.2; font-family: Montserrat, 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
+                              <p style="line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
                                 &nbsp;
                               </p>
-                              <p style="line-height: 1.2; font-family: Montserrat, 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
-                                Ihr parcel.one-Team
+                              <p style="text-align: center; line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
+                                Dein PARCEL.ONE-Team
                               </p>
                             </div>
                           </div><!--[if mso]></td></tr></table><![endif]-->
@@ -140,26 +140,26 @@
                         <!--[if (!mso)&(!IE)]><!-->
                         <div style="border-top:0px solid transparent; border-left:0px solid transparent; border-bottom:0px solid transparent; border-right:0px solid transparent; padding-top:20px; padding-bottom:10px; padding-right: 0px; padding-left: 0px;">
                           <!--<![endif]-->
-                          <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; font-family: 'Trebuchet MS', Tahoma, sans-serif"><![endif]-->
-                          <div style="color:#555555;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;line-height:1.5;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;">
-                            <div style="line-height: 1.5; font-size: 12px; font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; color: #555555; mso-line-height-alt: 18px;">
-                              <p style="text-align: center; line-height: 1.5; font-family: Montserrat, 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
+                          <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif"><![endif]-->
+                          <div style="color:#555555;font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.5;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;">
+                            <div style="line-height: 1.5; font-size: 14px; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; color: #555555; mso-line-height-alt: 18px;">
+                              <p style="text-align: center; line-height: 1.5; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
                                 <span style="color: #ffffff;">PARCEL.ONE GmbH</span><br>
                                 <span style="color: #ffffff;">Otto-Hahn-Strasse 21</span><br>
                                 <span style="color: #ffffff;">35510 Butzbach</span>
                               </p>
-                              <p style="text-align: center; line-height: 1.5; font-family: Montserrat, 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
+                              <p style="text-align: center; line-height: 1.5; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
                                 &nbsp;
                               </p>
-                              <p style="text-align: center; line-height: 1.5; font-family: Montserrat, 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
-                                <span style="color: #ffffff;">Telefon: +49(0)6033 352250</span><br>
+                              <p style="text-align: center; line-height: 1.5; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
+                                <span style="color: #ffffff;">Telefon: +49 6033 352250</span><br>
                                 <span style="color: #ffffff;">E-Mail: info@parcel.one</span>
                               </p>
-                              <p style="text-align: center; line-height: 1.5; font-family: Montserrat, 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
+                              <p style="text-align: center; line-height: 1.5; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
                                 &nbsp;
                               </p>
-                              <p style="text-align: center; line-height: 1.5; font-family: Montserrat, 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
-                                <span style="color: #ffffff;">Ust-IdNr.: DE312186140</span>
+                              <p style="text-align: center; line-height: 1.5; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
+                                <span style="color: #ffffff;">UST-ID.: DE312186140</span>
                               </p>
                             </div>
                           </div><!--[if mso]></td></tr></table><![endif]-->
