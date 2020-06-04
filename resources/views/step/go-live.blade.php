@@ -6,7 +6,7 @@
     @include('step.components.steps', ['current' => 8])
     <h2>Go-Live</h2>
     <div class="group">
-      <h3>Willkommen bei parcel.one</h3>
+      <h3>Willkommen bei PARCEL.ONE</h3>
       <p>Lieber Kunde, für eine erfolgreiche Kundenaufschaltung für den PARCEL.ONE Versand haben wir <br> bereits alle erforderlichen Informationen erhalten.</p>
       <p>Bei Fragen oder Vertragsänderungen wende dich bitte an unseren Kunden-Support.</p>
     </div>
