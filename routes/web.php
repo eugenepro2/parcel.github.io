@@ -25,6 +25,7 @@ Route::get('/registrierung/{id}', 'FormController@index')->name('step')->where('
 Route::post('/step/{id}', 'FormController@store')->name('send')->where('id', '[1-6]')->middleware(['user', 'verified']);
 Route::put('/step/{id}', 'FormController@update')->name('update')->where('id', '[1-6]')->middleware(['user', 'verified']);
 Route::get('/go-live', 'FormController@endSteps')->name('go-live')->middleware(['user', 'verified']);
+Route::get('/test', 'FormController@test')->name('test');
 
 Route::get('/admin', 'AdminController@index')->name('admin-index')->middleware(['admin', 'verified',]);
 Route::put('/admin/update/{id}', 'AdminController@update')->name('admin-update')->middleware(['admin', 'verified']);

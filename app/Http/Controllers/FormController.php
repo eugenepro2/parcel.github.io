@@ -92,4 +92,9 @@ class FormController extends Controller
         }
     }
 
+    public function test()
+    {
+        return view('a01');
+    }
+
 }
