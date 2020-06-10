@@ -3,9 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Form;
-use App\IForm;
 use App\PDF;
-use Illuminate\Http\Request;
 
 class PDFController extends Controller
 {

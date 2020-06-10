@@ -8,6 +8,7 @@
     <meta name="theme-color" content="#fff">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" media="all" href="{{ asset('docs/css/app.css') }}">
+    <style>.out{max-width: 780px; margin: 0 auto}</style>
   </head>
   <body>
     <!--BEGIN out-->

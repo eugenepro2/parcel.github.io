@@ -47,4 +47,4 @@ Route::get('/middle', function () {
 
 
 Route::get('/pdf{id}', 'PDFController@pdfToHtml')->name('pdf')->where('id', '[1-3]')->middleware(['user', 'verified']);
-
+Route::get('/test', 'FormController@test');
