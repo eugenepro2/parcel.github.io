@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Form;
 use App\FormChecking;
 use App\FormMailer;
 use App\IFormChecking;
@@ -92,9 +93,5 @@ class FormController extends Controller
         }
     }
 
-    public function test()
-    {
-        return view('a01');
-    }
 
 }

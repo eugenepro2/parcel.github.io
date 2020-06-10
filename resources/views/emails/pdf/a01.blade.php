@@ -17,15 +17,44 @@
         <div class="row lastschrift__row">
           <div class="frame frame_sm">
             <h2 class="subtitle">Name und Anschrift des Zahlers</h2>
+            @foreach($fields as $field)
+              @if($field['field_id'] == 34)
+              <input type="text" value="{{$field['value']}}">
+              @elseif($field['field_id'] == 35)
+              <input type="text" value="{{$field['value']}}">
+              @elseif($field['field_id'] == 36)
+              <input type="text" value="{{$field['value']}}">
+              @endif
+            @endforeach
+            @foreach($fields as $field)
+              @if($field['field_id'] == 4)
+                <input type="text" value="{{$field['value']}}">
+              @endif
+            @endforeach
           </div>
           <div class="frame frame_lg">
             <h2 class="subtitle">Name des Zahlungsdienstleisters des Zahlers</h2>
+            @foreach($fields as $field)
+              @if($field['field_id'] == 37)
+                <input type="text" value="{{$field['value']}}">
+              @endif
+            @endforeach
             <div class="row frame__row">
               <div class="col">
                 <h2 class="subtitle">BIC</h2>
+                @foreach($fields as $field)
+                  @if($field['field_id'] == 38)
+                    <input type="text" value="{{$field['value']}}">
+                  @endif
+                @endforeach
               </div>
               <div class="col">
                 <h2 class="subtitle">IBAN</h2>
+                @foreach($fields as $field)
+                  @if($field['field_id'] == 39)
+                    <input type="text" value="{{$field['value']}}">
+                  @endif
+                @endforeach
               </div>
             </div>
           </div>
@@ -43,6 +72,7 @@
             <div class="row frame__row">
               <div class="col">
                 <h2 class="subtitle">Mandatsreferenz</h2>
+                <p class="text">KD{{Auth::id()}}</p>
               </div>
               <div class="col">
                 <p class="text text-checkbox">Mandat für einmalige Zahlungen</p>
@@ -61,17 +91,21 @@
           <div class="frame frame_md">
             <h2 class="subtitle">Unterschrift(en) des/der Kontoinhabers/Kontoinhaber</h2>
             <p class="text">Dokument wurde elektronisch signiert</p>
-            <p class="text">IP-Adresse:</p>
+            <p class="text">IP-Adresse: {{$_SERVER['REMOTE_ADDR']}}</p>
           </div>
           <div class="frame frame_md">
             <h2 class="subtitle">Ort, Datum</h2>
-            <p class="text">,</p>
+            @foreach($fields as $field)
+              @if($field['field_id'] == 3)
+                <p class="text">{{$field['value']}}, {{date('d.m.Y')}}</p>
+              @endif
+            @endforeach
           </div>
         </div>
       </section>
     </div>
     <!--END out-->
     <!--LOAD SCRIPTS-->
-    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="{{ asset('docs/js/app.js') }}"></script>
   </body>
 </html>
