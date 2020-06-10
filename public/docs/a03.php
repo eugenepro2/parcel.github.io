@@ -1,3 +1,13 @@
+<?php
+
+use App\Form;
+use App\PDF;
+
+$fields = PDF::getFieldValues(new Form);
+$user_id = \Illuminate\Support\Facades\Auth::id();
+
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,14 +17,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" media="all" href="css/app.css">
+    <link rel="stylesheet" media="all" href="http://parcel.iocube.de/docs/css/app.css">
+    <style>.out{max-width: 780px; margin: 0 auto}</style>
   </head>
   <body>
     <!--BEGIN out-->
     <div class="out">
       <section class="zusammenfassung">
         <div class="header">
-          <div class="header__logo"><img src="img/logo.png" alt="parcel.one"></div>
+          <div class="header__logo"><img src="http://parcel.iocube.de/docs/img/logo.png" alt="parcel.one"></div>
         </div>
         <div class="lines">
           <div class="line line_red">
@@ -25,11 +36,19 @@
           </div>
         </div>
         <div class="zusammenfassung__content">
-          <h1 class="title zusammenfassung__title">Kerbs & Kremer GbR</h1>
+            <?php foreach($fields as $field)
+            if($field['field_id'] == 1): ?>
+                <h1 class="title zusammenfassung__title"><?= $field['value'] ?></h1>
+            <?php endif; ?>
           <h2 class="subtitle zusammenfassung__subtitle">Online-Registrierung</h2>
           <div class="zusammenfassung__details">
             <p class="text">Datum: 03.06.2020</p>
-            <p class="text">Kundennummer: 123456789</p>
+              <?php foreach($fields as $field)
+              if($field['field_id'] == 6 and $field['value'] != null): ?>
+                <p class="text">Kundennummer: <?= $field['value'] ?></p>
+              <?php elseif($field['field_id'] == 6 and $field['value'] == null): ?>
+                <p class="text">Kundennummer: <?= $user_id ?></p>
+              <?php endif ?>
           </div>
           <h2 class="subtitle zusammenfassung__text">Rechnungsadresse</h2>
           <p class="text zusammenfassung__text"><b>Firma * <br></b>Kerbs & Kremer GbR</p>
@@ -70,6 +89,6 @@
     </div>
     <!--END out-->
     <!--LOAD SCRIPTS-->
-    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="http://parcel.iocube.de/docs/js/app.js"></script>
   </body>
 </html>

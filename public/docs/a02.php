@@ -1,3 +1,13 @@
+<?php
+
+use App\Form;
+use App\PDF;
+
+$fields = PDF::getFieldValues(new Form);
+$user_id = \Illuminate\Support\Facades\Auth::id();
+
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,14 +17,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" media="all" href="css/app.css">
+    <link rel="stylesheet" media="all" href="http://parcel.iocube.de/docs/css/app.css">
+    <style>.out{max-width: 780px; margin: 0 auto}</style>
   </head>
   <body>
     <!--BEGIN out-->
     <div class="out">
       <div class="firmen__header">
         <div class="header">
-          <div class="header__logo"><img src="img/logo.png" alt="parcel.one"></div>
+          <div class="header__logo"><img src="http://parcel.iocube.de/docs/img/logo.png" alt="parcel.one"></div>
         </div>
       </div>
       <section class="firmen">
@@ -22,15 +33,45 @@
         <div class="row lastschrift__row">
           <div class="frame frame_sm">
             <h2 class="subtitle">Name und Anschrift des Zahlers</h2>
+
+              <?php foreach($fields as $field)
+                  if($field['field_id'] == 34): ?>
+                      <p class="text"><?= $field['value']?></p>
+                  <?php elseif($field['field_id'] == 35): ?>
+                      <p class="text"><?= $field['value']?></p>
+                  <?php elseif($field['field_id'] == 36): ?>
+                      <p class="text"><?= $field['value']?></p>
+                  <?php elseif($field['field_id'] == 4): ?>
+                      <p class="text"><?= $field['value']?></p>
+                  <?php endif; ?>
+
           </div>
           <div class="frame frame_lg">
             <h2 class="subtitle">Name des Zahlungsdienstleisters des Zahlers</h2>
+
+              <?php foreach($fields as $field)
+                  if($field['field_id'] == 37): ?>
+                      <p class="text"><?= $field['value']?></p>
+                  <?php endif; ?>
+
             <div class="row frame__row">
               <div class="col">
                 <h2 class="subtitle">BIC</h2>
+
+                  <?php foreach($fields as $field)
+                      if($field['field_id'] == 38): ?>
+                          <p class="text"><?= $field['value']?></p>
+                      <?php endif; ?>
+
               </div>
               <div class="col">
                 <h2 class="subtitle">IBAN</h2>
+
+                  <?php foreach($fields as $field)
+                      if($field['field_id'] == 39): ?>
+                          <p class="text"><?= $field['value']?></p>
+                      <?php endif; ?>
+
               </div>
             </div>
           </div>
@@ -48,6 +89,7 @@
             <div class="row frame__row">
               <div class="col">
                 <h2 class="subtitle">Mandatsreferenz</h2>
+                  <p class="text">KD<?= $user_id ?></p>
               </div>
               <div class="col">
                 <p class="text text-checkbox">Mandat für einmalige Zahlungen</p>
@@ -74,6 +116,6 @@
     </div>
     <!--END out-->
     <!--LOAD SCRIPTS-->
-    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="http://parcel.iocube.de/docs/js/app.js"></script>
   </body>
 </html>

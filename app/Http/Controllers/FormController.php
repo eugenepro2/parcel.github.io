@@ -12,9 +12,11 @@ use App\Http\Requests\FormValidator;
 use App\Jobs\SendMail;
 use App\Mail\AdminMail;
 use App\Mail\UserMail;
+use App\PDF;
 use App\Step;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Storage;
 
 class FormController extends Controller
 {
@@ -46,6 +48,11 @@ class FormController extends Controller
 
         if($id == 6){
 
+            $pdf = new PDF();
+            $pdf->savePdfOnStorage('1');
+            $pdf->savePdfOnStorage('2');
+            $pdf->savePdfOnStorage('3');
+
             $user = Auth::user();
 
             $mailer = new FormMailer();
@@ -66,6 +73,11 @@ class FormController extends Controller
         $form->updateFormFields($request->except(['_token', 'checkbox', '_method']), $id);
 
         if($id == 6){
+
+            $pdf = new PDF();
+            $pdf->savePdfOnStorage('1');
+            $pdf->savePdfOnStorage('2');
+            $pdf->savePdfOnStorage('3');
 
             $user = Auth::user();
 
@@ -92,43 +104,5 @@ class FormController extends Controller
             return redirect()->route('step', $step_id);
         }
     }
-
-    public function test()
-    {
-
-        $html = file_get_contents('docs/a01.html');
-
-        $data = [
-            'html' => $html,
-            'apiKey' => '343b0a3713976c3089f26eb15308a8552ff861def1878efdd53e5f00d35dbfab',
-        ];
-
-        $dataString = json_encode($data);
-
-        $ch = curl_init('https://api.html2pdf.app/v1/generate');
-        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'POST');
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $dataString);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_HTTPHEADER, [
-            'Content-Type: application/json',
-        ]);
-
-        $response = curl_exec($ch);
-        $err = curl_error($ch);
-
-        curl_close($ch);
-
-        if ($err) {
-            echo 'Error #:' . $err;
-        } else {
-            header('Content-Type: application/pdf');
-            header('Content-Disposition: inline; filename="your-file-name.pdf"');
-            header('Content-Transfer-Encoding: binary');
-            header('Accept-Ranges: bytes');
-
-            echo $response;
-        }
-    }
-
 
 }
