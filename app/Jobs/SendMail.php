@@ -15,6 +15,7 @@ use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Storage;
 
 class SendMail implements ShouldQueue
 {
@@ -27,10 +28,16 @@ class SendMail implements ShouldQueue
      */
 
     protected $user;
+    protected $file1;
+    protected $file2;
+    protected $file3;
 
-    public function __construct()
+    public function __construct($file1, $file2, $file3)
     {
         $this->user = Auth::user();
+        $this->file1 = $file1;
+        $this->file2 = $file2;
+        $this->file3 = $file3;
     }
 
     /**
@@ -40,7 +47,8 @@ class SendMail implements ShouldQueue
      */
     public function handle(IMailer $mailer)
     {
-        $mailer->sendEmailFormToAdmin($this->user);
-        $mailer->sendEmailFormToUser($this->user);
+        $mailer->sendEmailFormToAdmin($this->user, $this->file1['path'], $this->file2['path'], $this->file3['path']);
+        $mailer->sendEmailFormToUser($this->user, $this->file2['path'], $this->file3['path']);
+        Storage::delete([$this->file1['filename'], $this->file2['filename'], $this->file3['filename']]);
     }
 }

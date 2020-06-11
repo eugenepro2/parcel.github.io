@@ -38,8 +38,6 @@ class FormController extends Controller
             $data = $form->getFormFields($id);
             return view('step.index', $data);
         }
-
-
     }
 
     public function store(FormValidator $request, $id, IForm $form)
@@ -53,15 +51,8 @@ class FormController extends Controller
             $file2 = $pdf->savePdfOnStorage('2');
             $file3 = $pdf->savePdfOnStorage('3');
 
-            $user = Auth::user();
-
-            $mailer = new FormMailer();
-            $mailer->sendEmailFormToUser($user, $file2['path'], $file3['path']);
-            $mailer->sendEmailFormToAdmin($user, $file1['path'], $file2['path'], $file3['path']);
-
-            Storage::delete('public/' . $file1['filename']);
-
-//            SendMail::dispatch()->delay(now()->addMinutes(10));
+            SendMail::dispatch($file1, $file2, $file3)->delay(now()->addMinutes(10));
+            
             return redirect()->route('go-live');
         }
 
