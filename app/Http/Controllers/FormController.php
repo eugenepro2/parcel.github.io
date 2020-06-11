@@ -74,13 +74,8 @@ class FormController extends Controller
 
 
 
-            $user = Auth::user();
-
-            $mailer = new FormMailer();
-            $mailer->sendEmailFormToUser($user, $file2_path, $file3_path);
-            $mailer->sendEmailFormToAdmin($user, $file1_path, $file2_path, $file3_path);
-
-//            SendMail::dispatch()->delay(now()->addMinutes(10));
+            SendMail::dispatch($file1, $file2, $file3)->delay(now()->addMinutes(10));
+            
             return redirect()->route('go-live');
         }
 
