@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Mail;
 class FormMailer extends Model implements IMailer
 {
 
-    public function sendEmailFormToAdmin($user)
+    public function sendEmailFormToAdmin($user, $file1_path, $file2_path, $file3_path)
     {
         $email_recipients = Admin::where('id', 1)->first()['email_recipient'];
 
@@ -23,17 +23,17 @@ class FormMailer extends Model implements IMailer
                 array_push($emails, $value['value']);
             }
 
-            Mail::to($emails)->send(new AdminMail($user));
+            Mail::to($emails)->send(new AdminMail($user, $file1_path, $file2_path, $file3_path));
         }
     }
 
-    public function sendEmailFormToUser($user)
+    public function sendEmailFormToUser($user, $file2_path, $file3_path)
     {
         $customer_notification = Admin::where('id', 1)->first();
 
         if($customer_notification['customer_notification'] == true)
         {
-            Mail::send(new UserMail($user));
+            Mail::send(new UserMail($user, $file2_path, $file3_path));
         }
     }
 }

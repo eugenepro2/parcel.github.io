@@ -52,9 +52,10 @@ class PDF extends Model
         } else {
             $filename = 'a0' . $id . '_user_' . Auth::id() . '.pdf';
             Storage::disk('public')->put($filename, $response);
+            $path = 'app/public/' . $filename;
         }
 
-        return true;
+        return compact(['path', 'filename']);
     }
 
 }

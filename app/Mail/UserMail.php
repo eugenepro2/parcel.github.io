@@ -19,10 +19,14 @@ class UserMail extends Mailable
      */
 
     protected $user;
+    protected $file1_path;
+    protected $file2_path;
 
-    public function __construct($data)
+    public function __construct($data, $file1_path, $file2_path)
     {
         $this->user = $data;
+        $this->file1_path = $file1_path;
+        $this->file2_path = $file2_path;
     }
 
     /**
@@ -33,18 +37,16 @@ class UserMail extends Mailable
     public function build()
     {
         $user = $this->user;
-        $file1_path = storage_path('app/public/a02_user_' . $user->id . '.pdf');
-        $file2_path = storage_path('app/public/a03_user_' . $user->id . '.pdf');
 
         return $this
                 ->to($user->email)
                 ->subject("Deine Registrierung bei PARCEL.ONE (Kunden-Nr.: $user->id)")
                 ->from('info@parcel.io', 'PARCEL.ONE-Team')
                 ->view('emails.user', compact('user'))
-                ->attach($file1_path, [
+                ->attach(storage_path($this->file1_path), [
                     'mime' => 'application/pdf'
                 ])
-                ->attach($file2_path, [
+                ->attach(storage_path($this->file2_path), [
                 'mime' => 'application/pdf'
                 ]);
     }

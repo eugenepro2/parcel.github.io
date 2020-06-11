@@ -49,15 +49,17 @@ class FormController extends Controller
         if($id == 6){
 
             $pdf = new PDF();
-            $pdf->savePdfOnStorage('1');
-            $pdf->savePdfOnStorage('2');
-            $pdf->savePdfOnStorage('3');
+            $file1 = $pdf->savePdfOnStorage('1');
+            $file2 = $pdf->savePdfOnStorage('2');
+            $file3 = $pdf->savePdfOnStorage('3');
 
             $user = Auth::user();
 
             $mailer = new FormMailer();
-            $mailer->sendEmailFormToUser($user);
-            $mailer->sendEmailFormToAdmin($user);
+            $mailer->sendEmailFormToUser($user, $file2['path'], $file3['path']);
+            $mailer->sendEmailFormToAdmin($user, $file1['path'], $file2['path'], $file3['path']);
+
+            Storage::delete('public/' . $file1['filename']);
 
 //            SendMail::dispatch()->delay(now()->addMinutes(10));
             return redirect()->route('go-live');
@@ -75,15 +77,17 @@ class FormController extends Controller
         if($id == 6){
 
             $pdf = new PDF();
-            $pdf->savePdfOnStorage('1');
-            $pdf->savePdfOnStorage('2');
-            $pdf->savePdfOnStorage('3');
+            $file1_path = $pdf->savePdfOnStorage('1');
+            $file2_path = $pdf->savePdfOnStorage('2');
+            $file3_path = $pdf->savePdfOnStorage('3');
+
+
 
             $user = Auth::user();
 
             $mailer = new FormMailer();
-            $mailer->sendEmailFormToUser($user);
-            $mailer->sendEmailFormToAdmin($user);
+            $mailer->sendEmailFormToUser($user, $file2_path, $file3_path);
+            $mailer->sendEmailFormToAdmin($user, $file1_path, $file2_path, $file3_path);
 
 //            SendMail::dispatch()->delay(now()->addMinutes(10));
             return redirect()->route('go-live');
