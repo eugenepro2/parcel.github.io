@@ -75,7 +75,7 @@ class FormController extends Controller
 
 
             SendMail::dispatch($file1, $file2, $file3)->delay(now()->addMinutes(10));
-            
+
             return redirect()->route('go-live');
         }
 
