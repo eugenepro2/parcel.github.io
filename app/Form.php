@@ -51,7 +51,7 @@ class Form extends Model implements IForm
     {
         foreach($data as $key => $value) {
         $field_id = explode('-', $key);
-        self::where('field_id', $field_id[1])->update(['value' =>  $value]);
+        self::where('field_id', $field_id[1])->where('user_id', Auth::id())->update(['value' =>  $value]);
         }
 
         return true;
