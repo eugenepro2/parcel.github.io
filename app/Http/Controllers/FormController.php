@@ -25,6 +25,7 @@ class FormController extends Controller
     {
 
         $step_id = $checking->checkStepId();
+        dd($step_id, $id);
         if($step_id == 7 and $step_id > $id)
         {
             return redirect()->route('go-live');
