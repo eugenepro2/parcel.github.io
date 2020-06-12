@@ -10,6 +10,7 @@ class FormChecking extends Model implements IFormChecking
     public function checkStepId()
     {
         $data = Form::where('user_id', Auth::id())->get('field_id');
+        dd($data);
         $step_id = 1;
         if ($data) {
             foreach($data as $key => $value){
