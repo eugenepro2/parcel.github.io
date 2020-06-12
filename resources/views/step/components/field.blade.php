@@ -1,4 +1,4 @@
-@if(isset($data[0]))
+@if(isset($data[1]))
   @foreach($data as $form_field)
     @if($form_field->field_id == $id)
       @php($value = $form_field->value)
