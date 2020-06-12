@@ -68,11 +68,9 @@ class FormController extends Controller
         if($id == 6){
 
             $pdf = new PDF();
-            $file1_path = $pdf->savePdfOnStorage('1');
-            $file2_path = $pdf->savePdfOnStorage('2');
-            $file3_path = $pdf->savePdfOnStorage('3');
-
-
+            $file1 = $pdf->savePdfOnStorage('1');
+            $file2 = $pdf->savePdfOnStorage('2');
+            $file3 = $pdf->savePdfOnStorage('3');
 
             SendMail::dispatch($file1, $file2, $file3)->delay(now()->addMinutes(10));
 

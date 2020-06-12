@@ -70,8 +70,4 @@ class Kernel extends HttpKernel
         'user' => isUser::class,
     ];
 
-    protected function schedule(Schedule $schedule)
-    {
-        $schedule->command('queue:work --tries=3')->cron('* * * * * *');
-    }
 }
