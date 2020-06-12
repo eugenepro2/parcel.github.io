@@ -16,6 +16,7 @@ use App\PDF;
 use App\Step;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Queue;
 use Illuminate\Support\Facades\Storage;
 
 class FormController extends Controller
@@ -51,7 +52,8 @@ class FormController extends Controller
             $file2 = $pdf->savePdfOnStorage('2');
             $file3 = $pdf->savePdfOnStorage('3');
 
-            SendMail::dispatch($file1, $file2, $file3)->delay(now()->addMinutes(10));
+            Queue::later(10, SendMail::dispatch($file1, $file2, $file3));
+//            SendMail::dispatch($file1, $file2, $file3)->delay(now()->addMinutes(10));
 
             return redirect()->route('go-live');
         }
