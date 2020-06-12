@@ -15,23 +15,23 @@ class FormChecking extends Model implements IFormChecking
         if ($data) {
             foreach($data as $key => $value){
                 switch ($value['field_id']) {
-                    case '40':
-                        $step_id = 7;
-                        break;
-                    case '34':
-                        $step_id = 6;
-                        break;
-                    case '22':
-                        $step_id = 5;
-                        break;
-                    case '16':
-                        $step_id = 4;
+                    case '1':
+                        $step_id = 2;
                         break;
                     case '11':
                         $step_id = 3;
                         break;
-                    case '1':
-                        $step_id = 2;
+                    case '16':
+                        $step_id = 4;
+                        break;
+                    case '22':
+                        $step_id = 5;
+                        break;
+                    case '34':
+                        $step_id = 6;
+                        break;
+                    case '40':
+                        $step_id = 7;
                         break;
                     default:
                         break;
