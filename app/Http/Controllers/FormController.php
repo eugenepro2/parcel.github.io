@@ -31,13 +31,24 @@ class FormController extends Controller
         }
         elseif($step_id != 7 and $step_id <= $id)
         {
-            $data = $form->getFormFields($step_id);
-            return view('step.index', $data);
+
+            $data = $form->getFormFields($id);
+            $step = $form->getFormStep($id);
+
+            if($id == 5 and !isset($data[0])){
+                $data = $form->getFormFields(1);
+                return view('step.index-step-5', compact(['data', 'step']));
+            }else{
+                return view('step.index', compact(['data', 'step']));
+            }
         }
         elseif($step_id != 7 and $step_id > $id)
         {
             $data = $form->getFormFields($id);
-            return view('step.index', $data);
+            $step = $form->getFormStep($id);
+
+            return view('step.index', compact(['data', 'step']));
+
         }
     }
 

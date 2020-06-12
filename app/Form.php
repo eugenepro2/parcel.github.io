@@ -21,16 +21,21 @@ class Form extends Model implements IForm
 
     public function getFormFields($id)
     {
-//        dd($id);
-        $step = Step::where('id', $id)->with('group.field.option')->first();
         $data = Form::where('user_id', Auth::id())->where('step_id', $id)->get();
-        return compact(['step', 'data']);
+        return $data;
+    }
+
+    public function getFormStep($id)
+    {
+        $step = Step::where('id', $id)->with('group.field.option')->first();
+        return $step;
     }
 
     public function saveFormFields($data, $step_id)
     {
         foreach($data as $key => $value) {
             $field_id = explode('-', $key);
+
             self::create([
                 'value' =>  $value,
                 'field_id' => $field_id[1],
