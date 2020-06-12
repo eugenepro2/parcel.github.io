@@ -39,7 +39,6 @@ class FormController extends Controller
                 $data = $form->getFormFields(1);
                 return view('step.index-step-5', compact(['data', 'step']));
             }else{
-                dd('1');
                 return view('step.index', compact(['data', 'step']));
             }
         }
