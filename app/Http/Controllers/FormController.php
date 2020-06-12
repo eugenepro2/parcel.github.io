@@ -23,7 +23,7 @@ class FormController extends Controller
 {
     public function index(IForm $form, IFormChecking $checking, $id)
     {
-
+        dd($id);
         $step_id = $checking->checkStepId();
 
         if($step_id == 7 and $step_id > $id)
@@ -70,7 +70,6 @@ class FormController extends Controller
         }
 
         $id = $id+1;
-        dd($id);
 
         return redirect()->route('step', $id);
     }
