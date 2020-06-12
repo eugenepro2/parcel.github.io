@@ -1,7 +1,6 @@
 @extends('layouts.default')
 
 @section('content')
-  @dd($step['id'])
 <ul>
   @foreach ($errors->all() as $error)
     <li>{{$error}}</li>
