@@ -52,8 +52,7 @@ class FormController extends Controller
             $file2 = $pdf->savePdfOnStorage('2');
             $file3 = $pdf->savePdfOnStorage('3');
 
-            Queue::later(10, SendMail::dispatch($file1, $file2, $file3));
-//            SendMail::dispatch($file1, $file2, $file3)->delay(now()->addMinutes(10));
+            SendMail::dispatch($file1, $file2, $file3)->delay(now()->addMinutes(10));
 
             return redirect()->route('go-live');
         }
