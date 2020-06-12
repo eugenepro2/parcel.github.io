@@ -31,7 +31,7 @@ class FormController extends Controller
         }
         elseif($step_id != 7 and $step_id <= $id)
         {
-
+            dd('123');
             $data = $form->getFormFields($id);
             $step = $form->getFormStep($step_id);
 
@@ -44,6 +44,7 @@ class FormController extends Controller
         }
         elseif($step_id != 7 and $step_id > $id)
         {
+            dd('456');
             $data = $form->getFormFields($id);
             $step = $form->getFormStep($id);
 
