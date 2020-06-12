@@ -70,6 +70,7 @@ class FormController extends Controller
         }
 
         $id = $id+1;
+        dd($id);
 
         return redirect()->route('step', $id);
     }
