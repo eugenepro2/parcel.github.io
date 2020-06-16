@@ -47,3 +47,6 @@ Route::get('/middle', function () {
 
 
 Route::get('/pdf{id}', 'PDFController@pdfToHtml')->name('pdf')->where('id', '[1-3]');
+
+//Check IBAN
+Route::get('/iban/{iban}', 'FormController@checkIBAN')->middleware(['user', 'verified']);

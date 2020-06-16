@@ -29,7 +29,7 @@
       @endforeach
       
       @if ($step['id'] == 1)
-        <div class="grey">
+        <div class="grey" style="margin-bottom: 20px;">
           <div class="flex">
             <div class="checkbox">
               <input type="checkbox" name="checkbox" id="checkbox" required>

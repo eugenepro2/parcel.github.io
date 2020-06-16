@@ -103,5 +103,34 @@ class FormController extends Controller
             return redirect()->route('step', $step_id);
         }
     }
+    public function checkIBAN($iban)
+    {
+        $curl = curl_init();
+ 
+        $post = [
+            'format' => 'json',
+            'api_key' => '286a8bf4fcc2cbad9137b47ff62e60ca',
+            'iban'   => $iban,
+        ];
+        
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => 'https://api.iban.com/clients/api/v4/iban/',
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_POSTFIELDS => $post
+        ));
+        
+        $output = curl_exec($curl);
+        $result = json_decode($output);
+        $bic = $result->bank_data->bic;
+        $bank = $result->bank_data->bank;
+        curl_close($curl);
+        if (!$bic && !$bank) {
+            return response()->json('error', 500); 
+        }
+        
+        return response()->json(compact("bic", "bank"), 200);
+        
+        
+    }
 
 }

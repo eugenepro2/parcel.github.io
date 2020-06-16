@@ -54,3 +54,25 @@ const month  = dayjs().subtract('1', 'month').format('YYYY-MM-DD');
 const today  = dayjs().format('YYYY-MM-DD');
 $('input[type="date"]').attr('min', month)
 $('input[type="date"]').attr('max', today)
+
+
+$('.iban').click(function(){
+  const iban = $('#field-38 input').val()
+  $.ajax({
+    type: "GET",
+    url: `/iban/${iban}`,
+  }).done(function( data ) {
+    $('.error').slideUp()
+    $('#field-39').slideDown();
+    $('#field-37').slideDown();
+    $('#field-39 input').val(data.bic);
+    $('#field-37 input').val(data.bank);
+  }).fail(function(xhr, status, error) {
+    if (status) {
+      $('#field-39').slideUp();
+      $('#field-37').slideUp();
+      $('.error').slideDown()
+    }
+    
+  })
+})
