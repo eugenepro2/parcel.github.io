@@ -50,22 +50,27 @@
       </div>
       <div class="group">
         <h3>Name und Anschrift des Kontoinhabers</h3>
-        <div class="field" id="field-37">
-          <label for="37">Zahlungsdienstleister *</label>
-          <input type="text" id="37" name="field-37" required
-                 class="@if ($errors->has(`field-37`)) error @endif"
-                 value="">
-        </div>
+        <p class="error" style="display: none">Bitte prüfen Sie Ihre IBAN</p>
         <div class="field" id="field-38">
           <label for="38">IBAN *</label>
           <input type="text" id="38" name="field-38" required
                  class="@if ($errors->has(`field-38`)) error @endif"
                  value="">
         </div>
+        <a class="btn btn-submit iban">
+          IBAN prüfen
+        </a>
+        </form>
         <div class="field" id="field-39">
           <label for="39">BIC *</label>
           <input type="text" id="39" name="field-39" required
                  class="@if ($errors->has(`field-39`)) error @endif"
+                 value="">
+        </div>
+        <div class="field" id="field-37">
+          <label for="37">Zahlungsdienstleister *</label>
+          <input type="text" id="37" name="field-37" required
+                 class="@if ($errors->has(`field-37`)) error @endif"
                  value="">
         </div>
       </div>
