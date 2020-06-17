@@ -54,7 +54,7 @@
         </div>
       @elseif($step['id'] == 5)
         <div class="grey" style="margin-bottom: 20px;">
-          <h4>SEPA-Basis-Lastschrift-Mandat an den Zahlungsempfänger</h4>
+          <h4>SEPA-Basis-Lastschrift-Mandat an den Zahlungsempfänger für wiederkehrende Zahlungen</h4>
           <div class="flex">
             <div class="checkbox" style="margin-top: 12px;">
               <input type="checkbox" name="checkbox" id="checkbox" required>
