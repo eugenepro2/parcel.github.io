@@ -59,7 +59,7 @@ $user_id = \Illuminate\Support\Facades\Auth::id();
                 <h2 class="subtitle">BIC</h2>
 
                   <?php foreach($fields as $field)
-                      if($field['field_id'] == 38): ?>
+                      if($field['field_id'] == 39): ?>
                           <p class="text"><?= $field['value']?></p>
                       <?php endif; ?>
 
@@ -68,7 +68,7 @@ $user_id = \Illuminate\Support\Facades\Auth::id();
                 <h2 class="subtitle">IBAN</h2>
 
                   <?php foreach($fields as $field)
-                      if($field['field_id'] == 39): ?>
+                      if($field['field_id'] == 38): ?>
                           <p class="text"><?= $field['value']?></p>
                       <?php endif; ?>
 
@@ -79,9 +79,10 @@ $user_id = \Illuminate\Support\Facades\Auth::id();
         <div class="row lastschrift__row">
           <div class="frame frame_sm">
             <h2 class="subtitle">Name und Anschrift des Zahlungsempfängers</h2>
-            <p class="text">PARCEL.ONE GmbH</p>
-            <p class="text">Otto-Hahn-Str. 21</p>
-            <p class="text">35510 Butzbach</p>
+            <p class="text">Kremer & Kerbs Gbr</p>
+            <p class="text">Blumenstr. 31</p>
+            <p class="text">Butzbach</p>
+            <p class="text">Deutschland</p>
           </div>
           <div class="frame frame_lg">
             <h2 class="subtitle">Name des Zahlungsdienstleisters des Zahlers</h2>
