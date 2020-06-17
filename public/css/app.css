@@ -500,7 +500,9 @@
 .step #field-25,
 .step #field-28,
 .step #field-29,
-.step #field-30 {
+.step #field-30,
+.step #field-37,
+.step #field-39 {
   display: none;
 }
 
