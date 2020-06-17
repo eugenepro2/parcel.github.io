@@ -50,7 +50,12 @@ class PDF extends Model
         if ($err) {
             echo 'Error #:' . $err;
         } else {
-            $filename = 'a0' . $id . '_user_' . Auth::id() . '.pdf';
+
+            if($id == 3){
+                $filename = 'Zusammenfassung.pdf';
+            }else{
+                $filename = 'a0' . $id . '_user_' . Auth::id() . '.pdf';
+            }
             Storage::disk('public')->put($filename, $response);
             $path = 'app/public/' . $filename;
         }

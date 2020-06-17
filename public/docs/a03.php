@@ -37,9 +37,8 @@ $user_id = \Illuminate\Support\Facades\Auth::id();
         </div>
         <div class="zusammenfassung__content">
             <?php foreach($fields as $field)
-            if($field['field_id'] == 1): ?>
+            if($field['field_id'] == 1) ?>
                 <h1 class="title zusammenfassung__title"><?= $field['value'] ?></h1>
-            <?php endif; ?>
           <h2 class="subtitle zusammenfassung__subtitle">Online-Registrierung</h2>
           <div class="zusammenfassung__details">
             <p class="text">Datum: 03.06.2020</p>
@@ -51,13 +50,19 @@ $user_id = \Illuminate\Support\Facades\Auth::id();
               <?php endif ?>
           </div>
           <h2 class="subtitle zusammenfassung__text">Rechnungsadresse</h2>
-          <p class="text zusammenfassung__text"><b>Firma * <br></b>Kerbs & Kremer GbR</p>
-          <p class="text zusammenfassung__text"><b>Straße, Nr. * <br></b>Blumenstraße 31</p>
-          <p class="text zusammenfassung__text"><b>PLZ, Ort * <br></b>35516 Münzenberg</p>
+            <?php foreach($fields as $field)
+            if($field['field_id'] == 1) ?>
+          <p class="text zusammenfassung__text"><b>Firma * <br></b><?= $field['value'] ?></p>
+            <?php if($field['field_id'] == 2) ?>
+          <p class="text zusammenfassung__text"><b>Straße, Nr. * <br></b><?= $field['value'] ?></p>
+            <?php if($field['field_id'] == 3) ?>
+          <p class="text zusammenfassung__text"><b>PLZ, Ort * <br></b><?= $field['value'] ?></p>
           <p class="text zusammenfassung__text">...</p>
           <h2 class="subtitle zusammenfassung__text">Details zur Ware</h2>
-          <p class="text zusammenfassung__text"><b>Versandgut <br></b>Notebooks</p>
-          <p class="text zusammenfassung__text"><b>Ø Warenwert * <br></b>150</p>
+            <?php if($field['field_id'] == 11) ?>
+          <p class="text zusammenfassung__text"><b>Versandgut <br></b><?= $field['value'] ?></p>
+            <?php if($field['field_id'] == 12) ?>
+          <p class="text zusammenfassung__text"><b>Ø Warenwert * <br></b><?= $field['value'] ?></p>
           <p class="text zusammenfassung__text">...</p>
         </div>
         <div class="zusammenfassung__footer">
