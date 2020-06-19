@@ -50,11 +50,13 @@ $('#24').change(function() {
   }
 });
 
-const month  = dayjs().subtract('1', 'month').format('YYYY-MM-DD');
+const month  = dayjs().subtract('1', 'year').format('YYYY-MM-DD');
 const today  = dayjs().format('YYYY-MM-DD');
 $('input[type="date"]').attr('min', month)
 $('input[type="date"]').attr('max', today)
 
+
+$('input[type=number]').attr('min', '1');
 
 $('.iban').click(function(){
   const iban = $('#field-38 input').val()

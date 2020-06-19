@@ -11023,16 +11023,16 @@ __webpack_require__.r(__webpack_exports__);
 
 var input = document.querySelector('#email_recipient'); // initialize Tagify on the above input node reference
 
-new _yaireo_tagify__WEBPACK_IMPORTED_MODULE_1___default.a(input);
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('#27').change(function () {
-  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == '54') {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-28,#field-29,#field-30').slideDown();
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-28 select,#field-29 select,#field-30 select').attr('required', true);
-  } else {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-28,#field-29,#field-30').slideUp();
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-28 select,#field-29 select,#field-30 select').attr('required', false);
-  }
-});
+new _yaireo_tagify__WEBPACK_IMPORTED_MODULE_1___default.a(input); // $('#27').change(function() {
+//   if ($(this).val() == '54') {
+//     $('#field-28,#field-29,#field-30').slideDown()
+//     $('#field-28 select,#field-29 select,#field-30 select').attr('required', true);
+//   } else{
+//     $('#field-28,#field-29,#field-30').slideUp()
+//     $('#field-28 select,#field-29 select,#field-30 select').attr('required', false);
+//   }
+// });
+
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('#19').change(function () {
   if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == '68') {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-20,#field-21').slideDown();
@@ -11060,10 +11060,11 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('#24').change(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-25 input').attr('required', false);
   }
 });
-var month = dayjs__WEBPACK_IMPORTED_MODULE_2___default()().subtract('1', 'month').format('YYYY-MM-DD');
+var month = dayjs__WEBPACK_IMPORTED_MODULE_2___default()().subtract('1', 'year').format('YYYY-MM-DD');
 var today = dayjs__WEBPACK_IMPORTED_MODULE_2___default()().format('YYYY-MM-DD');
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[type="date"]').attr('min', month);
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[type="date"]').attr('max', today);
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[type=number]').attr('min', '1');
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('.iban').click(function () {
   var iban = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-38 input').val();
   jquery__WEBPACK_IMPORTED_MODULE_0___default.a.ajax({
