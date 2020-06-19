@@ -46,12 +46,12 @@ class OptionSeeder extends Seeder
                 'field_id' => 17,
             ],
 
-            //
-            [
-                'id' => 8,
-                'name' => 'Kein LETTER & PARCEL Check',
-                'field_id' => 18,
-            ],
+//            //
+//            [
+//                'id' => 8,
+//                'name' => 'Kein LETTER & PARCEL Check',
+//                'field_id' => 18,
+//            ],
             [
                 'id' => 9,
                 'name' => 'LETTER Hub - Nachweis',
@@ -203,7 +203,7 @@ class OptionSeeder extends Seeder
             ],
             [
                 'id' => 38,
-                'name' => 'OpenCart',
+                'name' => 'osCommerce',
                 'field_id' => 24,
             ],
             [
@@ -233,7 +233,7 @@ class OptionSeeder extends Seeder
             ],
             [
                 'id' => 44,
-                'name' => 'WoCommerce',
+                'name' => 'WooCommerce',
                 'field_id' => 24,
             ],
             [
@@ -260,7 +260,7 @@ class OptionSeeder extends Seeder
             ],
             [
                 'id' => 49,
-                'name' => 'Pixi',
+                'name' => 'pixi',
                 'field_id' => 26,
             ],
             [
@@ -283,18 +283,23 @@ class OptionSeeder extends Seeder
                 'name' => 'Xentral',
                 'field_id' => 26,
             ],
-
-            //
             [
                 'id' => 54,
-                'name' => 'Ja',
-                'field_id' => 27,
+                'name' => 'keine von den genannten',
+                'field_id' => 26,
             ],
-            [
-                'id' => 55,
-                'name' => 'Nein',
-                'field_id' => 27,
-            ],
+
+            //
+//            [
+//                'id' => 54,
+//                'name' => 'Ja',
+//                'field_id' => 27,
+//            ],
+//            [
+//                'id' => 55,
+//                'name' => 'Nein',
+//                'field_id' => 27,
+//            ],
 
             //
             [

@@ -175,9 +175,9 @@ class FieldSeeder extends Seeder
             //sixth group fields
             [
                 'id' => 22,
-                'name' => 'Wawi/ERP System *',
+                'name' => 'Wawi/ERP System',
                 'type' => 'select',
-                'required' => true,
+                'required' => false,
                 'group_id' => 6
             ],
             [
@@ -189,9 +189,9 @@ class FieldSeeder extends Seeder
             ],
             [
                 'id' => 24,
-                'name' => 'Shopsystem *',
+                'name' => 'Shopsystem',
                 'type' => 'select',
-                'required' => true,
+                'required' => false,
                 'group_id' => 6
             ],
             [
@@ -210,32 +210,32 @@ class FieldSeeder extends Seeder
             ],
 
             //seventh group fields
-            [
-                'id' => 27,
-                'name' => 'LogSelect *',
-                'type' => 'select',
-                'required' => true,
-                'group_id' => 7
-            ],
+//            [
+//                'id' => 27,
+//                'name' => 'LogSelect *',
+//                'type' => 'select',
+//                'required' => true,
+//                'group_id' => 7
+//            ],
             [
                 'id' => 28,
                 'name' => 'Einzelplatz oder Mehrplatz *',
                 'type' => 'select',
-                'required' => false,
+                'required' => true,
                 'group_id' => 7
             ],
             [
                 'id' => 29,
                 'name' => 'Installation an wie vielen Standorten *',
                 'type' => 'select',
-                'required' => false,
+                'required' => true,
                 'group_id' => 7
             ],
             [
                 'id' => 30,
                 'name' => 'Installation an wie vielen PCs *',
                 'type' => 'select',
-                'required' => false,
+                'required' => true,
                 'group_id' => 7
             ],
 

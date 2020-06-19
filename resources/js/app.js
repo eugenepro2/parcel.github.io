@@ -9,15 +9,15 @@ var input = document.querySelector('#email_recipient');
 new Tagify(input)
 
 
-$('#27').change(function() {
-  if ($(this).val() == '54') {
-    $('#field-28,#field-29,#field-30').slideDown()
-    $('#field-28 select,#field-29 select,#field-30 select').attr('required', true);
-  } else{
-    $('#field-28,#field-29,#field-30').slideUp()
-    $('#field-28 select,#field-29 select,#field-30 select').attr('required', false);
-  }
-});
+// $('#27').change(function() {
+//   if ($(this).val() == '54') {
+//     $('#field-28,#field-29,#field-30').slideDown()
+//     $('#field-28 select,#field-29 select,#field-30 select').attr('required', true);
+//   } else{
+//     $('#field-28,#field-29,#field-30').slideUp()
+//     $('#field-28 select,#field-29 select,#field-30 select').attr('required', false);
+//   }
+// });
 
 
 $('#19').change(function() {
