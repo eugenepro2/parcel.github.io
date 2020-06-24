@@ -60,27 +60,34 @@ class FieldSeeder extends Seeder
             //second group fields
             [
                 'id' => 7,
-                'name' => 'Telefon *',
+                'name' => 'Name *',
                 'type' => 'text',
                 'required' => true,
                 'group_id' => 2
             ],
             [
                 'id' => 8,
+                'name' => 'Telefon *',
+                'type' => 'text',
+                'required' => true,
+                'group_id' => 2
+            ],
+            [
+                'id' => 9,
                 'name' => 'Mobil',
                 'type' => 'text',
                 'required' => false,
                 'group_id' => 2
             ],
             [
-                'id' => 9,
+                'id' => 10,
                 'name' => 'E-Mail *',
                 'type' => 'email',
                 'required' => true,
                 'group_id' => 2
             ],
             [
-                'id' => 10,
+                'id' => 11,
                 'name' => 'Website',
                 'type' => 'text',
                 'required' => false,
@@ -89,14 +96,14 @@ class FieldSeeder extends Seeder
 
             //third group fields
             [
-                'id' => 11,
+                'id' => 12,
                 'name' => 'Versandgut *',
                 'type' => 'text',
                 'required' => true,
                 'group_id' => 3
             ],
             [
-                'id' => 12,
+                'id' => 13,
                 'name' => 'Ø Warenwert *',
                 'type' => 'number',
                 'required' => true,
@@ -105,21 +112,21 @@ class FieldSeeder extends Seeder
 
             //fourth group fields
             [
-                'id' => 13,
+                'id' => 14,
                 'name' => 'LETTER (national) in Stück',
                 'type' => 'number',
                 'required' => false,
                 'group_id' => 4
             ],
             [
-                'id' => 14,
+                'id' => 15,
                 'name' => 'LETTER (international) in Stück',
                 'type' => 'number',
                 'required' => false,
                 'group_id' => 4
             ],
             [
-                'id' => 15,
+                'id' => 16,
                 'name' => 'PARCEL (international) in Stück',
                 'type' => 'number',
                 'required' => false,
@@ -128,14 +135,14 @@ class FieldSeeder extends Seeder
 
             //fifth group fields
             [
-                'id' => 16,
+                'id' => 17,
                 'name' => 'Abrechnungsmodell LETTER *',
                 'type' => 'select',
                 'required' => true,
                 'group_id' => 5
             ],
             [
-                'id' => 17,
+                'id' => 18,
                 'name' => 'gew-prod',
                 'name' => 'Gewichts- & Produktauswahl *',
                 'type' => 'select',
@@ -143,21 +150,21 @@ class FieldSeeder extends Seeder
                 'group_id' => 5
             ],
             [
-                'id' => 18,
+                'id' => 19,
                 'name' => 'Mindestprodukt bei LETTER & PARCEL Check *',
                 'type' => 'select',
                 'required' => true,
                 'group_id' => 5
             ],
             [
-                'id' => 19,
+                'id' => 20,
                 'name' => 'PARCEL Volume *',
                 'type' => 'select',
                 'required' => true,
                 'group_id' => 5
             ],
             [
-                'id' => 20,
+                'id' => 21,
                 'name' => 'vein',
                 'name' => 'Vereinbarte Mindestmenge in Stück/Monat *',
                 'type' => 'number',
@@ -165,7 +172,7 @@ class FieldSeeder extends Seeder
                 'group_id' => 5
             ],
             [
-                'id' => 21,
+                'id' => 22,
                 'name' => 'Vereinbarter Mindermengenzuschlag in Euro/Monat *',
                 'type' => 'number',
                 'required' => false,
@@ -174,35 +181,35 @@ class FieldSeeder extends Seeder
 
             //sixth group fields
             [
-                'id' => 22,
+                'id' => 23,
                 'name' => 'Wawi/ERP System',
                 'type' => 'select',
                 'required' => false,
                 'group_id' => 6
             ],
             [
-                'id' => 23,
+                'id' => 24,
                 'name' => 'Wawi/ERP System Bezeichnung *',
                 'type' => 'text',
                 'required' => false,
                 'group_id' => 6
             ],
             [
-                'id' => 24,
+                'id' => 25,
                 'name' => 'Shopsystem',
                 'type' => 'select',
                 'required' => false,
                 'group_id' => 6
             ],
             [
-                'id' => 25,
+                'id' => 26,
                 'name' => 'Shopsystem Bezeichnung *',
                 'type' => 'text',
                 'required' => false,
                 'group_id' => 6
             ],
             [
-                'id' => 26,
+                'id' => 27,
                 'name' => 'API-Anbindung *',
                 'type' => 'select',
                 'required' => true,

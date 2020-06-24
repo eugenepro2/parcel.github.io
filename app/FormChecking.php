@@ -18,13 +18,13 @@ class FormChecking extends Model implements IFormChecking
                     case '1':
                         $step_id = 2;
                         break;
-                    case '11':
+                    case '12':
                         $step_id = 3;
                         break;
-                    case '16':
+                    case '17':
                         $step_id = 4;
                         break;
-                    case '22':
+                    case '23':
                         $step_id = 5;
                         break;
                     case '34':

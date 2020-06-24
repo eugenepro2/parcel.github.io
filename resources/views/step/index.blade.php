@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
-{{--  @dd($errors)--}}
+
 <ul>
   @foreach ($errors->all() as $error)
     <li>{{$error}}</li>

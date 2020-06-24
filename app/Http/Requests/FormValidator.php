@@ -32,22 +32,23 @@ class FormValidator extends FormRequest
                 'field-3' => 'required|string',
                 'field-4' => 'required|string',
                 'field-7' => 'required|string',
-                'field-9' => 'required|email',
+                'field-8' => 'required|string',
+                'field-10' => 'required|email',
             ];
 
             case 2: return [
-                'field-11' => 'required|string',
-                'field-12' => 'required|integer',
+                'field-12' => 'required|string',
+                'field-13' => 'required|integer',
             ];
 
             case 3: return [
-                'field-16' => 'required',
                 'field-17' => 'required',
                 'field-18' => 'required',
+                'field-19' => 'required',
             ];
 
             case 4: return [
-                'field-26' => 'required',
+                'field-27' => 'required',
                 'field-28' => 'required',
                 'field-29' => 'required',
                 'field-30' => 'required',

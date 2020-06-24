@@ -20,33 +20,33 @@ new Tagify(input)
 // });
 
 
-$('#19').change(function() {
+$('#20').change(function() {
   if ($(this).val() == '68') {
-    $('#field-20,#field-21').slideDown()
-    $('#field-20 input, #field-21 input').attr('required', true);
+    $('#field-21,#field-22').slideDown()
+    $('#field-21 input, #field-22 input').attr('required', true);
   } else{
-    $('#field-20,#field-21').slideUp()
-    $('#field-20 input,#field-21 input').attr('required', false);
+    $('#field-21,#field-22').slideUp()
+    $('#field-21 input,#field-22 input').attr('required', false);
   }
 });
 
-$('#22').change(function() {
+$('#23').change(function() {
   if ($(this).val() == '33') {
-    $('#field-23').slideDown()
-    $('#field-23 input').attr('required', true);
+    $('#field-24').slideDown()
+    $('#field-24 input').attr('required', true);
   } else{
-    $('#field-23').slideUp()
-    $('#field-23 input').attr('required', false);
+    $('#field-24').slideUp()
+    $('#field-24 input').attr('required', false);
   }
 });
 
-$('#24').change(function() {
+$('#25').change(function() {
   if ($(this).val() == '46') {
-    $('#field-25').slideDown()
-    $('#field-25 input').attr('required', true);
+    $('#field-26').slideDown()
+    $('#field-26 input').attr('required', true);
   } else{
-    $('#field-25').slideUp()
-    $('#field-25 input').attr('required', false);
+    $('#field-26').slideUp()
+    $('#field-26 input').attr('required', false);
   }
 });
 
