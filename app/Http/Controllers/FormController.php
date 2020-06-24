@@ -34,7 +34,7 @@ class FormController extends Controller
             $data = $form->getFormFields($id);
             $step = $form->getFormStep($step_id);
 
-            if($id == 5 and !isset($data[0])){
+            if($step_id == 5 and !isset($data[0])){
                 $data = $form->getFormFields(1);
                 return view('step.index-step-5', compact(['data', 'step']));
             }else{
