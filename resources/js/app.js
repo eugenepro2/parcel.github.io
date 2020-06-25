@@ -9,15 +9,47 @@ var input = document.querySelector('#email_recipient');
 new Tagify(input)
 
 
-// $('#27').change(function() {
-//   if ($(this).val() == '54') {
-//     $('#field-28,#field-29,#field-30').slideDown()
-//     $('#field-28 select,#field-29 select,#field-30 select').attr('required', true);
-//   } else{
-//     $('#field-28,#field-29,#field-30').slideUp()
-//     $('#field-28 select,#field-29 select,#field-30 select').attr('required', false);
-//   }
-// });
+$('#27').change(function() {
+  if ($(this).val() == '54') {
+    $('#field-28,#field-29,#field-30').slideDown()
+    $('#field-28 select,#field-29 select,#field-30 select').attr('required', true);
+  } else{
+    $('#field-28,#field-29,#field-30').slideUp()
+    $('#field-28 select,#field-29 select,#field-30 select').attr('required', false);
+  }
+});
+
+//On Change  Abrechnungsmodell LETTER *
+$('#17').change(function() {
+  $("#18").prop('selectedIndex',0)
+  $('#18 option').attr('disabled', false)
+  if ($(this).val() == '1') {
+    $('#18 option:nth-of-type(2)').attr('disabled', true);
+  }
+  if ($(this).val() == '2') {
+    $('#18 option:nth-of-type(3)').attr('disabled', true);
+  }
+});
+//on Change Gewichts- & Produktauswahl *
+$('#18').change(function() {
+  $("#19").prop('selectedIndex',0)
+  $('#19 option').attr('disabled', false)
+  if ($(this).val() == '6') {
+    console.log(1);
+    
+    $('#option-9').attr('disabled', true);
+    $('#option-10').attr('disabled', true);
+    $('#option-11').attr('disabled', true);
+    $('#option-12').attr('disabled', true);
+    $('#option-13').attr('disabled', true);
+    $('#option-14').attr('disabled', true);
+  }
+  if ($(this).val() == '5') {
+    $('#option-15').attr('disabled', true);
+    $('#option-16').attr('disabled', true);
+  }
+});
+
 
 
 $('#20').change(function() {
@@ -59,20 +91,20 @@ $('input[type="date"]').attr('max', today)
 $('input[type=number]').attr('min', '1');
 
 $('.iban').click(function(){
-  const iban = $('#field-38 input').val()
+  const iban = $('#field-37 input').val()
   $.ajax({
     type: "GET",
     url: `/iban/${iban}`,
   }).done(function( data ) {
     $('.error').slideUp()
+    $('#field-38').slideDown();
     $('#field-39').slideDown();
-    $('#field-37').slideDown();
-    $('#field-39 input').val(data.bic);
-    $('#field-37 input').val(data.bank);
+    $('#field-38 input').val(data.bic);
+    $('#field-39 input').val(data.bank);
   }).fail(function(xhr, status, error) {
     if (status) {
-      $('#field-39').slideUp();
-      $('#field-37').slideUp();
+      $('#field-38').slideUp();
+      $('#field-38').slideUp();
       $('.error').slideDown()
     }
     

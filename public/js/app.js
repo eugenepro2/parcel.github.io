@@ -11023,16 +11023,49 @@ __webpack_require__.r(__webpack_exports__);
 
 var input = document.querySelector('#email_recipient'); // initialize Tagify on the above input node reference
 
-new _yaireo_tagify__WEBPACK_IMPORTED_MODULE_1___default.a(input); // $('#27').change(function() {
-//   if ($(this).val() == '54') {
-//     $('#field-28,#field-29,#field-30').slideDown()
-//     $('#field-28 select,#field-29 select,#field-30 select').attr('required', true);
-//   } else{
-//     $('#field-28,#field-29,#field-30').slideUp()
-//     $('#field-28 select,#field-29 select,#field-30 select').attr('required', false);
-//   }
-// });
+new _yaireo_tagify__WEBPACK_IMPORTED_MODULE_1___default.a(input);
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('#27').change(function () {
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == '54') {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-28,#field-29,#field-30').slideDown();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-28 select,#field-29 select,#field-30 select').attr('required', true);
+  } else {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-28,#field-29,#field-30').slideUp();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-28 select,#field-29 select,#field-30 select').attr('required', false);
+  }
+}); //On Change  Abrechnungsmodell LETTER *
 
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('#17').change(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()("#18").prop('selectedIndex', 0);
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#18 option').attr('disabled', false);
+
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == '1') {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#18 option:nth-of-type(2)').attr('disabled', true);
+  }
+
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == '2') {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#18 option:nth-of-type(3)').attr('disabled', true);
+  }
+}); //on Change Gewichts- & Produktauswahl *
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('#18').change(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()("#19").prop('selectedIndex', 0);
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#19 option').attr('disabled', false);
+
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == '6') {
+    console.log(1);
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#option-9').attr('disabled', true);
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#option-10').attr('disabled', true);
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#option-11').attr('disabled', true);
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#option-12').attr('disabled', true);
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#option-13').attr('disabled', true);
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#option-14').attr('disabled', true);
+  }
+
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == '5') {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#option-15').attr('disabled', true);
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#option-16').attr('disabled', true);
+  }
+});
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('#20').change(function () {
   if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == '68') {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-21,#field-22').slideDown();
@@ -11066,20 +11099,20 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[type="date"]').attr('min', 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[type="date"]').attr('max', today);
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('input[type=number]').attr('min', '1');
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('.iban').click(function () {
-  var iban = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-38 input').val();
+  var iban = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-37 input').val();
   jquery__WEBPACK_IMPORTED_MODULE_0___default.a.ajax({
     type: "GET",
     url: "/iban/".concat(iban)
   }).done(function (data) {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.error').slideUp();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-38').slideDown();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-39').slideDown();
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-37').slideDown();
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-39 input').val(data.bic);
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-37 input').val(data.bank);
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-38 input').val(data.bic);
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-39 input').val(data.bank);
   }).fail(function (xhr, status, error) {
     if (status) {
-      jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-39').slideUp();
-      jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-37').slideUp();
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-38').slideUp();
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-38').slideUp();
       jquery__WEBPACK_IMPORTED_MODULE_0___default()('.error').slideDown();
     }
   });
@@ -11105,8 +11138,8 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.iban').click(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/cyrill/Documents/GitHub/parcel.github.io/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/cyrill/Documents/GitHub/parcel.github.io/resources/sass/app.sass */"./resources/sass/app.sass");
+__webpack_require__(/*! /Users/macbook/Work/6 LEONTIN/parcel.github.io/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/macbook/Work/6 LEONTIN/parcel.github.io/resources/sass/app.sass */"./resources/sass/app.sass");
 
 
 /***/ })

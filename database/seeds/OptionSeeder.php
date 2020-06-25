@@ -46,12 +46,12 @@ class OptionSeeder extends Seeder
                 'field_id' => 18,
             ],
 
-//            //
-//            [
-//                'id' => 8,
-//                'name' => 'Kein LETTER & PARCEL Check',
-//                'field_id' => 18,
-//            ],
+           //
+            [
+                'id' => 8,
+                'name' => 'Kein LETTER & PARCEL Check',
+                'field_id' => 19,
+            ],
             [
                 'id' => 9,
                 'name' => 'LETTER Hub - Nachweis',
