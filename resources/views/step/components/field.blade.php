@@ -5,7 +5,7 @@
     @endif
   @endforeach
 @endif
-{{-- {{dd($data)}} --}}
+
 @if ($type == 'text' || $type == 'email' || $type == 'number' || $type == 'date')
   @if ($step->id == 5)
     @if ($id == 37)

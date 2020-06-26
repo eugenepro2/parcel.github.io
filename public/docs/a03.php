@@ -2,8 +2,12 @@
 
 use App\Form;
 use App\PDF;
+use App\Step;
+use Illuminate\Support\Facades\Auth;
 
 $fields = PDF::getFieldValues(new Form);
+$user = Auth::user();
+$steps = Step::with('group')->get();
 $user_id = \Illuminate\Support\Facades\Auth::id();
 
 ?>
@@ -50,26 +54,21 @@ $user_id = \Illuminate\Support\Facades\Auth::id();
                 <p class="text">Kundennummer: <?= $user_id ?></p>
               <?php endif ?>
           </div>
-          <h2 class="subtitle zusammenfassung__text">Rechnungsadresse</h2>
-            <?php foreach($fields as $field)
-            if($field['field_id'] == 1){ ?>
-          <p class="text zusammenfassung__text"><b>Firma * <br></b><?= $field['value'] ?></p>
-            <?php }; ?>
-            <?php foreach($fields as $field) if($field['field_id'] == 2){ ?>
-          <p class="text zusammenfassung__text"><b>Straße, Nr. * <br></b><?= $field['value'] ?></p>
-            <?php };?>
-            <?php foreach($fields as $field) if($field['field_id'] == 3){ ?>
-          <p class="text zusammenfassung__text"><b>PLZ, Ort * <br></b><?= $field['value'] ?></p>
-            <?php };?>
-          <p class="text zusammenfassung__text">...</p>
-          <h2 class="subtitle zusammenfassung__text">Details zur Ware</h2>
-            <?php foreach($fields as $field) if($field['field_id'] == 12){ ?>
-          <p class="text zusammenfassung__text"><b>Versandgut <br></b><?= $field['value'] ?></p>
-            <?php };?>
-            <?php foreach($fields as $field) if($field['field_id'] == 13){ ?>
-          <p class="text zusammenfassung__text"><b>Ø Warenwert * <br></b><?= $field['value'] ?></p>
-            <?php };?>
-          <p class="text zusammenfassung__text">...</p>
+            <?php foreach($steps as $step): ?>
+            <h2 class="subtitle zusammenfassung__text"><?= $step['name'] ?></h2>
+            <?php foreach($user['form'] as $field):
+                if($field['value'] != null && $step['id'] == $field['step_id']){?>
+                    <p class="text zusammenfassung__text"><b><?=$field->field->first()['name']?><br></b>
+                        <?php if($field->field->first()['type'] == 'select'){
+                            foreach($field->field->first()->option as $option)
+                            {
+                                if($option->id == $field['value']){
+                                    echo $option->name;
+                                }
+                            }
+                        }else{
+                            echo $field['value'];} ?></p>
+                <?php }endforeach; endforeach;?>
         </div>
         <div class="zusammenfassung__footer">
           <div class="col">
