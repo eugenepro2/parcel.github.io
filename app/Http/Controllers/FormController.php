@@ -2,22 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Form;
-use App\FormChecking;
-use App\FormMailer;
 use App\IFormChecking;
-use App\IMailer;
 use App\IForm;
 use App\Http\Requests\FormValidator;
 use App\Jobs\SendMail;
-use App\Mail\AdminMail;
-use App\Mail\UserMail;
 use App\PDF;
-use App\Step;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Mail;
-use Illuminate\Support\Facades\Queue;
-use Illuminate\Support\Facades\Storage;
 
 class FormController extends Controller
 {
@@ -137,7 +126,10 @@ class FormController extends Controller
 
     public function test()
     {
-        return require_once 'docs/a02.php';
+        $pdf = new PDF();
+        $file1 = $pdf->savePdfOnStorage('1');
+        $file2 = $pdf->savePdfOnStorage('2');
+        $file3 = $pdf->savePdfOnStorage('3');
     }
 
 }

@@ -50,7 +50,7 @@ $user_id = \Illuminate\Support\Facades\Auth::id();
             <h2 class="subtitle">Name des Zahlungsdienstleisters des Zahlers</h2>
 
               <?php foreach($fields as $field)
-                  if($field['field_id'] == 37): ?>
+                  if($field['field_id'] == 39): ?>
                       <p class="text"><?= $field['value']?></p>
                   <?php endif; ?>
 
@@ -59,7 +59,7 @@ $user_id = \Illuminate\Support\Facades\Auth::id();
                 <h2 class="subtitle">BIC</h2>
 
                   <?php foreach($fields as $field)
-                      if($field['field_id'] == 39): ?>
+                      if($field['field_id'] == 38): ?>
                           <p class="text"><?= $field['value']?></p>
                       <?php endif; ?>
 
@@ -68,7 +68,7 @@ $user_id = \Illuminate\Support\Facades\Auth::id();
                 <h2 class="subtitle">IBAN</h2>
 
                   <?php foreach($fields as $field)
-                      if($field['field_id'] == 38): ?>
+                      if($field['field_id'] == 37): ?>
                           <p class="text"><?= $field['value']?></p>
                       <?php endif; ?>
 
