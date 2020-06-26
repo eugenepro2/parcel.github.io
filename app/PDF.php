@@ -52,8 +52,10 @@ class PDF extends Model
 
             if($id == 3){
                 $filename = 'Zusammenfassung.pdf';
-            }else{
-                $filename = 'a0' . $id . '_user_' . Auth::id() . '.pdf';
+            }elseif($id == 1){
+                $filename = 'Basis-Lastschrift.pdf';
+            }elseif($id == 2){
+                $filename = 'Firmen-Lastschrift.pdf';
             }
             Storage::disk('public')->put($filename, $response);
             $path = 'app/public/' . $filename;
