@@ -30,15 +30,15 @@ $user_id = \Illuminate\Support\Facades\Auth::id();
                 <h2 class="subtitle">Name und Anschrift des Zahlers</h2>
 
                 <?php foreach($fields as $field)
-                if($field['field_id'] == 34): ?>
-                    <p class="text">PARCEL.ONE Gmbh</p>
-                <?php elseif($field['field_id'] == 35): ?>
-                    <p class="text"><?= $field['value']?></p>
-                <?php elseif($field['field_id'] == 36): ?>
-                    <p class="text"><?= $field['value']?></p>
-                <?php elseif($field['field_id'] == 4): ?>
-                    <!-- <p class="text"><?= $field['value']?></p> -->
-                <?php endif; ?>
+                  if($field['field_id'] == 34): ?>
+                      <p class="text"><?= $field['value']?></p>
+                  <?php elseif($field['field_id'] == 35): ?>
+                      <p class="text"><?= $field['value']?></p>
+                  <?php elseif($field['field_id'] == 36): ?>
+                      <p class="text"><?= $field['value']?></p>
+                  <?php elseif($field['field_id'] == 4): ?>
+                      <!-- <p class="text"><?= $field['value']?></p> -->
+                  <?php endif; ?>
 
             </div>
             <div class="frame frame_lg">
