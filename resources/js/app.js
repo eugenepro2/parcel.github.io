@@ -24,9 +24,11 @@ $('#17').change(function() {
   $("#18").prop('selectedIndex',0)
   $('#18 option').attr('disabled', false)
   if ($(this).val() == '1') {
+    console.log(1);
     $('#18 option:nth-of-type(2)').attr('disabled', true);
   }
-  if ($(this).val() == '2') {
+  if ($(this).val() == '2' || $(this).val() == '3') {
+    console.log(2);
     $('#18 option:nth-of-type(3)').attr('disabled', true);
   }
 });
@@ -34,9 +36,11 @@ $('#17').change(function() {
 $('#18').change(function() {
   $("#19").prop('selectedIndex',0)
   $('#19 option').attr('disabled', false)
+  $('#field-19').slideUp()
+  $('#19').attr('required', false);
   if ($(this).val() == '6') {
-    console.log(1);
-    
+    $('#field-19').slideDown()
+    $('#19').attr('required', true);
     $('#option-9').attr('disabled', true);
     $('#option-10').attr('disabled', true);
     $('#option-11').attr('disabled', true);
@@ -45,10 +49,20 @@ $('#18').change(function() {
     $('#option-14').attr('disabled', true);
   }
   if ($(this).val() == '5') {
+    $('#field-19').slideDown()
+    $('#19').attr('required', true);
     $('#option-15').attr('disabled', true);
     $('#option-16').attr('disabled', true);
   }
 });
+if ($('#18').val() == '6') {
+  $('#field-19').slideDown()
+  $('#19').attr('required', true);
+}
+if ($('#18').val() == '5') {
+  $('#field-19').slideDown()
+  $('#19').attr('required', true);
+}
 
 
 

@@ -153,7 +153,7 @@ class FieldSeeder extends Seeder
                 'id' => 19,
                 'name' => 'Mindestprodukt bei LETTER & PARCEL Check *',
                 'type' => 'select',
-                'required' => true,
+                'required' => false,
                 'group_id' => 5
             ],
             [

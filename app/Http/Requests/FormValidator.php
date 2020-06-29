@@ -44,7 +44,7 @@ class FormValidator extends FormRequest
             case 3: return [
                 'field-17' => 'required',
                 'field-18' => 'required',
-                'field-19' => 'required',
+                // 'field-19' => 'required',
             ];
 
             case 4: return [

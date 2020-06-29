@@ -11039,10 +11039,12 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('#17').change(function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#18 option').attr('disabled', false);
 
   if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == '1') {
+    console.log(1);
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#18 option:nth-of-type(2)').attr('disabled', true);
   }
 
-  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == '2') {
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == '2' || jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == '3') {
+    console.log(2);
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#18 option:nth-of-type(3)').attr('disabled', true);
   }
 }); //on Change Gewichts- & Produktauswahl *
@@ -11050,9 +11052,12 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('#17').change(function () {
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('#18').change(function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()("#19").prop('selectedIndex', 0);
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#19 option').attr('disabled', false);
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-19').slideUp();
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#19').attr('required', false);
 
   if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == '6') {
-    console.log(1);
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-19').slideDown();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#19').attr('required', true);
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#option-9').attr('disabled', true);
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#option-10').attr('disabled', true);
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#option-11').attr('disabled', true);
@@ -11062,10 +11067,23 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('#18').change(function () {
   }
 
   if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == '5') {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-19').slideDown();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#19').attr('required', true);
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#option-15').attr('disabled', true);
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#option-16').attr('disabled', true);
   }
 });
+
+if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('#18').val() == '6') {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-19').slideDown();
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#19').attr('required', true);
+}
+
+if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('#18').val() == '5') {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-19').slideDown();
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#19').attr('required', true);
+}
+
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('#20').change(function () {
   if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == '68') {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-21,#field-22').slideDown();
