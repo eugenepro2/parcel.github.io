@@ -37,7 +37,7 @@ $user_id = \Illuminate\Support\Facades\Auth::id();
                 <?php elseif($field['field_id'] == 36): ?>
                     <p class="text"><?= $field['value']?></p>
                 <?php elseif($field['field_id'] == 4): ?>
-                    <p class="text"><?= $field['value']?></p>
+                    <!-- <p class="text"><?= $field['value']?></p> -->
                 <?php endif; ?>
 
             </div>
