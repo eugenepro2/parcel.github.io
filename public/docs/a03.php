@@ -70,7 +70,7 @@ $user_id = \Illuminate\Support\Facades\Auth::id();
                             echo $field['value'];} ?></p>
                 <?php }endforeach; endforeach;?>
         </div>
-        <div class="zusammenfassung__footer">
+        <!-- <div class="zusammenfassung__footer">
           <div class="col">
             <p class="text-footer">PARCEL.ONE 21 GmbH</p>
             <p class="text-footer">Otto-Hahn-Str. 21</p>
@@ -94,7 +94,7 @@ $user_id = \Illuminate\Support\Facades\Auth::id();
             <p class="text-footer">IBAN DE66515500350002102291</p>
             <p class="text-footer">BIC HELADEF1WET</p>
           </div>
-        </div>
+        </div> -->
       </section>
     </div>
     <!--END out-->
