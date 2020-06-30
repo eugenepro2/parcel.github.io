@@ -123,8 +123,6 @@ class FormController extends Controller
         }
         
         return response()->json(compact("bic", "bank"), 200);
-        
-        
     }
 
 }

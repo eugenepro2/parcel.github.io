@@ -41,7 +41,8 @@ class UserMail extends Mailable
         return $this
                 ->to($user->email)
                 ->subject("Deine Registrierung bei PARCEL.ONE (Kunden-Nr.: $user->id)")
-                ->from('info@parcel.io', 'PARCEL.ONE-Team')
+                ->from('noreply@parcel.one', 'PARCEL.ONE GmbH')
+                ->replyTo('sales@parcel.one', 'PARCEL.ONE GmbH')
                 ->view('emails.user', compact('user'))
                 ->attach(storage_path($this->file1_path), [
                     'mime' => 'application/pdf'

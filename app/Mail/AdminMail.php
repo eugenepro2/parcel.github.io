@@ -41,7 +41,8 @@ class AdminMail extends Mailable
 
         return $this
                 ->subject("Neue Kunden-Registrierung (Kunden-Nr.: $user->id)")
-                ->from('info@parcel.io', 'PARCEL.ONE-Team')
+                ->from('noreply@parcel.one', 'PARCEL.ONE GmbH')
+                ->replyTo('sales@parcel.one', 'PARCEL.ONE GmbH')
                 ->view('emails.admin', compact('user'))
                 ->attach(storage_path($this->file1_path), [
                     'mime' => 'application/pdf'

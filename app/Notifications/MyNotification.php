@@ -46,7 +46,8 @@ class MyNotification extends Notification
         $url = $this->verificationUrl($notifiable);
 
         return (new MailMessage)
-            ->from('info@parcel.one', 'PARCEL.ONE-Team')
+            ->from('noreply@parcel.one', 'PARCEL.ONE GmbH')
+            ->replyTo('sales@parcel.one', 'PARCEL.ONE GmbH')
             ->subject('Bitte bestätige dein PARCEL.ONE-Konto')
             ->view('emails.verify', compact('url'));
     }
