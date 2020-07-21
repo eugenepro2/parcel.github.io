@@ -69,13 +69,18 @@ class GroupSeeder extends Seeder
             ],
             [
                 'id' => 10,
+                'name' => 'E-Mail-Adresse für Rechnungen',
+                'step_id' => 5
+            ],
+            [
+                'id' => 11,
                 'name' => 'Details zur Bank',
                 'step_id' => 5
             ],
 
             //sixth step group
             [
-                'id' => 11,
+                'id' => 12,
                 'name' => 'Angebotsdatum und Zustimmung',
                 'step_id' => 6
             ]
