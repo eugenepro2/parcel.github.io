@@ -6,7 +6,7 @@
 			<div class="verified">
 				<div class="flex">
 					<h3>E-Mail zum Wiederherstellen versendet!</h3>
-					<p>Wir haben Ihnen per E-Mail einen Link zum<br>
+					<p>Wir haben dir per E-Mail einen Link zum<br>
 						Zurücksetzen versendet.</p>
 					<a class="btn btn-primary" href="{{route('login')}}">Anmelden</a>
 				</div>

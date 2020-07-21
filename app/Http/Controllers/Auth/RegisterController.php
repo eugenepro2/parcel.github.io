@@ -57,7 +57,8 @@ class RegisterController extends Controller
         ];
 
         $messages = [
-            'min' => 'Passwort: mindestens 8 oder mehr </br> Zeichen eingeben.'
+            'min' => 'Passwort: Mindestlänge 8 Zeichen, 1 Zahl, </br> 1 Großbuchstabe. ',
+            'unique' => 'E-Mail-Adresse ist bereits registriert'
         ];
 
         return Validator::make($data, $rules, $messages);
@@ -81,7 +82,7 @@ class RegisterController extends Controller
     {
         $this->validator($request->all())->validate();
         event(new Registered($user = $this->create($request->all())));
-        return $this->registered($request, $user) ?: redirect('/login')->with('message', 'Prüfe deinen E-Mail-Ordner. </br> Bestätige dort deine Registrierung.');
+        return $this->registered($request, $user) ?: redirect('/login')->with('message', 'Prüfe bitte Deinen E-Mail-Ordner und </br> bestätige dort Deine Registrierung </br> (schaue ggf. im Spam-Ordner nach).');
     }
 
 }

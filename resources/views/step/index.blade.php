@@ -54,31 +54,38 @@
         </div>
       @elseif($step['id'] == 5)
         <div class="grey" style="margin-bottom: 20px;">
-          <h4>SEPA-Basis-Lastschrift-Mandat an den Zahlungsempfänger für wiederkehrende Zahlungen</h4>
+          <h4>SEPA-Lastschrift-Mandat an den Zahlungsempfänger für wiederkehrende Zahlungen</h4>
+
           <div class="flex">
             <div class="checkbox" style="margin-top: 12px;">
               <input type="checkbox" name="checkbox" id="checkbox" required>
               <label for="checkbox"></label>
             </div>
             <label class="label" for="checkbox">
+              <p>Ich/Wir ermächtige(n) den oben genannten Zahlungsempfänger, Zahlungen von meinem/unserem Konto mittels Lastschrift einzuziehen. <br>
+              Zugleich weise ich meinen/weisen wir unseren oben genannten Zahlungsdienstleister an, die vom oben genannten Zahlungsempfänger auf <br>
+              mein/unser Konto gezogenen Lastschriften einzulösen.</p>
+
+              <p><b>Hinweis:</b> Dieses Lastschriftmandat dient dem Einzug von Lastschriften. Ich bin/Wir sind nicht berechtigt, nach der erfolgten Einlösung eine <br>
+              Erstattung des belasteten Betrages zu verlangen. Ich bin/Wir sind berechtigt, meinen/unseren Zahlungsdienstleister bis zum Fälligkeitstag <br>
+              anzuweisen, Lastschriften nicht einzulösen.</p>
+
+              <p><b>Bestätigung des SEPA-Lastschrift-Mandats gegenüber dem Zahlungsdienstleister d. Zahlers:</b> Ich bestätige/Wir bestätigen gegenüber meinem/ <br>
+              unseren oben genannten Zahlungsdienstleister die Erteilung des oben aufgeführten SEPA-Lastschrift-Mandat an den oben genannten <br>
+              Zahlungsempfänger.</p>
+
               <p><b>Gläubiger-Identifikationsnummer des Zahlungsempfängers:</b> DE67ONE00002014326</p>
 
               <p><b>Mandatsreferenz:</b> KD{{Auth::id()}}</p>
-
-              <p>Ich/Wir ermächtige(n) den oben genannten Zahlungsempfänger, Zahlungen von meinem/unserem Konto mittels Lastschrift einzuziehen. Zugleich weise ich meinen/weisen wir unseren oben genannten Zahlungsdienstleister an, die vom oben genannten Zahlungsempfänger auf mein/unser Konto gezogenen Lastschriften einzulösen.</p>
-
-              <p><b>Hinweis:</b> Dieses Lastschriftmandat dient dem Einzug von Lastschriften. Ich bin/Wir sind nicht berechtigt, nach der erfolgten Einlösung eine Erstattung des belasteten Betrages zu verlangen. Ich bin/Wir sind berechtigt, meinen/unseren Zahlungsdienstleister bis zum Fälligkeitstag anzuweisen, Lastschriften nicht einzulösen.</p>
-
-              <p><b>Bestätigung des SEPA-Basis-Lastschrift-Mandats gegenüber dem Zahlungsdienstleister d. Zahlers:</b> Ich bestätige/Wir bestätigen gegenüber meinem/unseren oben genannten Zahlungsdienstleister die Erteilung des oben aufgeführten SEPA-Basis-Lastschrift-Mandat an den oben genannten Zahlungsempfänger.</p>
             </label>
           </div>
         </div>
       @endif
       <button class="btn btn-submit mt-50">
         @if ($step['id'] == 5)
-          Basis-Lastschrift-MANDAT erteilen
+          Lastschrift-Mandat erteilen
         @else
-          Absenden
+          Weiter
         @endif
       </button>
     </div>

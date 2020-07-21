@@ -76,7 +76,7 @@ class GroupSeeder extends Seeder
             //sixth step group
             [
                 'id' => 11,
-                'name' => 'Angebotsdatum',
+                'name' => 'Angebotsdatum und Zustimmung',
                 'step_id' => 6
             ]
         ];

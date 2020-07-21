@@ -42,7 +42,7 @@ Route::get('/bestaetigt', function () {
 
 
 Route::get('/middle', function () {
-    return redirect()->route('login')->with('message', 'Ihr Passwort wurde wiederhergestellt. Sie können sofort loslegen!');
+    return redirect()->route('login')->with('message', 'Dein Passwort wurde wiederhergestellt. <br> Du kannst sofort loslegen!');
 });
 
 
