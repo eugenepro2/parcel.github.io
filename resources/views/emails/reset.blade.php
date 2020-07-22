@@ -133,28 +133,33 @@
                         <div style="border-top:0px solid transparent; border-left:0px solid transparent; border-bottom:0px solid transparent; border-right:0px solid transparent; padding-top:20px; padding-bottom:10px; padding-right: 0px; padding-left: 0px;">
                           <!--<![endif]-->
                           <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif"><![endif]-->
-                          <div style="color:#555555;font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.5;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;">
-                            <div style="line-height: 1.5; font-size: 14px; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; color: #555555; mso-line-height-alt: 18px;">
-                              <p style="text-align: center; line-height: 1.5; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
-                                <span style="color: #ffffff;">PARCEL.ONE GmbH</span><br>
-                                <span style="color: #ffffff;">Otto-Hahn-Strasse 21</span><br>
-                                <span style="color: #ffffff;">35510 Butzbach</span>
-                              </p>
-                              <p style="text-align: center; line-height: 1.5; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
-                                &nbsp;
-                              </p>
-                              <p style="text-align: center; line-height: 1.5; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
-                                <span style="color: #ffffff;">Telefon: +49 6033 352250</span><br>
-                                <span style="color: #ffffff;">E-Mail: info@parcel.one</span>
-                              </p>
-                              <p style="text-align: center; line-height: 1.5; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
-                                &nbsp;
-                              </p>
-                              <p style="text-align: center; line-height: 1.5; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
-                                <span style="color: #ffffff;">UST-ID.: DE312186140</span>
-                              </p>
-                            </div>
-                          </div><!--[if mso]></td></tr></table><![endif]-->
+                            <div style="color:#555555;font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.5;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;">
+                              <div style="line-height: 1.5; font-size: 14px; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; color: #555555; mso-line-height-alt: 18px;">
+                                <p style="text-align: center; line-height: 1.5; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
+                                  <span style="color: #ffffff;">PARCEL.ONE GmbH</span><br>
+                                  <span style="color: #ffffff;">Otto-Hahn-Strasse 21</span><br>
+                                  <span style="color: #ffffff;">35510 Butzbach</span>
+                                </p>
+                                <p style="text-align: center; line-height: 1.5; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
+                                  &nbsp;
+                                </p>
+                                <p style="text-align: center; line-height: 1.5; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
+                                  <span style="color: #ffffff;">Telefon +49 6033 352250</span><br>
+                                  <span style="color: #ffffff;">Email info@parcel.one</span><br>
+                                  <span style="color: #ffffff;">www.parcel.one</span><br>
+                                  <span style="color: #ffffff;">Geschäftsführer: Micha Augstein</span>
+                                </p>
+                                <p style="text-align: center; line-height: 1.5; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
+                                  &nbsp;
+                                </p>
+                                <p style="text-align: center; line-height: 1.5; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
+                                  <span style="color: #ffffff;">Amtsgericht Friedberg HRB8537</span><br>
+                                  <span style="color: #ffffff;">Sitz der Gesellschaft ist Butzbach</span><br>
+                                  <span style="color: #ffffff;">UST-ID: DE312186140</span><br>
+                                  <span style="color: #ffffff;">Verantwortlicher i. S. d. § 55 Abs. 2 RStV Micha Augstein</span>
+                                </p>
+                              </div>
+                            </div><!--[if mso]></td></tr></table><![endif]-->
                           <!--[if (!mso)&(!IE)]><!-->
                         </div><!--<![endif]-->
                       </div>

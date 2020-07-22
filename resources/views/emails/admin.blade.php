@@ -143,6 +143,10 @@
                 </div>
               </div>
             </div>
+
+              
+
+
             <div style="background-color:transparent;">
               <div class="block-grid" style="Margin: 0 auto; min-width: 320px; max-width: 780px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; background-color: transparent;">
                 <div style="border-collapse: collapse;display: table;width: 100%;background-color:transparent;">
@@ -165,14 +169,19 @@
                               &nbsp;
                             </p>
                             <p style="text-align: center; line-height: 1.5; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
-                              <span style="color: #ffffff;">Telefon: +49 6033 352250</span><br>
-                              <span style="color: #ffffff;">E-Mail: info@parcel.one</span>
+                              <span style="color: #ffffff;">Telefon +49 6033 352250</span><br>
+                              <span style="color: #ffffff;">Email info@parcel.one</span><br>
+                              <span style="color: #ffffff;">www.parcel.one</span><br>
+                              <span style="color: #ffffff;">Geschäftsführer: Micha Augstein</span>
                             </p>
                             <p style="text-align: center; line-height: 1.5; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
                               &nbsp;
                             </p>
                             <p style="text-align: center; line-height: 1.5; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
-                              <span style="color: #ffffff;">UST-ID.: DE312186140</span>
+                              <span style="color: #ffffff;">Amtsgericht Friedberg HRB8537</span><br>
+                              <span style="color: #ffffff;">Sitz der Gesellschaft ist Butzbach</span><br>
+                              <span style="color: #ffffff;">UST-ID: DE312186140</span><br>
+                              <span style="color: #ffffff;">Verantwortlicher i. S. d. § 55 Abs. 2 RStV Micha Augstein</span>
                             </p>
                           </div>
                         </div><!--[if mso]></td></tr></table><![endif]-->
