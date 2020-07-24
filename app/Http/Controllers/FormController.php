@@ -23,6 +23,7 @@ class FormController extends Controller
         }
         elseif($step_id != 7 and $step_id <= $id)
         {
+
             $data = $form->getFormFields($id);
             $data_step_1 = $form->getFormFields(1);
             $step = $form->getFormStep($step_id);

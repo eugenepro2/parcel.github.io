@@ -355,37 +355,49 @@ class FieldSeeder extends Seeder
                 'group_id' => 9
             ],
 
-            //tenth group fields
+            //tenth group field
+
             [
                 'id' => 46,
-                'name' => 'IBAN *',
-                'type' => 'text',
-                'required' => true,
-                'group_id' => 10
-            ],
-            [
-                'id' => 47,
-                'name' => 'BIC *',
-                'type' => 'text',
-                'required' => true,
-                'group_id' => 10
-            ],
-            [
-                'id' => 48,
-                'name' => 'Zahlungsdienstleister *',
-                'type' => 'text',
+                'name' => 'E-Mail *',
+                'type' => 'email',
                 'required' => true,
                 'group_id' => 10
             ],
 
-            //eleventh group field
+            //eleventh group fields
             [
-                'id' => 49,
-                'name' => 'Angebotsdatum *',
-                'type' => 'date',
+                'id' => 47,
+                'name' => 'IBAN *',
+                'type' => 'text',
                 'required' => true,
                 'group_id' => 11
             ],
+            [
+                'id' => 48,
+                'name' => 'BIC *',
+                'type' => 'text',
+                'required' => true,
+                'group_id' => 11
+            ],
+            [
+                'id' => 49,
+                'name' => 'Zahlungsdienstleister *',
+                'type' => 'text',
+                'required' => true,
+                'group_id' => 11
+            ],
+
+            //twelfth group field
+            [
+                'id' => 50,
+                'name' => 'Angebotsdatum *',
+                'type' => 'date',
+                'required' => true,
+                'group_id' => 12
+            ],
+
+
         ];
 
         foreach($fields as $field)
