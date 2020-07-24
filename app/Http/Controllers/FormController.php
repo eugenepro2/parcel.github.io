@@ -28,12 +28,6 @@ class FormController extends Controller
             $data_step_1 = $form->getFormFields(1);
             $step = $form->getFormStep($step_id);
 
-            // if($step_id == 5 and !isset($data[0])){
-            //     $data = $form->getFormFields(1);
-            //     return view('step.index-step-5', compact(['data', 'step']));
-            // }else{
-            //     return view('step.index', compact(['data', 'step']));
-            // }
             return view('step.index', compact(['data', 'step', 'data_step_1']));
         }
         elseif($step_id != 7 and $step_id > $id)
@@ -101,28 +95,28 @@ class FormController extends Controller
     public function checkIBAN($iban)
     {
         $curl = curl_init();
- 
+
         $post = [
             'format' => 'json',
             'api_key' => '286a8bf4fcc2cbad9137b47ff62e60ca',
-            'iban'   => $iban,
+            'iban' => $iban,
         ];
-        
+
         curl_setopt_array($curl, array(
             CURLOPT_URL => 'https://api.iban.com/clients/api/v4/iban/',
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_POSTFIELDS => $post
         ));
-        
+
         $output = curl_exec($curl);
         $result = json_decode($output);
         $bic = $result->bank_data->bic;
         $bank = $result->bank_data->bank;
         curl_close($curl);
-        if (!$bic && !$bank) {
-            return response()->json('error', 500); 
+        if(!$bic && !$bank) {
+            return response()->json('error', 500);
         }
-        
+
         return response()->json(compact("bic", "bank"), 200);
     }
 

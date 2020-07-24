@@ -5,6 +5,7 @@ use App\PDF;
 
 $fields = PDF::getFieldValues(new Form);
 $user_id = \Illuminate\Support\Facades\Auth::id();
+$countries = include('../resources/views/step/components/countries.php');
 
 ?>
 
@@ -30,22 +31,29 @@ $user_id = \Illuminate\Support\Facades\Auth::id();
                 <h2 class="subtitle">Name und Anschrift des Zahlers</h2>
 
                 <?php foreach($fields as $field)
-                  if($field['field_id'] == 34): ?>
+                  if($field['field_id'] == 40): ?>
                       <p class="text"><?= $field['value']?></p>
-                  <?php elseif($field['field_id'] == 35): ?>
+                  <?php elseif($field['field_id'] == 41): ?>
                       <p class="text"><?= $field['value']?></p>
-                  <?php elseif($field['field_id'] == 36): ?>
+                  <?php elseif($field['field_id'] == 42): ?>
                       <p class="text"><?= $field['value']?></p>
-                  <?php elseif($field['field_id'] == 4): ?>
-                      <!-- <p class="text"><?= $field['value']?></p> -->
-                  <?php endif; ?>
+                  <?php elseif($field['field_id'] == 43): ?>
+                       <p class="text"><?= $field['value']?></p>
+                  <?php elseif($field['field_id'] == 44): ?>
+                      <p class="text"><?= $field['value']?></p>
+                  <?php elseif($field['field_id'] == 45):
+                        foreach($countries as $key => $value):
+                            if($key == $field['value']):
+                      ?>
+                      <p class="text"><?= $value['name']?></p>
+                  <?php endif; endforeach; endif; ?>
 
             </div>
             <div class="frame frame_lg">
                 <h2 class="subtitle">Name des Zahlungsdienstleisters des Zahlers</h2>
 
                 <?php foreach($fields as $field)
-                if($field['field_id'] == 39): ?>
+                if($field['field_id'] == 49): ?>
                     <p class="text"><?= $field['value']?></p>
                 <?php endif; ?>
 
@@ -54,7 +62,7 @@ $user_id = \Illuminate\Support\Facades\Auth::id();
                         <h2 class="subtitle">BIC</h2>
 
                         <?php foreach($fields as $field)
-                            if($field['field_id'] == 38): ?>
+                            if($field['field_id'] == 48): ?>
                                 <p class="text"><?= $field['value']?></p>
                         <?php endif; ?>
 
@@ -63,7 +71,7 @@ $user_id = \Illuminate\Support\Facades\Auth::id();
                         <h2 class="subtitle">IBAN</h2>
 
                         <?php foreach($fields as $field)
-                            if($field['field_id'] == 37): ?>
+                            if($field['field_id'] == 47): ?>
                                 <p class="text"><?= $field['value']?></p>
                         <?php endif; ?>
 

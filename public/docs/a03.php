@@ -9,6 +9,7 @@ $fields = PDF::getFieldValues(new Form);
 $user = Auth::user();
 $steps = Step::with('group')->get();
 $user_id = \Illuminate\Support\Facades\Auth::id();
+$countries = include('../resources/views/step/components/countries.php');
 
 ?>
 
@@ -60,10 +61,18 @@ $user_id = \Illuminate\Support\Facades\Auth::id();
                 if($field['value'] != null && $step['id'] == $field['step_id']){?>
                     <p class="text zusammenfassung__text"><b><?=$field->field->first()['name']?><br></b>
                         <?php if($field->field->first()['type'] == 'select'){
-                            foreach($field->field->first()->option as $option)
-                            {
-                                if($option->id == $field['value']){
-                                    echo $option->name;
+                            if($field->field->first()['id'] == 6 or $field->field->first()['id'] == 45){
+                                foreach($countries as $key => $value){
+                                    if($key == $field['value']){
+                                        echo $value['name'];
+                                    }
+                                }
+                            }else{
+                                foreach($field->field->first()->option as $option)
+                                {
+                                    if($option->id == $field['value']){
+                                        echo $option->name;
+                                    }
                                 }
                             }
                         }else{

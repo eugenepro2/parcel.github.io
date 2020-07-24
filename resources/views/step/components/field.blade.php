@@ -24,8 +24,16 @@
 
       {{-- Set value from first step in five step --}}
       @if ($step->id == 5)
-        @if ($id == 40 or $id == 41 or $id == 42 or $id == 43 or $id == 44)
+        @if ($id == 40)
           value="{{(isset($data[0])) ? $data[0]->value : $data_step_1[0]->value}}"
+        @elseif($id == 41)
+         value="{{(isset($data[0])) ? $data[1]->value : $data_step_1[1]->value}}"
+        @elseif($id == 42)
+          value="{{(isset($data[0])) ? $data[2]->value : $data_step_1[2]->value}}"
+        @elseif($id == 43)
+          value="{{(isset($data[0])) ? $data[3]->value : $data_step_1[3]->value}}"
+        @elseif($id == 44)
+          value="{{(isset($data[0])) ? $data[4]->value : $data_step_1[4]->value}}"
         @else
           value="{{(isset($field_value) ? $field_value : '')}}"
         @endif
@@ -65,7 +73,7 @@
           @endif
         @endforeach
       @endif
-      
+
     </select>
   </div>   
 @endif

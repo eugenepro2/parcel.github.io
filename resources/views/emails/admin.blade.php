@@ -2,6 +2,9 @@
 
 
 @section('content')
+
+@php($countries = include('resources/views/step/components/countries.php'))
+
 <!DOCTYPE html>
     <!--[if IE]><div class="ie-browser"><![endif]-->
     <table bgcolor="#FFFFFF" cellpadding="0" cellspacing="0" class="nl-container" role="presentation" style="table-layout: fixed; vertical-align: top; min-width: 320px; Margin: 0 auto; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #FFFFFF; width: 100%;" width="100%">
@@ -87,11 +90,19 @@
                                 </div>
                                 <div class="text" style="background-color: #ffffff;text-align: left;padding: 10px;font-size: 16px;color: #737373;">
                                   @if($field->field->first()['type'] == 'select')
-                                    @foreach($field->field->first()->option as $option)
-                                      @if($option->id == $field['value'])
-                                        {{$option->name}}
-                                      @endif
-                                    @endforeach
+                                    @if($field->field->first()['id'] == 6 or $field->field->first()['id'] == 45)
+                                      @foreach($countries as $key => $value)
+                                        @if($key == $field['value'])
+                                          {{$value['name']}}
+                                        @endif
+                                      @endforeach
+                                    @else
+                                      @foreach($field->field->first()->option as $option)
+                                        @if($option->id == $field['value'])
+                                          {{$option->name}}
+                                        @endif
+                                      @endforeach
+                                    @endif
                                   @else
                                     {{$field['value']}}
                                   @endif
