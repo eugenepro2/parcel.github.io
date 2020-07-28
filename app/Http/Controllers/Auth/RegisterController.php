@@ -82,7 +82,7 @@ class RegisterController extends Controller
     public function register(Request $request)
     {
 
-      if(!preg_match("/((?=.*[a-z])(?=.*[A-Z]))/", $request->password)){
+      if(!preg_match("/((?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]))/", $request->password)){
         return redirect('/register')->with('message', 'Passwort: Mindestlänge 8 Zeichen, 1 Zahl, </br> 1 Großbuchstabe. ');
       }
 
