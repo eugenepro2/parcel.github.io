@@ -82,8 +82,10 @@
         </div>
       @endif
       <button class="btn btn-submit mt-50">
-        @if ($step['id'] == 5)
+        @if($step['id'] == 5)
           Lastschrift-Mandat erteilen
+        @elseif($step['id'] == 6)
+          Absenden
         @else
           Weiter
         @endif
