@@ -9,7 +9,7 @@
 		<input id="password" type="password" class="@error('password') is-invalid @enderror" name="password" required autocomplete="new-password" placeholder="Passwort">
 		<input id="password-confirm" type="password" name="password_confirmation" required autocomplete="new-password" placeholder="Passwort wiederholen">
 		<div class="badge">
-			Passwort: Mindestlänge 8 Zeichen, 1 Zahl, 1 Großbuchstabe.
+			Passwort: Mindestlänge 8 Zeichen, 1 Zahl, <br> 1 Großbuchstabe.
 		</div>
 		@if ($errors->has('email'))
 			<div class="badge">
