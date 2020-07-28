@@ -24,11 +24,19 @@ $countries = include('../resources/views/step/components/countries.php');
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" media="all" href="http://parcel.iocube.de/docs/css/app.css">
     <style>.out{max-width: 780px; margin: 0 auto}</style>
+    <style type="text/css">
+      div.page
+      {
+        page-break-after: always;
+        page-break-inside: avoid;
+      }
+    </style>
   </head>
   <body>
     <!--BEGIN out-->
     <div class="out">
       <section class="zusammenfassung">
+      <div class="page">
         <div class="header">
           <div class="header__logo"><img src="http://parcel.iocube.de/docs/img/logo.png" alt="parcel.one"></div>
         </div>
@@ -54,31 +62,62 @@ $countries = include('../resources/views/step/components/countries.php');
               <?php elseif($field['field_id'] == 6 and $field['value'] == null): ?>
                 <p class="text">Kundennummer: <?= $user_id ?></p>
               <?php endif ?>
+            <p class="text">Seite: 1 von 3</p>
           </div>
-            <?php foreach($steps as $step): ?>
-            <h2 class="subtitle zusammenfassung__text"><?php if($step['id'] != 7) echo $step['name'] ?></h2>
-            <?php foreach($user['form'] as $field):
-                if($field['value'] != null && $step['id'] == $field['step_id']){?>
-                    <p class="text zusammenfassung__text"><b><?=$field->field->first()['name']?><br></b>
-                        <?php if($field->field->first()['type'] == 'select'){
-                            if($field->field->first()['id'] == 6 or $field->field->first()['id'] == 45){
-                                foreach($countries as $key => $value){
-                                    if($key == $field['value']){
-                                        echo $value['name'];
-                                    }
-                                }
-                            }else{
-                                foreach($field->field->first()->option as $option)
-                                {
-                                    if($option->id == $field['value']){
-                                        echo $option->name;
-                                    }
-                                }
-                            }
-                        }else{
-                            echo $field['value'];} ?></p>
-                <?php }endforeach; endforeach;?>
         </div>
+          <?php foreach($steps as $step): ?>
+
+          <?php if($step['id'] == 3 or $step['id'] == 5): ?>
+          <div class="page">
+            <div class="header">
+              <div class="header__logo"><img src="http://parcel.iocube.de/docs/img/logo.png" alt="parcel.one"></div>
+            </div>
+            <div class="lines">
+              <div class="line line_red">
+                <p>Wir stemmen deinen</p>
+              </div>
+              <div class="line line_blue">
+                <p>internationalen Versand</p>
+              </div>
+            </div>
+            <div class="zusammenfassung__content">
+              <div class="zusammenfassung__details">
+                <p class="text">Datum: 03.06.2020</p>
+                <?php foreach($fields as $field)
+                  if($field['field_id'] == 6 and $field['value'] != null): ?>
+                    <p class="text">Kundennummer: <?= $field['value'] ?></p>
+                  <?php elseif($field['field_id'] == 6 and $field['value'] == null): ?>
+                    <p class="text">Kundennummer: <?= $user_id ?></p>
+                  <?php endif ?>
+                <p class="text"><?php if($step['id'] == 3): ?>Seite: 2 von 3 <?php elseif($step['id'] == 5): ?>Seite: 3 von 3<?php endif ?></p>
+              </div>
+            </div>
+          <?php endif ?>
+
+          <h2 class="subtitle zusammenfassung__text"><?php if($step['id'] < 7) echo $step['name'] ?></h2>
+          <?php foreach($user['form'] as $field):
+              if($field['value'] != null && $step['id'] == $field['step_id']){?>
+                  <p class="text zusammenfassung__text"><b><?=$field->field->first()['name']?><br></b>
+                      <?php if($field->field->first()['type'] == 'select'){
+                          if($field->field->first()['id'] == 6 or $field->field->first()['id'] == 45){
+                              foreach($countries as $key => $value){
+                                  if($key == $field['value']){
+                                      echo $value['name'];
+                                  }
+                              }
+                          }else{
+                              foreach($field->field->first()->option as $option)
+                              {
+                                  if($option->id == $field['value']){
+                                      echo $option->name;
+                                  }
+                              }
+                          }
+                      }else{
+                          echo $field['value'];} ?></p>
+              <?php }endforeach; endforeach;?>
+            </div>
+          </div>
         <!-- <div class="zusammenfassung__footer">
           <div class="col">
             <p class="text-footer">PARCEL.ONE 21 GmbH</p>
