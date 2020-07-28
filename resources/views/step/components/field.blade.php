@@ -10,12 +10,15 @@
 @if ($type == 'text' || $type == 'email' || $type == 'number' || $type == 'date')
   @if ($step->id == 5)
     @if ($id == 47)
-    <p class="error" style="display: none">Bitte prüfen Sie Ihre IBAN</p>
+    <p class="notify" style="display: none">
+      <img src="{{asset('img/warning.jpeg')}}" alt="">
+      Bitte prüfen Sie Ihre IBAN</p>
     @endif
   @endif
   <div class="field" id="field-{{$id}}">
     <label for="{{$id}}">{{$title}}</label>
     <input 
+      @if ($id == 27) step="any" @endif
       type="{{$type}}"
       id="{{$id}}"
       name="field-{{$id}}" 
@@ -42,6 +45,13 @@
       @endif
       >
   </div>
+  @if ($step->id == 1)
+    @if ($id == 9)
+    <p class="notify" style="display: none">
+      <img src="{{asset('img/warning.jpeg')}}" alt="">
+      Bitte reiche uns Deine Gewerbeanmeldung nach.</p>
+    @endif
+  @endif
   @if ($step->id == 5)
     @if ($id == 47)
     <a class="btn btn-submit iban">
