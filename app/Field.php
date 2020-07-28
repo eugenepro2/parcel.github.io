@@ -8,6 +8,6 @@ class Field extends Model
 {
   public function option()
   {
-      return $this->hasMany(Option::class, 'field_id', 'id');
+    return $this->hasMany(Option::class, 'field_id', 'id');
   }
 }

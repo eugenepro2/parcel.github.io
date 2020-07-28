@@ -15,7 +15,6 @@ class DatabaseSeeder extends Seeder
         $this->call(GroupSeeder::class);
         $this->call(FieldSeeder::class);
         $this->call(OptionSeeder::class);
-        $this->call(CountrySeeder::class);
         $this->call(AdminSeeder::class);
     }
 }
