@@ -51,6 +51,7 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
+
         $rules = [
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:8|confirmed',
@@ -72,17 +73,22 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
-        ]);
+      return User::create([
+          'email' => $data['email'],
+          'password' => Hash::make($data['password']),
+      ]);
     }
 
     public function register(Request $request)
     {
-        $this->validator($request->all())->validate();
-        event(new Registered($user = $this->create($request->all())));
-        return $this->registered($request, $user) ?: redirect('/login')->with('message', 'Prüfe bitte Deinen E-Mail-Ordner und </br> bestätige dort Deine Registrierung </br> (schaue ggf. im Spam-Ordner nach).');
+
+      if(!preg_match("/((?=.*[a-z])(?=.*[A-Z]))/", $request->password)){
+        return redirect('/register')->with('message', 'Passwort: Mindestlänge 8 Zeichen, 1 Zahl, </br> 1 Großbuchstabe. ');
+      }
+
+      $this->validator($request->all())->validate();
+      event(new Registered($user = $this->create($request->all())));
+      return $this->registered($request, $user) ?: redirect('/login')->with('message', 'Prüfe bitte Deinen E-Mail-Ordner und </br> bestätige dort Deine Registrierung </br> (schaue ggf. im Spam-Ordner nach).');
     }
 
 }
