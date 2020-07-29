@@ -68,13 +68,14 @@ $countries = include('../resources/views/step/components/countries.php');
           </div>
 
           <?php foreach($steps as $step): ?>
+
           <?php if($step['id'] == 1): ?>
           <h2 class="subtitle zusammenfassung__text"><?php if($step['id'] < 7) echo $step['name'] ?></h2>
           <?php foreach($user['form'] as $field):
             if($field['value'] != null && $step['id'] == $field['step_id']){?>
               <p class="text zusammenfassung__text"><b><?=$field->field->first()['name']?><br></b>
                 <?php if($field->field->first()['type'] == 'select'){
-                  if($field->field->first()['id'] == 6 or $field->field->first()['id'] == 45){
+                  if($field->field->first()['id'] == 6){
                     foreach($countries as $key => $value){
                       if($key == $field['value']){
                         echo $value['name'];
@@ -164,18 +165,10 @@ $countries = include('../resources/views/step/components/countries.php');
             if($field['value'] != null && $step['id'] == $field['step_id']){?>
             <p class="text zusammenfassung__text"><b><?=$field->field->first()['name']?><br></b>
               <?php if($field->field->first()['type'] == 'select'){
-                if($field->field->first()['id'] == 6 or $field->field->first()['id'] == 45){
-                  foreach($countries as $key => $value){
-                    if($key == $field['value']){
-                      echo $value['name'];
-                    }
-                  }
-                }else{
-                  foreach($field->field->first()->option as $option)
+                foreach($field->field->first()->option as $option)
                   {
                     if($option->id == $field['value']){
                       echo $option->name;
-                    }
                   }
                 }
               }else{
@@ -255,7 +248,7 @@ $countries = include('../resources/views/step/components/countries.php');
                 if($field['value'] != null && $step['id'] == $field['step_id']){?>
                   <p class="text zusammenfassung__text"><b><?=$field->field->first()['name']?><br></b>
                     <?php if($field->field->first()['type'] == 'select'){
-                      if($field->field->first()['id'] == 6 or $field->field->first()['id'] == 45){
+                      if($field->field->first()['id'] == 45){
                         foreach($countries as $key => $value){
                           if($key == $field['value']){
                             echo $value['name'];
