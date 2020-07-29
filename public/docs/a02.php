@@ -24,11 +24,17 @@ $countries = include('../resources/views/step/components/countries.php');
   <body>
     <!--BEGIN out-->
     <div class="out">
-      <div class="firmen__header">
-        <div class="header">
-          <div class="header__logo"><img src="http://parcel.iocube.de/docs/img/logo.png" alt="parcel.one"></div>
+      <div class="header">
+        <div class="lines">
+          <div class="line line_red">
+            <p>Wir stemmen deinen</p>
+          </div>
+          <div class="line line_blue">
+            <p>internationalen Versand</p>
+          </div>
         </div>
-      </div>
+        <div class="header__logo"><img src="http://parcel.iocube.de/docs/img/logo.png" alt="parcel.one"></div>
+    </div>
       <section class="firmen">
         <h1 class="title lastschrift__title">SEPA-Firmenlastschrift-Mandat für SEPA-Firmenlastschriften</h1>
         <div class="row lastschrift__row">
@@ -121,6 +127,31 @@ $countries = include('../resources/views/step/components/countries.php');
           </div>
         </div>
       </section>
+      <div class="zusammenfassung__footer">
+          <div class="col">
+            <p class="text-footer">PARCEL.ONE 21 GmbH</p>
+            <p class="text-footer">Otto-Hahn-Str. 21</p>
+            <p class="text-footer">35510 Butzbach</p>
+            <p class="text-footer">Deutschland</p>
+          </div>
+          <div class="col">
+            <p class="text-footer">Tel +49 6033 - 35225 -0</p>
+            <p class="text-footer">Fax +49 6033 - 35225 - 88</p>
+            <p class="text-footer">info@parcel.one</p>
+            <p class="text-footer">www.parcel.one</p>
+          </div>
+          <div class="col">
+            <p class="text-footer">Amtsgericht Friedberg HRB8537</p>
+            <p class="text-footer">Sitz der Gesellschaft ist Butzbach</p>
+            <p class="text-footer">Geschäftsführung: Micha Augstein</p>
+            <p class="text-footer">UST-ID: DE312186140</p>
+          </div>
+          <div class="col">
+            <p class="text-footer">Sparkasse Wetzlar</p>
+            <p class="text-footer">IBAN DE66515500350002102291</p>
+            <p class="text-footer">BIC HELADEF1WET</p>
+          </div>
+        </div>
     </div>
     <!--END out-->
     <!--LOAD SCRIPTS-->
