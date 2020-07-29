@@ -30,7 +30,7 @@ $countries = include('../resources/views/step/components/countries.php');
         </div>
       </div>
       <section class="firmen">
-        <h1 class="title lastschrift__title">SEPA-Firmenlastschrift-Mandat für SEPA-FIrmenlastschriften</h1>
+        <h1 class="title lastschrift__title">SEPA-Firmenlastschrift-Mandat für SEPA-Firmenlastschriften</h1>
         <div class="row lastschrift__row">
           <div class="frame frame_sm">
             <h2 class="subtitle">Name und Anschrift des Zahlers</h2>
@@ -114,7 +114,7 @@ $countries = include('../resources/views/step/components/countries.php');
         <p class="text lastschrift__text">Ich bestätige/Wir bestätigen gegenüber meinem/unseren oben genannten Zahlungsdienstleister die Erteilung des oben aufgeführten SEPA-Firmenlastschriftmandats an den oben genannten Zahlungsempfänger.</p>
         <div class="row lastschrift__bottom">
           <div class="frame frame_md">
-            <h2 class="subtitle">Unterschrift(en) des/der Kontoinhabers/Kontoinhaber</h2>
+            <h2 class="subtitle">Firmenstempel und Unterschrift(en)</h2>
           </div>
           <div class="frame frame_md">
             <h2 class="subtitle">Ort, Datum</h2>

@@ -58,9 +58,9 @@ $countries = include('../resources/views/step/components/countries.php');
             <p class="text">Datum: 03.06.2020</p>
               <?php foreach($fields as $field)
               if($field['field_id'] == 6 and $field['value'] != null): ?>
-                <p class="text">Kundennummer: <?= $field['value'] ?></p>
+                <p class="text">Deine Kundennummer: <?= $field['value'] ?></p>
               <?php elseif($field['field_id'] == 6 and $field['value'] == null): ?>
-                <p class="text">Kundennummer: <?= $user_id ?></p>
+                <p class="text">Deine Kundennummer: <?= $user_id ?></p>
               <?php endif ?>
             <p class="text">Seite: 1 von 3</p>
           </div>
