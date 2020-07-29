@@ -29,7 +29,7 @@ class PDF extends Model
         $data = [
             'html' => $a01,
             'apiKey' => '6ee161313c052eab8b5c5a739593b7aaed96ebbe52ec635dd5db6fef54663111',
-            'headerTemplate' => '  <div class="header">
+            'headerTemplate' => '<div class="header">
             <div class="lines">
               <div class="line line_red">
                 <p>Wir stemmen deinen</p>
