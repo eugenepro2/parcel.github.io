@@ -18,7 +18,7 @@ $countries = include('../resources/views/step/components/countries.php');
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" media="all" href="http://parcel.iocube.de/docs/css/app.css">
+    <link rel="stylesheet" media="all" href="docs/css/app.css">
     <style>.out{max-width: 780px; margin: 0 auto} .inline{display: inline} div.page
       {
         max-width: 780px; margin: 0 auto;
@@ -39,7 +39,7 @@ $countries = include('../resources/views/step/components/countries.php');
           </div>
         </div>
         <div class="header__logo"><img src="http://parcel.iocube.de/docs/img/logo.png" alt="parcel.one"></div>
-    </div>
+      </div>
       <section class="firmen">
         <h1 class="title lastschrift__title">SEPA-Firmenlastschrift-Mandat für SEPA-Firmenlastschriften</h1>
         <div class="row lastschrift__row">
@@ -124,10 +124,10 @@ $countries = include('../resources/views/step/components/countries.php');
         <p class="text"><b>2 Bestätigung des SEPA-Firmenlastschrift-Mandats gegenüber dem Zahlungsdienstleister d. Zahlers</b></p>
         <p class="text lastschrift__text">Ich bestätige/Wir bestätigen gegenüber meinem/unseren oben genannten Zahlungsdienstleister die Erteilung des oben aufgeführten SEPA-Firmenlastschriftmandats an den oben genannten Zahlungsempfänger.</p>
         <div class="row lastschrift__bottom">
-          <div class="frame frame_md">
+          <div class="frame frame_xs">
             <h2 class="subtitle">Firmenstempel und Unterschrift(en)</h2>
           </div>
-          <div class="frame frame_md">
+          <div class="frame frame_xs">
             <h2 class="subtitle">Ort, Datum</h2>
           </div>
         </div>

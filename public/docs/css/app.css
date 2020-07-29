@@ -152,6 +152,12 @@ a {
   max-height: 130px;
 }
 
+.frame_xs {
+  min-height: 50px;
+  max-height: 50px;
+  max-width: 340px;
+}
+
 .frame_sm {
   max-width: 250px;
 }
@@ -188,7 +194,6 @@ a {
   font-size: 18px;
   line-height: 21px;
   font-weight: bold;
-  margin-bottom: 60px;
 }
 
 .line_red {
