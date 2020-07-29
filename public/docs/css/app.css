@@ -28,8 +28,7 @@
   justify-content: space-between;
   align-items: flex-start;
   background-color: #3E4C69;
-  padding: 20px 50px 45px;
-  margin-top: 300px;
+  padding: 20px;
 }
 
 .lastschrift {
@@ -55,7 +54,7 @@
 }
 
 .firmen {
-  padding: 30px 50px 250px;
+  padding: 20px;
 }
 
 .firmen__header {
@@ -131,7 +130,7 @@ a {
 .text-footer {
   color: white;
   font-size: 10px;
-  line-height: 15px;
+  line-height: 5px;
 }
 
 .row {
@@ -151,6 +150,12 @@ a {
   width: 100%;
   min-height: 130px;
   max-height: 130px;
+}
+
+.frame_xs {
+  min-height: 50px;
+  max-height: 50px;
+  max-width: 340px;
 }
 
 .frame_sm {
@@ -189,7 +194,6 @@ a {
   font-size: 18px;
   line-height: 21px;
   font-weight: bold;
-  margin-bottom: 60px;
 }
 
 .line_red {
@@ -209,8 +213,7 @@ a {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 20px 0;
-  padding-right: 20px;
+  padding: 0;
 }
 
 .header__logo {

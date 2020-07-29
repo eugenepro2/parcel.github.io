@@ -90,11 +90,15 @@ $('#25').change(function() {
 });
 
 //Welches Betriebssystem nutzt Du? *
+$('#option-55').attr('disabled', true);
 $('#28').change(function() {
   $("#33").prop('selectedIndex',0)
   $('#33 option').attr('disabled', false)
   if ($(this).val() == '74') {
-    $('#option-54').attr('disabled', true);
+    $('#option-54').hide()
+    $('#option-55').attr('disabled', false);
+  }else{
+    $('#option-54').show()
     $('#option-55').attr('disabled', true);
   }
 });
