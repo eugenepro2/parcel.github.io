@@ -25,6 +25,17 @@ $countries = include('../resources/views/step/components/countries.php');
 <!--BEGIN out-->
 <div class="out">
     <section class="lastschrift">
+        <div class="header">
+            <div class="lines">
+              <div class="line line_red">
+                <p>Wir stemmen deinen</p>
+              </div>
+              <div class="line line_blue">
+                <p>internationalen Versand</p>
+              </div>
+            </div>
+            <div class="header__logo"><img src="http://parcel.iocube.de/docs/img/logo.png" alt="parcel.one"></div>
+          </div>
         <h1 class="title lastschrift__title">SEPA-Lastschrift-Mandat</h1>
         <div class="row lastschrift__row">
             <div class="frame frame_sm">
@@ -117,6 +128,31 @@ $countries = include('../resources/views/step/components/countries.php');
                     <?php endif; ?>
             </div>
         </div>
+        <div class="zusammenfassung__footer">
+              <div class="col">
+                <p class="text-footer">PARCEL.ONE 21 GmbH</p>
+                <p class="text-footer">Otto-Hahn-Str. 21</p>
+                <p class="text-footer">35510 Butzbach</p>
+                <p class="text-footer">Deutschland</p>
+              </div>
+              <div class="col">
+                <p class="text-footer">Tel +49 6033 - 35225 -0</p>
+                <p class="text-footer">Fax +49 6033 - 35225 - 88</p>
+                <p class="text-footer">info@parcel.one</p>
+                <p class="text-footer">www.parcel.one</p>
+              </div>
+              <div class="col">
+                <p class="text-footer">Amtsgericht Friedberg HRB8537</p>
+                <p class="text-footer">Sitz der Gesellschaft ist Butzbach</p>
+                <p class="text-footer">Geschäftsführung: Micha Augstein</p>
+                <p class="text-footer">UST-ID: DE312186140</p>
+              </div>
+              <div class="col">
+                <p class="text-footer">Sparkasse Wetzlar</p>
+                <p class="text-footer">IBAN DE66515500350002102291</p>
+                <p class="text-footer">BIC HELADEF1WET</p>
+              </div>
+            </div>
     </section>
 </div>
 <!--END out-->

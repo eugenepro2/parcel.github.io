@@ -11187,15 +11187,27 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.iban').click(function () {
 
 /***/ }),
 
+/***/ "./resources/sass/pdf.sass":
+/*!*********************************!*\
+  !*** ./resources/sass/pdf.sass ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ 0:
-/*!*************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.sass ***!
-  \*************************************************************/
+/*!***************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.sass ./resources/sass/pdf.sass ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /Users/macbook/Work/6 LEONTIN/parcel.github.io/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/macbook/Work/6 LEONTIN/parcel.github.io/resources/sass/app.sass */"./resources/sass/app.sass");
+__webpack_require__(/*! /Users/macbook/Work/6 LEONTIN/parcel.github.io/resources/sass/app.sass */"./resources/sass/app.sass");
+module.exports = __webpack_require__(/*! /Users/macbook/Work/6 LEONTIN/parcel.github.io/resources/sass/pdf.sass */"./resources/sass/pdf.sass");
 
 
 /***/ })
