@@ -18,7 +18,7 @@ $countries = include('../resources/views/step/components/countries.php');
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" media="all" href="http://parcel.iocube.de/docs/css/app.css">
+    <link rel="stylesheet" media="all" href="docs/css/app.css">
     <style>.out{max-width: 780px; margin: 0 auto} .inline{display: inline} div.page
       {
         max-width: 780px; margin: 0 auto;
