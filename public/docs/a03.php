@@ -65,14 +65,8 @@ $countries = include('../resources/views/step/components/countries.php');
               <h2 class="subtitle">Online-Registrierung</h2>
 
               <div class="zusammenfassung__details">
-                <p class="text"><?= date('d.m.Y')?></p>
-                  <?php foreach($fields as $field):?>
-                    <?php if($field['field_id'] == 6 and $field['value'] != null): ?>
-                      <p class="text">Deine Kundennummer: <?= $field['value'] ?></p>
-                    <?php elseif($field['field_id'] == 6 and $field['value'] == null): ?>
-                      <p class="text">Deine Kundennummer: <?= $user_id ?></p>
-                    <?php endif ?>
-                  <?php endforeach; ?>
+                <p class="text">Datum: <?= date('d.m.Y')?></p>
+                <p class="text">Deine Kundennummer: <?= $user_id ?></p>
                 <p class="text">Seite: 1 von 4</p>
               </div>
             </div>
@@ -157,16 +151,8 @@ $countries = include('../resources/views/step/components/countries.php');
               <?php if($step['id'] == 2): ?>
                 <div class="zusammenfassung__content">
                   <div class="zusammenfassung__details">
-                    <p class="text"><?= date('d.m.Y')?></p>
-                    <?php foreach($fields as $field):?>
-
-                      <?php if($field['field_id'] == 6 and $field['value'] != null): ?>
-                        <p class="text">Deine Kundennummer: <?= $field['value'] ?></p>
-                      <?php elseif($field['field_id'] == 6 and $field['value'] == null): ?>
-                        <p class="text">Deine Kundennummer: <?= $user_id ?></p>
-                      <?php endif ?>
-
-                    <?php endforeach; ?>
+                    <p class="text">Datum: <?= date('d.m.Y')?></p>
+                    <p class="text">Deine Kundennummer: <?= $user_id ?></p>
                     <p class="text">Seite: 2 von 4</p>
                   </div>
                 </div>
@@ -239,16 +225,8 @@ $countries = include('../resources/views/step/components/countries.php');
               <?php if($step['id'] == 3): ?>
                 <div class="zusammenfassung__content">
                   <div class="zusammenfassung__details">
-                    <p class="text"><?= date('d.m.Y')?></p>
-                    <?php foreach($fields as $field):?>
-
-                      <?php if($field['field_id'] == 6 and $field['value'] != null): ?>
-                        <p class="text">Deine Kundennummer: <?= $field['value'] ?></p>
-                      <?php elseif($field['field_id'] == 6 and $field['value'] == null): ?>
-                        <p class="text">Deine Kundennummer: <?= $user_id ?></p>
-                      <?php endif ?>
-
-                    <?php endforeach; ?>
+                    <p class="text">Datum: <?= date('d.m.Y')?></p>
+                    <p class="text">Deine Kundennummer: <?= $user_id ?></p>
                     <p class="text">Seite: 3 von 4</p>
                   </div>
                 </div>
@@ -347,14 +325,8 @@ $countries = include('../resources/views/step/components/countries.php');
 
               <div class="zusammenfassung__content">
                 <div class="zusammenfassung__details">
-                  <p class="text"><?= date('d.m.Y')?></p>
-                  <?php foreach($fields as $field): ?>
-                    <?php if($field['field_id'] == 6 and $field['value'] != null): ?>
-                      <p class="text">Deine Kundennummer: <?= $field['value'] ?></p>
-                    <?php elseif($field['field_id'] == 6 and $field['value'] == null): ?>
-                      <p class="text">Deine Kundennummer: <?= $user_id ?></p>
-                    <?php endif; ?>
-                  <?php endforeach; ?>
+                  <p class="text">Datum: <?= date('d.m.Y')?></p>
+                  <p class="text">Deine Kundennummer: <?= $user_id ?></p>
                   <p class="text">Seite: 4 von 4</p>
                 </div>
               </div>
