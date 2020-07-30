@@ -104,7 +104,7 @@ $countries = include('../resources/views/step/components/countries.php');
                 <p class="text">35510 Butzbach</p>
             </div>
             <div class="frame frame_lg">
-                <h2 class="subtitle">Name des Zahlungsdienstleisters des Zahlers</h2>
+                <h2 class="subtitle">Gläubiger-Identifikationsnummer des Zahlungsempfängers</h2>
                 <p class="text">DE67ONE00002014326</p>
                 <div class="row frame__row">
                     <div class="col">
