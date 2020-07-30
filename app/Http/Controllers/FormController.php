@@ -120,4 +120,10 @@ class FormController extends Controller
         return response()->json(compact("bic", "bank"), 200);
     }
 
+  public function test()
+  {
+
+    return include('../public/docs/a01.php');
+  }
+
 }

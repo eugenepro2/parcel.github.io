@@ -18,7 +18,8 @@ $countries = include('../resources/views/step/components/countries.php');
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" media="all" href="http://parcel.iocube.de/docs/css/app.css">
+    <!-- <link rel="stylesheet" media="all" href="http://parcel.iocube.de/docs/css/app.css"> -->
+    <link rel="stylesheet" media="all" href="docs/css/app.css">
     <style>.out{max-width: 780px; margin: 0 auto} div.page
       {
         page-break-after: always;
@@ -119,12 +120,12 @@ $countries = include('../resources/views/step/components/countries.php');
         <p class="text"><b>1.1 Bestätigung des SEPA-Mandats gegenüber dem Zahlungsdienstleister d. Zahlers</b></p>
         <p class="text lastschrift__text">Ich bestätige/Wir bestätigen gegenüber meinem/unseren oben genannten Zahlungsdienstleister die Erteilung des oben aufgeführten SEPA-Lastschriftmandats an den oben genannten Zahlungsempfänger.</p>
         <div class="row lastschrift__bottom">
-            <div class="frame frame_md">
+            <div class="frame frame_another">
                 <h2 class="subtitle">Unterschrift(en) des/der Kontoinhabers/Kontoinhaber</h2>
                 <p class="text">Dokument wurde elektronisch signiert</p>
                 <p class="text">IP-Adresse: <?= $_SERVER['REMOTE_ADDR'] ?></p>
             </div>
-            <div class="frame frame_md">
+            <div class="frame frame_another">
                 <h2 class="subtitle">Ort, Datum</h2>
                 <?php foreach($fields as $field)
                     if($field['field_id'] == 3): ?>
