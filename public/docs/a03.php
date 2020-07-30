@@ -28,7 +28,9 @@ $countries = include('../resources/views/step/components/countries.php');
     <style type="text/css">
       div.page
       {
-        min-height: 1000px;
+        min-height: 1100px;
+        max-height: 1100px;
+        overflow: hidden;
         page-break-after: always;
         page-break-inside: avoid;
       }
