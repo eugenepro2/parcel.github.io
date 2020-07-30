@@ -50,10 +50,14 @@ $countries = include('../resources/views/step/components/countries.php');
                 <?php foreach($fields as $field)
                   if($field['field_id'] == 40): ?>
                       <p class="text"><?= $field['value']?></p>
-                  <?php elseif($field['field_id'] == 41 or $field['field_id'] == 42): ?>
-                      <span class="text"><?= $field['value']?></span>
-                  <?php elseif($field['field_id'] == 43 or $field['field_id'] == 44): ?>
-                    <span class="text"><?= $field['value']?></span>
+                  <?php elseif($field['field_id'] == 41): ?>
+                      <p class="text"><?= $field['value']?></p>
+                  <?php elseif($field['field_id'] == 42): ?>
+                    <p class="text"><?= $field['value']?></p>
+                  <?php elseif($field['field_id'] == 43): ?>
+                    <p class="text"><?= $field['value']?></p>
+                  <?php elseif($field['field_id'] == 44): ?>
+                    <p class="text"><?= $field['value']?></p>
                   <?php elseif($field['field_id'] == 45):
                         foreach($countries as $key => $value):
                             if($key == $field['value']):
