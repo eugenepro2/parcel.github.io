@@ -20,7 +20,7 @@ $countries = include('../resources/views/step/components/countries.php');
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" media="all" href="http://parcel.iocube.de/docs/css/app.css">
     <!-- <link rel="stylesheet" media="all" href="docs/css/app.css"> -->
-    <style>.out{max-width: 780px; margin: 0 auto} .inline{display: inline} div.page
+    <style>.out{max-width: 780px; margin: 0 auto} div.page
       {
         max-width: 780px; margin: 0 auto;
         page-break-after: always;
@@ -41,7 +41,7 @@ $countries = include('../resources/views/step/components/countries.php');
         </div>
         <div class="header__logo"><img src="http://parcel.iocube.de/docs/img/logo.png" alt="parcel.one"></div>
       </div>
-      <section class="firmen">
+      <section class="firmen main">
         <h1 class="title lastschrift__title">SEPA-Firmenlastschrift-Mandat für SEPA-Firmenlastschriften</h1>
         <div class="row lastschrift__row">
           <div class="frame frame_sm">
@@ -133,7 +133,7 @@ $countries = include('../resources/views/step/components/countries.php');
           </div>
         </div>
       </section>
-      <div class="zusammenfassung__footer">
+      <div class="zusammenfassung__footer footer">
           <div class="col">
             <p class="text-footer">PARCEL.ONE 21 GmbH</p>
             <p class="text-footer">Otto-Hahn-Str. 21</p>
