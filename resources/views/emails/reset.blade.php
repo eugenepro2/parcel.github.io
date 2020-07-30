@@ -84,6 +84,26 @@
                               <a href="{{$url}}" style="-webkit-text-size-adjust: none; text-decoration: none; display: inline-block; color: #ffffff; background-color: #661600; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; width: auto; width: auto; border-top: 1px solid #661600; border-right: 1px solid #661600; border-bottom: 1px solid #661600; border-left: 1px solid #661600; padding-top: 5px; padding-bottom: 5px; font-family: Arial,sans-serif; text-align: center; mso-border-alt: none; word-break: keep-all;" target="_blank"><span style="padding-left:60px;padding-right:60px;font-size:18px;display:inline-block;"><span style="font-size: 16px; line-height: 2; font-family: Arial,sans-serif; word-break: break-word; mso-line-height-alt: 32px;"><span data-mce-style="font-size: 18px; line-height: 36px;" style="font-size: 18px; line-height: 36px;">Passwort wiederherstellen</span></span></span></a>
                             </div><!--[if mso]></center></v:textbox></v:roundrect></td></tr></table><![endif]-->
                           </div>
+                          <div style="color:#555555;font-family: Arial,sans-serif;line-height:1.2;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;">
+                            <div style="line-height: 1.2; font-size: 14px; font-family: Arial,sans-serif; color: #555555; mso-line-height-alt: 14px;">
+                              <p style="text-align: center; line-height: 1.2; font-family: Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0; font-weight: normal;">
+                                Alternativ kannst du deine Registrierung über diesen Link bestätigen:<br>
+                                <a href="{{$url}}">{{$url}}</a>
+                              </p>
+                              <p style="line-height: 1.2; font-family: Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
+                                &nbsp;
+                              </p>
+                              <p style="text-align: center; line-height: 1.2; font-family: Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0; font-weight: normal;">
+                                Viele Grüße
+                              </p>
+                              <p style="line-height: 1.2; font-family: Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
+                                &nbsp;
+                              </p>
+                              <p style="text-align: center; line-height: 1.2; font-family: Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0; font-weight: normal;">
+                                Dein PARCEL.ONE-Team
+                              </p>
+                            </div>
+                          </div>
                           <table border="0" cellpadding="0" cellspacing="0" class="divider" role="presentation" style="table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; min-width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" width="100%">
                             <tbody>
                               <tr style="vertical-align: top;" valign="top">
