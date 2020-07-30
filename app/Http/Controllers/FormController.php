@@ -10,6 +10,7 @@ use App\Jobs\SendMail;
 use App\Mail\AdminMail;
 use App\PDF;
 use Illuminate\Support\Facades\Auth;
+use function Ramsey\Uuid\v1;
 
 class FormController extends Controller
 {
@@ -124,6 +125,7 @@ class FormController extends Controller
   {
 
     return include('../public/docs/a01.php');
+
   }
 
 }

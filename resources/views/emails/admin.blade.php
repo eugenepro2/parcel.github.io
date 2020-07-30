@@ -3,7 +3,8 @@
 
 @section('content')
 
-@php($countries = include('../resources/views/step/components/countries.php'))
+@php($countries = include('resources/views/step/components/countries.php'))
+@php($steps = \App\Step::with('group')->get())
 
 <!DOCTYPE html>
     <!--[if IE]><div class="ie-browser"><![endif]-->
@@ -81,8 +82,11 @@
                               </p>
                             </div>
                           </div><!--[if mso]></td></tr></table><![endif]-->
+
+                        @foreach($steps as $step)
+                          <h2 class="color zusammenfassung__text"><?php if($step['id'] < 7) echo $step['name'] ?></h2>
                           @foreach ($user['form'] as $field)
-                            @if($field['value'] != null)
+                            @if($field['value'] != null and $step['id'] == $field['step_id'])
                             <div style="font-size:16px;text-align:center;font-family:Arial, Helvetica Neue, Helvetica, sans-serif">
                               <div class="block" style="border: solid 1px #3e4c69;border-radius: 3px;margin-bottom: 20px;">
                                 
@@ -112,6 +116,7 @@
                             </div>
                             @endif
                           @endforeach
+                        @endforeach
                         <table border="0" cellpadding="0" cellspacing="0" class="divider" role="presentation" style="table-layout: fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; min-width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" width="100%">
                           <tbody>
                             <tr style="vertical-align: top;" valign="top">
