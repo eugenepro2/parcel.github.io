@@ -24,7 +24,8 @@ $countries = include('../resources/views/step/components/countries.php');
       {
         page-break-after: always;
         page-break-inside: avoid;
-      }</style>
+      }
+      </style>
 </head>
 <body>
 <!--BEGIN out-->
@@ -52,7 +53,7 @@ $countries = include('../resources/views/step/components/countries.php');
                   <?php elseif($field['field_id'] == 41 or $field['field_id'] == 42): ?>
                       <span class="text"><?= $field['value']?></span>
                   <?php elseif($field['field_id'] == 43 or $field['field_id'] == 44): ?>
-                       <span class="text"><?= $field['value']?></span>
+                    <span class="text"><?= $field['value']?></span>
                   <?php elseif($field['field_id'] == 45):
                         foreach($countries as $key => $value):
                             if($key == $field['value']):
