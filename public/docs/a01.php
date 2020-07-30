@@ -133,7 +133,7 @@ $countries = include('../resources/views/step/components/countries.php');
             <div class="frame frame_another">
                 <h2 class="subtitle">Ort, Datum</h2>
                 <?php foreach($fields as $field)
-                    if($field['field_id'] == 3): ?>
+                    if($field['field_id'] == 5): ?>
                         <p class="text"><?= $field['value']?>, <?= date('d.m.Y')?></p>
                     <?php endif; ?>
             </div>
