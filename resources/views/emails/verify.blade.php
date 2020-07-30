@@ -32,14 +32,14 @@
               <div style="background-color:transparent; overflow:hidden;">
                 <div class="block-grid" style="Margin: 0 auto; min-width: 320px; max-width: 780px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; background-color: transparent; overflow:hidden;">
                   <div style="border-collapse: collapse;display: table;width: 100%;background-color:transparent;">
-                    <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:transparent;"><tr><td align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:780px"><tr class="layout-full-width" style="background-color:transparent"><![endif]-->
-                    <!--[if (mso)|(IE)]><td align="center" width="780" style="background-color:transparent;width:780px; border-top: 0px solid transparent; border-left: 0px solid transparent; border-bottom: 0px solid transparent; border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 50px; padding-left: 50px; padding-top:30px; padding-bottom:30px;background-color:#f6f6f6;"><![endif]-->
+                    <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:transparent;"><tr><td align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:780px"><tr class="layout-full-width" style="background-color:transparent; overflow:hidden;"><![endif]-->
+                    <!--[if (mso)|(IE)]><td align="center" width="780" style="background-color:transparent;width:780px; border-top: 0px solid transparent; border-left: 0px solid transparent; border-bottom: 0px solid transparent; border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-top:30px; padding-bottom:30px;background-color:#f6f6f6;overflow:hidden;"><![endif]-->
                     <div class="col num12" style="min-width: 320px; max-width: 780px; display: table-cell; vertical-align: top; width: 780px; overflow:hidden;">
                       <div style="background-color:#f6f6f6;width:100% !important; max-width: 780px; overflow:hidden;">
                         <!--[if (!mso)&(!IE)]><!-->
                         <div style="border-top:0px solid transparent; border-left:0px solid transparent; border-bottom:0px solid transparent; border-right:0px solid transparent; padding-top:30px; padding-bottom:30px; padding-right: 0px; padding-left: 0px;">
                           <!--<![endif]-->
-                          <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-top: 10px; padding-bottom: 10px; font-family: Arial, sans-serif"><![endif]-->
+                          <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-top: 10px; padding-bottom: 10px; overflow:hidden; font-family: Arial, sans-serif"><![endif]-->
                           <div style="color:#3e4c69;font-family: Arial,sans-serif;line-height:1.2;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;">
                             <div style="line-height: 1.2; font-size: 14px; font-family: Arial,sans-serif; color: #3e4c69; mso-line-height-alt: 14px;">
                               <p style="text-align: center; font-size: 28px; line-height: 1.2; font-family: Arial,sans-serif; word-break: break-word; mso-line-height-alt: 34px; margin: 0;">
