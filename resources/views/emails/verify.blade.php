@@ -37,7 +37,7 @@
                     <div class="col num12" style="min-width: 320px; max-width: 780px; display: table-cell; vertical-align: top; width: 780px; overflow:hidden;">
                       <div style="background-color:#f6f6f6;width:100% !important; max-width: 780px; overflow:hidden;">
                         <!--[if (!mso)&(!IE)]><!-->
-                        <div style="border-top:0px solid transparent; border-left:0px solid transparent; border-bottom:0px solid transparent; border-right:0px solid transparent; padding-top:30px; padding-bottom:30px; padding-right: 50px; padding-left: 50px;">
+                        <div style="border-top:0px solid transparent; border-left:0px solid transparent; border-bottom:0px solid transparent; border-right:0px solid transparent; padding-top:30px; padding-bottom:30px; padding-right: 0px; padding-left: 0px;">
                           <!--<![endif]-->
                           <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-top: 10px; padding-bottom: 10px; font-family: Arial, sans-serif"><![endif]-->
                           <div style="color:#3e4c69;font-family: Arial,sans-serif;line-height:1.2;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;">
