@@ -85,6 +85,7 @@
                             @if($field['value'] != null)
                             <div style="font-size:16px;text-align:center;font-family:Arial, Helvetica Neue, Helvetica, sans-serif">
                               <div class="block" style="border: solid 1px #3e4c69;border-radius: 3px;margin-bottom: 20px;">
+                                
                                 <div class="field" style="background-color: #3e4c69;text-align: left;color: #ffffff;padding: 10px;font-size: 16px;">
                                   {{$field->field->first()['name']}}
                                 </div>
