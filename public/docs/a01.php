@@ -43,7 +43,6 @@ $countries = include('../resources/views/step/components/countries.php');
             <div class="header__logo"><img src="http://parcel.iocube.de/docs/img/logo.png" alt="parcel.one"></div>
         </div>
         <div class="main">
-        
             <h1 class="title lastschrift__title">SEPA-Lastschrift-Mandat</h1>
             <div class="row lastschrift__row">
                 <div class="frame frame_sm">
