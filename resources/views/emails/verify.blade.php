@@ -29,12 +29,12 @@
                   </div>
                 </div>
               </div>
-              <div style="background-color:transparent;">
-                <div class="block-grid" style="Margin: 0 auto; min-width: 320px; max-width: 780px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; background-color: transparent;">
+              <div style="background-color:transparent; overflow:hidden;">
+                <div class="block-grid" style="Margin: 0 auto; min-width: 320px; max-width: 780px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; background-color: transparent; overflow:hidden;">
                   <div style="border-collapse: collapse;display: table;width: 100%;background-color:transparent;">
                     <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:transparent;"><tr><td align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:780px"><tr class="layout-full-width" style="background-color:transparent"><![endif]-->
                     <!--[if (mso)|(IE)]><td align="center" width="780" style="background-color:transparent;width:780px; border-top: 0px solid transparent; border-left: 0px solid transparent; border-bottom: 0px solid transparent; border-right: 0px solid transparent;" valign="top"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 50px; padding-left: 50px; padding-top:30px; padding-bottom:30px;background-color:#f6f6f6;"><![endif]-->
-                    <div class="col num12" style="min-width: 320px; max-width: 780px; display: table-cell; vertical-align: top; width: 780px;">
+                    <div class="col num12" style="min-width: 320px; max-width: 780px; display: table-cell; vertical-align: top; width: 780px; overflow:hidden;">
                       <div style="background-color:#f6f6f6;width:100% !important;">
                         <!--[if (!mso)&(!IE)]><!-->
                         <div style="border-top:0px solid transparent; border-left:0px solid transparent; border-bottom:0px solid transparent; border-right:0px solid transparent; padding-top:30px; padding-bottom:30px; padding-right: 50px; padding-left: 50px;">
