@@ -3,7 +3,7 @@
 
 @section('content')
     <!--[if IE]><div class="ie-browser"><![endif]-->
-      <table bgcolor="#FFFFFF" cellpadding="0" cellspacing="0" class="nl-container" role="presentation" style="table-layout: fixed; vertical-align: top; min-width: 320px; Margin: 0 auto; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #FFFFFF; width: 100%;" width="100%">
+      <table bgcolor="#FFFFFF" cellpadding="0" cellspacing="0" class="nl-container" role="presentation" style="table-layout: fixed; vertical-align: top; min-width: 320px; Margin: 0 auto; border-spacing: 0; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #FFFFFF; width: 100%; overflow:hidden;" width="100%">
         <tbody>
           <tr style="vertical-align: top;" valign="top">
             <td style="word-break: break-word; vertical-align: top;" valign="top">
