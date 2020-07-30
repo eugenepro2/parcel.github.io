@@ -51,9 +51,11 @@ $countries = include('../resources/views/step/components/countries.php');
           <div class="zusammenfassung__content">
               <?php foreach($fields as $field)
               if($field['field_id'] == 1){ ?>
-                  <h1 class="title zusammenfassung__title"><?= $field['value'] ?></h1>
+                <h1 class="title zusammenfassung__title">
+                  Kerbs & Kremer GbR    
+                </h1>
               <?php };?>
-            <h2 class="subtitle zusammenfassung__subtitle">Online-Registrierung</h2>
+            <h2 class="color">Online-Registrierung</h2>
 
             <div class="zusammenfassung__details">
               <p class="text">Datum: 03.06.2020</p>
