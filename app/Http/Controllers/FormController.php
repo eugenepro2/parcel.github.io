@@ -128,4 +128,11 @@ class FormController extends Controller
 
   }
 
+  public function test2()
+  {
+
+    return include('../public/docs/a02.php');
+
+  }
+
 }
