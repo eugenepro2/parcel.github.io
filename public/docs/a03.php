@@ -73,7 +73,7 @@ $countries = include('../resources/views/step/components/countries.php');
                       <p class="text">Deine Kundennummer: <?= $user_id ?></p>
                     <?php endif ?>
                   <?php endforeach; ?>
-                <p class="text">Seite: 1 von 3</p>
+                <p class="text">Seite: 1 von 4</p>
               </div>
             </div>
 
@@ -107,9 +107,72 @@ $countries = include('../resources/views/step/components/countries.php');
                     </p>
                   <?php endif;?>
                 <?php endforeach; ?>
+                
+              <?php endif; ?>
 
-              <?php elseif($step['id'] == 2): ?>
+            <?php endforeach; ?>
+          </div>
+        
+          <div class="zusammenfassung__footer footer">
+            <div class="col">
+              <p class="text-footer">PARCEL.ONE 21 GmbH</p>
+              <p class="text-footer">Otto-Hahn-Str. 21</p>
+              <p class="text-footer">35510 Butzbach</p>
+              <p class="text-footer">Deutschland</p>
+            </div>
+            <div class="col">
+              <p class="text-footer">Tel +49 6033 - 35225 -0</p>
+              <p class="text-footer">Fax +49 6033 - 35225 - 88</p>
+              <p class="text-footer">info@parcel.one</p>
+              <p class="text-footer">www.parcel.one</p>
+            </div>
+            <div class="col">
+              <p class="text-footer">Amtsgericht Friedberg HRB8537</p>
+              <p class="text-footer">Sitz der Gesellschaft ist Butzbach</p>
+              <p class="text-footer">Geschäftsführung: Micha Augstein</p>
+              <p class="text-footer">UST-ID: DE312186140</p>
+            </div>
+            <div class="col">
+              <p class="text-footer">Sparkasse Wetzlar</p>
+              <p class="text-footer">IBAN DE66515500350002102291</p>
+              <p class="text-footer">BIC HELADEF1WET</p>
+            </div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="header">
+            <div class="lines">
+              <div class="line line_red">
+                <p>Wir stemmen deinen</p>
+              </div>
+              <div class="line line_blue">
+                <p>internationalen Versand</p>
+              </div>
+            </div>
+            <div class="header__logo"><img src="http://parcel.iocube.de/docs/img/logo.png" alt="parcel.one"></div>
+          </div>
+          <div class="main">
+            <?php foreach($steps as $step): ?>
+
+              <?php if($step['id'] == 2): ?>
+                <div class="zusammenfassung__content">
+                  <div class="zusammenfassung__details">
+                    <p class="text"><?= date('d.m.Y')?></p>
+                    <?php foreach($fields as $field):?>
+
+                      <?php if($field['field_id'] == 6 and $field['value'] != null): ?>
+                        <p class="text">Deine Kundennummer: <?= $field['value'] ?></p>
+                      <?php elseif($field['field_id'] == 6 and $field['value'] == null): ?>
+                        <p class="text">Deine Kundennummer: <?= $user_id ?></p>
+                      <?php endif ?>
+
+                    <?php endforeach; ?>
+                    <p class="text">Seite: 2 von 4</p>
+                  </div>
+                </div>
+
                 <h2 class="color zusammenfassung__text"><?php if($step['id'] < 7) echo $step['name'] ?></h2>
+
                 <?php foreach($user['form'] as $field):?>
                   <?php if($field['value'] != null && $step['id'] == $field['step_id']):?>
                     <p class="text zusammenfassung__text"><b><?=$field->field->first()['name']?><br></b>
@@ -122,15 +185,16 @@ $countries = include('../resources/views/step/components/countries.php');
                           }
                         } else {
                           echo $field['value'];
-                        } ?>
+                        } 
+                      ?>
                     </p>
-                  <?php endif; ?>
-                <?php endforeach; ?>
-              <?php endif; ?>
+                  <?php endif;?>
+                <?php endforeach;?>
+
+                <?php endif;?>
 
             <?php endforeach; ?>
           </div>
-        
           <div class="zusammenfassung__footer footer">
             <div class="col">
               <p class="text-footer">PARCEL.ONE 21 GmbH</p>
@@ -185,7 +249,7 @@ $countries = include('../resources/views/step/components/countries.php');
                       <?php endif ?>
 
                     <?php endforeach; ?>
-                    <p class="text">Seite: 2 von 3</p>
+                    <p class="text">Seite: 3 von 4</p>
                   </div>
                 </div>
 
@@ -291,7 +355,7 @@ $countries = include('../resources/views/step/components/countries.php');
                       <p class="text">Deine Kundennummer: <?= $user_id ?></p>
                     <?php endif; ?>
                   <?php endforeach; ?>
-                  <p class="text">Seite: 3 von 3</p>
+                  <p class="text">Seite: 4 von 4</p>
                 </div>
               </div>
 
