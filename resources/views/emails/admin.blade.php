@@ -3,7 +3,7 @@
 
 @section('content')
 
-@php($countries = include('resources/views/step/components/countries.php'))
+@php($countries = include('../resources/views/step/components/countries.php'))
 @php($steps = \App\Step::with('group')->get())
 
 <!DOCTYPE html>
