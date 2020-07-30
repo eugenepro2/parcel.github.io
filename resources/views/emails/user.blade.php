@@ -60,34 +60,34 @@
                         <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif"><![endif]-->
                         <div style="color:#555555;font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.2;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;">
                           <div style="line-height: 1.2; font-size: 14px; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; color: #555555; mso-line-height-alt: 14px;">
-                            <p style="line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
+                            <p style="line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0; font-weight: normal;">
                               Liebe(r) {{$user['form'][6]->value}},
                             </p>
-                            <p style="line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
+                            <p style="line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0; font-weight: normal;">
                               &nbsp;
                             </p>
-                            <p style="line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
+                            <p style="line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0; font-weight: normal;">
                               wir freuen uns, Dich als PARCEL.ONE Neukunden begrüßen zu dürfen. Deine Kundennummer lautet KD{{$user['id']}} - für die Kommunikation mit uns ist diese sehr wichtig.
                             </p>
-                            <p style="line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
+                            <p style="line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0; font-weight: normal;">
                               &nbsp;
                             </p>
-                            <p style="line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
+                            <p style="line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0; font-weight: normal;">
                               Für die Anbindung von PARCEL.ONE, wird sich unser IT-Techniker in den nächsten Tagen bei Dir melden. Danach kannst Du mit dem Versand starten.
                             </p>
-                            <p style="line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
+                            <p style="line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0; font-weight: normal;">
                               &nbsp;
                             </p>
-                            <p style="line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
+                            <p style="line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0; font-weight: normal;">
                               Im Anhang findest Du ein vorgefertigtes SEPA-Mandat. Wir bitten um Überprüfung, Unterschrift und schnellstmögliche Rücksendung per E-Mail. Leite bitte das Original SEPA-Mandat an Deine Bank weiter. 
                             </p>
-                            <p style="line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
+                            <p style="line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0; font-weight: normal;">
                               &nbsp;
                             </p>
-                            <p style="line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
+                            <p style="line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0; font-weight: normal;">
                               Bitte schicke Deine PARCEL.ONE-Sendungen künftig an diese Adresse:
                             </p>
-                            <p style="line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
+                            <p style="line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0; font-weight: normal;">
                               &nbsp;
                             </p>
                             <p style="line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0; font-weight: bold;">
@@ -96,22 +96,22 @@
                               Otto-Hahn-Str. 21<br>
                               35510 Butzbach<br>
                             </p>
-                            <p style="line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
+                            <p style="line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0; font-weight: normal;">
                               &nbsp;
                             </p>
-                            <p style="line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
+                            <p style="line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0; font-weight: normal;">
                               Bei weiteren Fragen sind wir gerne für Dich da! Auf Gute Zusammenarbeit!
                             </p>
-                            <p style="line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
+                            <p style="line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0; font-weight: normal;">
                               &nbsp;
                             </p>
-                            <p style="line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
+                            <p style="line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0; font-weight: normal;">
                               Schöne Grüße
                             </p>
-                            <p style="line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
+                            <p style="line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0; font-weight: normal;">
                               &nbsp;
                             </p>
-                            <p style="line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
+                            <p style="line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0; font-weight: normal;">
                               Dein PARCEL.ONE-Team
                             </p>
                           </div>
@@ -159,10 +159,10 @@
                             <p style="line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0; font-weight: bold;">
                               Anhang
                             </p>
-                            <p style=" line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
+                            <p style=" line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0; font-weight: normal;">
                               Zusammenfassung
                             </p>
-                            <p style="line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
+                            <p style="line-height: 1.2; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0; font-weight: normal;">
                               SEPA-Mandat
                             </p>
                           </div>
