@@ -65,7 +65,7 @@ $countries = include('../resources/views/step/components/countries.php');
               <h2 class="subtitle">Online-Registrierung</h2>
 
               <div class="zusammenfassung__details">
-                <p class="text">Datum: 03.06.2020</p>
+                <p class="text"><?= date('d.m.Y')?></p>
                   <?php foreach($fields as $field):?>
                     <?php if($field['field_id'] == 6 and $field['value'] != null): ?>
                       <p class="text">Deine Kundennummer: <?= $field['value'] ?></p>
@@ -175,7 +175,7 @@ $countries = include('../resources/views/step/components/countries.php');
               <?php if($step['id'] == 3): ?>
                 <div class="zusammenfassung__content">
                   <div class="zusammenfassung__details">
-                    <p class="text">Datum: 03.06.2020</p>
+                    <p class="text"><?= date('d.m.Y')?></p>
                     <?php foreach($fields as $field):?>
 
                       <?php if($field['field_id'] == 6 and $field['value'] != null): ?>
@@ -283,7 +283,7 @@ $countries = include('../resources/views/step/components/countries.php');
 
               <div class="zusammenfassung__content">
                 <div class="zusammenfassung__details">
-                  <p class="text">Datum: 03.06.2020</p>
+                  <p class="text"><?= date('d.m.Y')?></p>
                   <?php foreach($fields as $field): ?>
                     <?php if($field['field_id'] == 6 and $field['value'] != null): ?>
                       <p class="text">Deine Kundennummer: <?= $field['value'] ?></p>
