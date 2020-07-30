@@ -3,7 +3,7 @@
 
 @section('content')
 
-@php($countries = include('resources/views/step/components/countries.php'))
+@php($countries = include('../resources/views/step/components/countries.php'))
 
 <!DOCTYPE html>
     <!--[if IE]><div class="ie-browser"><![endif]-->

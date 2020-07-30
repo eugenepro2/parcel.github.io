@@ -62,7 +62,7 @@ $countries = include('../resources/views/step/components/countries.php');
                 <?php endif;?>
               <?php endforeach; ?>
 
-              <h2 class="color">Online-Registrierung</h2>
+              <h2 class="subtitle">Online-Registrierung</h2>
 
               <div class="zusammenfassung__details">
                 <p class="text">Datum: 03.06.2020</p>
@@ -81,7 +81,7 @@ $countries = include('../resources/views/step/components/countries.php');
             <?php foreach($steps as $step): ?>
 
               <?php if($step['id'] == 1): ?>
-                <h2 class="subtitle zusammenfassung__text"><?php if($step['id'] < 7) echo $step['name'] ?></h2>
+                <h2 class="color zusammenfassung__text"><?php if($step['id'] < 7) echo $step['name'] ?></h2>
                 <?php foreach($user['form'] as $field):
                   if($field['value'] != null && $step['id'] == $field['step_id']):?>
                     <p class="text zusammenfassung__text"><b><?=$field->field->first()['name']?><br></b>
@@ -109,7 +109,7 @@ $countries = include('../resources/views/step/components/countries.php');
                 <?php endforeach; ?>
 
               <?php elseif($step['id'] == 2): ?>
-                <h2 class="subtitle zusammenfassung__text"><?php if($step['id'] < 7) echo $step['name'] ?></h2>
+                <h2 class="color zusammenfassung__text"><?php if($step['id'] < 7) echo $step['name'] ?></h2>
                 <?php foreach($user['form'] as $field):?>
                   <?php if($field['value'] != null && $step['id'] == $field['step_id']):?>
                     <p class="text zusammenfassung__text"><b><?=$field->field->first()['name']?><br></b>
@@ -189,7 +189,7 @@ $countries = include('../resources/views/step/components/countries.php');
                   </div>
                 </div>
 
-                <h2 class="subtitle zusammenfassung__text"><?php if($step['id'] < 7) echo $step['name'] ?></h2>
+                <h2 class="color zusammenfassung__text"><?php if($step['id'] < 7) echo $step['name'] ?></h2>
 
                 <?php foreach($user['form'] as $field):?>
                   <?php if($field['value'] != null && $step['id'] == $field['step_id']):?>
@@ -212,7 +212,7 @@ $countries = include('../resources/views/step/components/countries.php');
 
                 <?php elseif($step['id'] == 4): ?>
 
-                  <h2 class="subtitle zusammenfassung__text"><?php if($step['id'] < 7) echo $step['name'] ?></h2>
+                  <h2 class="color zusammenfassung__text"><?php if($step['id'] < 7) echo $step['name'] ?></h2>
 
                   <?php foreach($user['form'] as $field):?>
                       <?php if($field['value'] != null && $step['id'] == $field['step_id']):?>
