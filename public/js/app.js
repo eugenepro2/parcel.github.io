@@ -11136,6 +11136,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('#31').change(function () {
   }
 }); //API-Anbindung *
 
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-34').prev().hide();
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('#33').change(function () {
   if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == '55') {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-34').prev().slideDown();

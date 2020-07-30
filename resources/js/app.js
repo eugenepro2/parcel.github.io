@@ -126,6 +126,7 @@ $('#31').change(function() {
 });
 
 //API-Anbindung *
+$('#field-34').prev().hide()
 $('#33').change(function() {
   if ($(this).val() == '55') {
     $('#field-34').prev().slideDown()
