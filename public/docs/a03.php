@@ -146,6 +146,13 @@ $countries = include('../resources/views/step/components/countries.php');
             <div class="header__logo"><img src="http://parcel.iocube.de/docs/img/logo.png" alt="parcel.one"></div>
           </div>
           <div class="main">
+            <div class="zusammenfassung__content opacity">
+              <h1 class="title zusammenfassung__title">
+                Kerbs & Kremer GbR    
+              </h1>
+            </div>
+            <h2 class="subtitle opacity" style="text-align: center">Online-Registrierung</h2>
+
             <?php foreach($steps as $step): ?>
 
               <?php if($step['id'] == 2): ?>
@@ -220,6 +227,12 @@ $countries = include('../resources/views/step/components/countries.php');
             <div class="header__logo"><img src="http://parcel.iocube.de/docs/img/logo.png" alt="parcel.one"></div>
           </div>
           <div class="main">
+            <div class="zusammenfassung__content opacity">
+              <h1 class="title zusammenfassung__title">
+                Kerbs & Kremer GbR    
+              </h1>
+            </div>
+            <h2 class="subtitle opacity" style="text-align: center">Online-Registrierung</h2>
             <?php foreach($steps as $step): ?>
 
               <?php if($step['id'] == 3): ?>
@@ -317,6 +330,12 @@ $countries = include('../resources/views/step/components/countries.php');
             <div class="header__logo"><img src="http://parcel.iocube.de/docs/img/logo.png" alt="parcel.one"></div>
           </div>
           <div class="main">
+            <div class="zusammenfassung__content opacity">
+              <h1 class="title zusammenfassung__title">
+                Kerbs & Kremer GbR    
+              </h1>
+            </div>
+            <h2 class="subtitle opacity" style="text-align: center">Online-Registrierung</h2>
             <?php foreach($steps as $step): ?>
 
 
