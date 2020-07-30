@@ -62,7 +62,7 @@ $countries = include('../resources/views/step/components/countries.php');
                 <?php endif;?>
               <?php endforeach; ?>
 
-              <h2 class="subtitle">Online-Registrierung</h2>
+              <h2 class="subtitle" style="text-align: center">Online-Registrierung</h2>
 
               <div class="zusammenfassung__details">
                 <p class="text">Datum: <?= date('d.m.Y')?></p>
@@ -331,7 +331,7 @@ $countries = include('../resources/views/step/components/countries.php');
                 </div>
               </div>
 
-              <h2 class="subtitle zusammenfassung__text"><?php if($step['id'] < 7) echo $step['name'] ?></h2>
+              <h2 class="color zusammenfassung__text"><?php if($step['id'] < 7) echo $step['name'] ?></h2>
 
               <?php foreach($user['form'] as $field): ?>
                 <?php if($field['value'] != null && $step['id'] == $field['step_id']):?>
@@ -361,7 +361,7 @@ $countries = include('../resources/views/step/components/countries.php');
 
               <?php elseif($step['id'] == 6): ?>
 
-                <h2 class="subtitle zusammenfassung__text"><?php if($step['id'] < 7) echo $step['name'] ?></h2>
+                <h2 class="color zusammenfassung__text"><?php if($step['id'] < 7) echo $step['name'] ?></h2>
 
                 <?php foreach($user['form'] as $field):?>
                   <?php if($field['value'] != null && $step['id'] == $field['step_id']):?>

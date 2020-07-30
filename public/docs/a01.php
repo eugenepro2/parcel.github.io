@@ -18,8 +18,8 @@ $countries = include('../resources/views/step/components/countries.php');
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" media="all" href="http://parcel.iocube.de/docs/css/app.css">
-    <!-- <link rel="stylesheet" media="all" href="docs/css/app.css"> -->
+    <!-- <link rel="stylesheet" media="all" href="http://parcel.iocube.de/docs/css/app.css"> -->
+    <link rel="stylesheet" media="all" href="docs/css/app.css">
     <style>.out{max-width: 780px; margin: 0 auto} div.page
       {
         page-break-after: always;
@@ -51,13 +51,13 @@ $countries = include('../resources/views/step/components/countries.php');
                   if($field['field_id'] == 40): ?>
                       <p class="text"><?= $field['value']?></p>
                   <?php elseif($field['field_id'] == 41): ?>
-                      <p class="text"><?= $field['value']?></p>
+                      <p class="text inline"><?= $field['value']?></p>
                   <?php elseif($field['field_id'] == 42): ?>
-                    <p class="text"><?= $field['value']?></p>
+                    <p class="text inline"><?= $field['value']?></p><br>
                   <?php elseif($field['field_id'] == 43): ?>
-                    <p class="text"><?= $field['value']?></p>
+                    <p class="text inline"><?= $field['value']?></p>
                   <?php elseif($field['field_id'] == 44): ?>
-                    <p class="text"><?= $field['value']?></p>
+                    <p class="text inline"><?= $field['value']?></p>
                   <?php elseif($field['field_id'] == 45):
                         foreach($countries as $key => $value):
                             if($key == $field['value']):
