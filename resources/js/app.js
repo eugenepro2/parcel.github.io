@@ -128,6 +128,7 @@ $('#31').change(function() {
 //API-Anbindung *
 $('#33').change(function() {
   if ($(this).val() == '55') {
+    $('#field-34').prev().slideDown()
     $('#field-34').slideDown()
     $('#34').attr('required', true);
     $('#field-35').slideDown()
@@ -135,6 +136,7 @@ $('#33').change(function() {
     $('#field-36').slideDown()
     $('#36').attr('required', true);
   } else{
+    $('#field-34').prev().slideUp()
     $('#field-34').slideUp()
     $('#34').attr('required', false);
     $('#field-35').slideUp()

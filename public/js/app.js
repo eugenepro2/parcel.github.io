@@ -11138,6 +11138,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('#31').change(function () {
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('#33').change(function () {
   if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == '55') {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-34').prev().slideDown();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-34').slideDown();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#34').attr('required', true);
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-35').slideDown();
@@ -11145,6 +11146,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('#33').change(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-36').slideDown();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#36').attr('required', true);
   } else {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-34').prev().slideUp();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-34').slideUp();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#34').attr('required', false);
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-35').slideUp();
