@@ -11101,18 +11101,18 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('#25').change(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#field-26 input,#field-27 input').attr('required', false);
   }
 }); //Welches Betriebssystem nutzt Du? *
+// $('#option-55').attr('disabled', true);
 
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('#option-55').attr('disabled', true);
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('#28').change(function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()("#33").prop('selectedIndex', 0);
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#33 option').attr('disabled', false);
 
   if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val() == '74') {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#option-54').hide();
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#option-55').attr('disabled', false);
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#option-55').show();
   } else {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#option-54').show();
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#option-55').attr('disabled', true);
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#option-55').hide();
   }
 }); //Wawi/ERP System
 
