@@ -38,7 +38,7 @@ class PDF extends Model
                 <p>internationalen Versand</p>
               </div>
             </div>
-            <div class="header__logo"><img src="http://parcel.iocube.de/docs/img/logo.png" alt="parcel.one"></div>
+            <div class="header__logo"><img src="https://go.parcel.one/docs/img/logo.png" alt="parcel.one"></div>
         </div>',
         'footerTemplate' => '<div class="zusammenfassung__footer">
         <div class="col">

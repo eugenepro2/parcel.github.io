@@ -18,7 +18,7 @@ $countries = include('../resources/views/step/components/countries.php');
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" media="all" href="http://parcel.iocube.de/docs/css/app.css">
+    <link rel="stylesheet" media="all" href="https://go.parcel.one/docs/css/app.css">
     <!-- <link rel="stylesheet" media="all" href="docs/css/app.css"> -->
     <style>.out{max-width: 780px; margin: 0 auto} div.page
       {
@@ -41,7 +41,7 @@ $countries = include('../resources/views/step/components/countries.php');
               <p>internationalen Versand</p>
             </div>
           </div>
-          <div class="header__logo"><img src="http://parcel.iocube.de/docs/img/logo.png" alt="parcel.one"></div>
+          <div class="header__logo"><img src="https://go.parcel.one/docs/img/logo.png" alt="parcel.one"></div>
         </div>
         <div class="main">
           <h1 class="title lastschrift__title">SEPA-Firmenlastschrift-Mandat für SEPA-Firmenlastschriften</h1>
@@ -165,6 +165,6 @@ $countries = include('../resources/views/step/components/countries.php');
     </div>
     <!--END out-->
     <!--LOAD SCRIPTS-->
-    <script type="text/javascript" src="http://parcel.iocube.de/docs/js/app.js"></script>
+    <script type="text/javascript" src="https://go.parcel.one/docs/js/app.js"></script>
   </body>
 </html>
