@@ -57,7 +57,7 @@ $countries = include('../resources/views/step/components/countries.php');
               <?php foreach($fields as $field):
                 if($field['field_id'] == 1): ?>
                   <h1 class="title zusammenfassung__title">
-                    Kerbs & Kremer GbR    
+                    <?= $field['field_id'] == 1 ?>
                   </h1>
                 <?php endif;?>
               <?php endforeach; ?>
