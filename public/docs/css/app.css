@@ -1,3 +1,7 @@
+body{
+  padding: 0 !important;
+  margin: 0 !important;
+}
 .zusammenfassung {
   padding: 0 20px;
 }
