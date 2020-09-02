@@ -19,7 +19,6 @@ $countries = include('../resources/views/step/components/countries.php');
     <meta name="theme-color" content="#fff">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" media="all" href="https://go.parcel.one/docs/css/app.css">
-    <!-- <link rel="stylesheet" media="all" href="docs/css/app.css"> -->
     <style>.out{max-width: 780px; margin: 0 auto} div.page
       {
         max-width: 780px; margin: 0 auto;
@@ -28,9 +27,7 @@ $countries = include('../resources/views/step/components/countries.php');
       }</style>
   </head>
   <body>
-    <!--BEGIN out-->
     <div class="out">
-
       <section class="firmen page">
         <div class="header">
           <div class="lines">
@@ -156,10 +153,6 @@ $countries = include('../resources/views/step/components/countries.php');
         </div>
       </div>
       </section>
-
     </div>
-    <!--END out-->
-    <!--LOAD SCRIPTS-->
-    <script type="text/javascript" src="https://go.parcel.one/docs/js/app.js"></script>
   </body>
 </html>

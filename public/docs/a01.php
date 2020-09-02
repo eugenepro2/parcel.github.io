@@ -8,7 +8,6 @@ $user_id = \Illuminate\Support\Facades\Auth::id();
 $countries = include('../resources/views/step/components/countries.php');
 
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,7 +18,6 @@ $countries = include('../resources/views/step/components/countries.php');
     <meta name="theme-color" content="#fff">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" media="all" href="https://go.parcel.one/docs/css/app.css">
-    <!-- <link rel="stylesheet" media="all" href="docs/css/app.css"> -->
     <style>.out{max-width: 780px; margin: 0 auto} div.page
       {
         page-break-after: always;
@@ -28,7 +26,6 @@ $countries = include('../resources/views/step/components/countries.php');
       </style>
 </head>
 <body>
-<!--BEGIN out-->
 <div class="out">
     <section class="lastschrift page">
         <div class="header">
@@ -162,8 +159,5 @@ $countries = include('../resources/views/step/components/countries.php');
         </div>
     </section>
 </div>
-<!--END out-->
-<!--LOAD SCRIPTS-->
-<script type="text/javascript" src="https://go.parcel.one/docs/js/app.js"></script>
 </body>
 </html>
