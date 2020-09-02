@@ -48,7 +48,7 @@ $countries = include('../resources/views/step/components/countries.php');
               <?php foreach($fields as $field):
                 if($field['field_id'] == 1): ?>
                   <h1 class="title zusammenfassung__title">
-                    <?= $field['field_id'] == 1 ?>
+                    <?= $field['value'] ?>
                   </h1>
                 <?php endif;?>
               <?php endforeach; ?>
