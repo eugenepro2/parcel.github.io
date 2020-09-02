@@ -1,6 +1,9 @@
 .zusammenfassung {
   padding: 0 20px;
 }
+.lines img{
+  width: 300px;
+}
 
 .zusammenfassung__title {
   margin-bottom: 15px;

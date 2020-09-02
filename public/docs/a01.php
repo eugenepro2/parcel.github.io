@@ -33,12 +33,7 @@ $countries = include('../resources/views/step/components/countries.php');
     <section class="lastschrift page">
         <div class="header">
             <div class="lines">
-              <div class="line line_red">
-                <p>Wir stemmen deinen</p>
-              </div>
-              <div class="line line_blue">
-                <p>internationalen Versand</p>
-              </div>
+                <img src="https://go.parcel.one/docs/img/slogan.png" alt="">
             </div>
             <div class="header__logo"><img src="https://go.parcel.one/docs/img/logo.png" alt="parcel.one"></div>
         </div>
