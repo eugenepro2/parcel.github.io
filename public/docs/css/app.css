@@ -36,12 +36,10 @@ body{
 }
 
 .zusammenfassung__footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  background-color: #3E4C69;
-  padding: 20px;
   margin-top: 20px;
+}
+.zusammenfassung__footer img{
+  width: 100%;
 }
 
 .opacity {
