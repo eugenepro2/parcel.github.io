@@ -61,7 +61,7 @@
                         <div style="color:#555555;font-family: Arial,sans-serif;line-height:1.2;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;">
                           <div style="line-height: 1.2; font-size: 14px; font-family: Arial,sans-serif; color: #555555; mso-line-height-alt: 14px;">
                             <p style="line-height: 1.2; font-family: Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0; font-weight: normal;">
-                              @if($user['form'][10]->value == 71)
+                              @if($user['form'][9]->value == 71)
                                 Lieber Herr {{$user['form'][6]->value}},
                                 @else
                                 Liebe Frau {{$user['form'][6]->value}},
