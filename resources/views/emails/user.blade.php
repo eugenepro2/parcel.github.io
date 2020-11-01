@@ -62,9 +62,9 @@
                           <div style="line-height: 1.2; font-size: 14px; font-family: Arial,sans-serif; color: #555555; mso-line-height-alt: 14px;">
                             <p style="line-height: 1.2; font-family: Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0; font-weight: normal;">
                               @if($user['form'][9]->value == 71)
-                                Lieber Herr {{$user['form'][6]->value}},
+                                Lieber Herr {{$user['form'][11]->value}},
                                 @else
-                                Liebe Frau {{$user['form'][6]->value}},
+                                Liebe Frau {{$user['form'][11]->value}},
                               @endif
                             </p>
                             <p style="line-height: 1.2; font-family: Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0; font-weight: normal;">
