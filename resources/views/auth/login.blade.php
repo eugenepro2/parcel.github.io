@@ -11,7 +11,7 @@
 		@enderror
 		@error('password')
 			<div class="badge">
-				Dieser Benutzer ist nicht registriert.
+				Falsches Passwort. Bitte noch einmal versuchen oder auf "Passwort vergessen" klicken, um das Passwort zurückzusetzen.
 			</div>
 		@enderror
 		@if (session('message'))
