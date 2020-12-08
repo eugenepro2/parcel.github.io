@@ -99,7 +99,7 @@ class FormController extends Controller
 
         $post = [
             'format' => 'json',
-            'api_key' => config('services.iban'),
+            'api_key' => config('services.iban.key'),
             'iban' => $iban,
         ];
 
