@@ -103,8 +103,6 @@ class FormController extends Controller
             'iban' => $iban,
         ];
 
-        dd($post['iban']);
-
         curl_setopt_array($curl, array(
             CURLOPT_URL => 'https://api.iban.com/clients/api/v4/iban/',
             CURLOPT_RETURNTRANSFER => true,

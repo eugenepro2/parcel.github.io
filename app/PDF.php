@@ -30,7 +30,6 @@ class PDF extends Model
             'html' => $a01,
             'apiKey' => config('services.html2pdf'),
         ];
-        dd($data['apiKey']);
 
         $dataString = json_encode($data);
 
