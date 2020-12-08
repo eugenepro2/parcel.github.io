@@ -99,9 +99,11 @@ class FormController extends Controller
 
         $post = [
             'format' => 'json',
-            'api_key' => '286a8bf4fcc2cbad9137b47ff62e60ca',
+            'api_key' => config('services.iban'),
             'iban' => $iban,
         ];
+
+        dd($post['iban']);
 
         curl_setopt_array($curl, array(
             CURLOPT_URL => 'https://api.iban.com/clients/api/v4/iban/',

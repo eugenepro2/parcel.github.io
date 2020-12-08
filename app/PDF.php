@@ -28,8 +28,9 @@ class PDF extends Model
 
         $data = [
             'html' => $a01,
-            'apiKey' => '6ee161313c052eab8b5c5a739593b7aaed96ebbe52ec635dd5db6fef54663111',
+            'apiKey' => config('services.html2pdf'),
         ];
+        dd($data['apiKey']);
 
         $dataString = json_encode($data);
 

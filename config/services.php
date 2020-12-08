@@ -30,4 +30,12 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'html2pdf' => [
+      'key' =>  env('HTML2PDF_API_KEY'),
+    ],
+
+    'iban' => [
+      'key' =>  env('IBAN_API_KEY'),
+    ],
+
 ];
