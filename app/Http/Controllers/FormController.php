@@ -95,30 +95,36 @@ class FormController extends Controller
     }
     public function checkIBAN($iban)
     {
-        $curl = curl_init();
 
-        $post = [
-            'format' => 'json',
-            'api_key' => config('services.iban.key'),
-            'iban' => $iban,
-        ];
+      $curl = curl_init();
 
-        curl_setopt_array($curl, array(
-            CURLOPT_URL => 'https://api.iban.com/clients/api/v4/iban/',
-            CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_POSTFIELDS => $post
-        ));
+      curl_setopt_array($curl, array(
+        CURLOPT_URL => "https://api.ibantest.com/v1/validate_iban/" . $iban,
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_CUSTOMREQUEST => "GET",
+        CURLOPT_FOLLOWLOCATION => true,
+        CURLOPT_HTTPHEADER => array(
+          "authorization: Bearer " . config('services.iban.key')
+        ),
+      ));
 
-        $output = curl_exec($curl);
-        $result = json_decode($output);
-        $bic = $result->bank_data->bic;
-        $bank = $result->bank_data->bank;
-        curl_close($curl);
-        if(!$bic && !$bank) {
-            return response()->json('error', 500);
-        }
+      $response = curl_exec($curl);
+      $fail = curl_error($curl);
+
+      $result = json_decode($response);
+      $error = json_decode($fail);
+
+      $bic = $result->bankData->bic;
+      $bank = $result->bankData->description;
+
+      if ($error) {
+        return response()->json($error, 500);
+      } else {
 
         return response()->json(compact("bic", "bank"), 200);
+      }
+      curl_close($curl);
+
     }
 
   public function test()
