@@ -185,8 +185,8 @@
                           <div style="line-height: 1.5; font-size: 14px; font-family: Arial,sans-serif; color: #555555; mso-line-height-alt: 18px;">
                             <p style="text-align: center; line-height: 1.5; font-family: Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
                               <span style="color: #ffffff;">PARCEL.ONE GmbH</span><br>
-                              <span style="color: #ffffff;">Otto-Hahn-Strasse 21</span><br>
-                              <span style="color: #ffffff;">35510 Butzbach</span>
+                              <span style="color: #ffffff;">Am Pfahlgraben 4-10</span><br>
+                              <span style="color: #ffffff;">35415 Pohlheim-Garbenteich</span>
                             </p>
                             <p style="text-align: center; line-height: 1.5; font-family: Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
                               &nbsp;
@@ -201,8 +201,8 @@
                               &nbsp;
                             </p>
                             <p style="text-align: center; line-height: 1.5; font-family: Arial,sans-serif; word-break: break-word; mso-line-height-alt: NaNpx; margin: 0;">
-                              <span style="color: #ffffff;">Amtsgericht Friedberg HRB8537</span><br>
-                              <span style="color: #ffffff;">Sitz der Gesellschaft ist Butzbach</span><br>
+                              <span style="color: #ffffff;">Amtsgericht Gießen HRB10371</span><br>
+                              <span style="color: #ffffff;">Sitz der Gesellschaft ist Pohlheim</span><br>
                               <span style="color: #ffffff;">UST-ID: DE312186140</span><br>
                               <span style="color: #ffffff;">Verantwortlicher i. S. d. § 55 Abs. 2 RStV Micha Augstein</span>
                             </p>
