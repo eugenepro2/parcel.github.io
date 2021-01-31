@@ -95,57 +95,54 @@ class FormController extends Controller
     }
     public function checkIBAN($iban)
     {
+        $curl = curl_init();
 
-      $curl = curl_init();
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => "https://fintechtoolbox.com/validate/iban.json?iban=" . $iban,
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_CUSTOMREQUEST => "POST",
+            CURLOPT_FOLLOWLOCATION => true,
+            CURLOPT_HTTPHEADER => array(
+                "Authorization: token " . config('services.iban.key')
+            ),
+        ));
 
-      curl_setopt_array($curl, array(
-        CURLOPT_URL => "https://api.ibantest.com/v1/validate_iban/" . $iban,
-        CURLOPT_RETURNTRANSFER => true,
-        CURLOPT_CUSTOMREQUEST => "GET",
-        CURLOPT_FOLLOWLOCATION => true,
-        CURLOPT_HTTPHEADER => array(
-          "authorization: Bearer " . config('services.iban.key')
-        ),
-      ));
+        $responseIBAN = curl_exec($curl);
+        $failIBAN = curl_error($curl);
 
-      $response = curl_exec($curl);
-      $fail = curl_error($curl);
+        $resultIBAN = json_decode($responseIBAN);
+        $errorIBAN = json_decode($failIBAN);
 
-      $result = json_decode($response);
-      $error = json_decode($fail);
+        $bic = $resultIBAN->iban->bic;
 
-      $bic = $result->bankData->bic;
-      $bank = $result->bankData->description;
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => "https://fintechtoolbox.com/bankcodes/" . $bic . ".json",
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_CUSTOMREQUEST => "GET",
+            CURLOPT_FOLLOWLOCATION => true,
+            CURLOPT_HTTPHEADER => array(
+                "Authorization: token " . config('services.iban.key')
+            ),
+        ));
 
-      if ($error) {
-        return response()->json($error, 500);
-      } else {
+        $responseBIC = curl_exec($curl);
+        $failBIC = curl_error($curl);
 
-        return response()->json(compact("bic", "bank"), 200);
-      }
-      curl_close($curl);
+        $resultBIC = json_decode($responseBIC);
+        $errorBIC = json_decode($failBIC);
+
+        $bank = $resultBIC->bank_code->bank_name;
+
+        if ($errorIBAN) {
+            return response()->json($errorIBAN, 500);
+        } elseif($errorBIC) {
+            return response()->json($errorBIC, 500);
+        } else {
+            return response()->json(compact("bic", "bank"), 200);
+        }
+
+        curl_close($curl);
 
     }
-
-  public function test()
-  {
-
-    return include('../public/docs/a01.php');
-
-  }
-
-  public function test2()
-  {
-
-    return include('../public/docs/a02.php');
-
-  }
-
-  public function test3()
-  {
-
-    return include('../public/docs/a03.php');
-
-  }
 
 }
