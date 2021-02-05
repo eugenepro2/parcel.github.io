@@ -5,8 +5,8 @@
 <td class="content-cell" align="center" style="color: #ffffff">
 {{-- {{ Illuminate\Mail\Markdown::parse($slot) }} --}}
 <p>PARCEL.ONE GmbH</p>
-<p>Otto-Hahn-Strasse 21</p> 
-<p>35510 Butzbach</p>
+<p>Am Pfahlgraben 4-10</p> 
+<p>35415 Pohlheim-Garbenteich</p>
 <br><br>
 <p>Telefon: +49(0)6033 352250</p>
 <p>E-Mail: info@parcel.one</p>

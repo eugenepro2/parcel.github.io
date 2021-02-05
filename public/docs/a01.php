@@ -93,8 +93,8 @@ $countries = include('../resources/views/step/components/countries.php');
                 <div class="frame frame_sm">
                     <h2 class="subtitle">Name und Anschrift des Zahlungsempfängers</h2>
                     <p class="text">PARCEL.ONE GmbH</p>
-                    <p class="text">Otto-Hahn-Str. 21</p>
-                    <p class="text">35510 Butzbach</p>
+                    <p class="text">Am Pfahlgraben 4-10</p>
+                    <p class="text">35415 Pohlheim-Garbenteich</p>
                 </div>
                 <div class="frame frame_lg">
                     <h2 class="subtitle">Gläubiger-Identifikationsnummer des Zahlungsempfängers</h2>
