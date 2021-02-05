@@ -54,9 +54,9 @@
         </div>
         <div class="zusammenfassung__footer">
           <div class="col">
-            <p class="text-footer">PARCEL.ONE 21 GmbH</p>
-            <p class="text-footer">Otto-Hahn-Str. 21</p>
-            <p class="text-footer">35510 Butzbach</p>
+            <p class="text-footer">PARCEL.ONE GmbH</p>
+            <p class="text-footer">Am Pfahlgraben 4-10</p>
+            <p class="text-footer">35415 Pohlheim-Garbenteich</p>
             <p class="text-footer">Deutschland</p>
           </div>
           <div class="col">
@@ -66,8 +66,8 @@
             <p class="text-footer">www.parcel.one</p>
           </div>
           <div class="col">
-            <p class="text-footer">Amtsgericht Friedberg HRB8537</p>
-            <p class="text-footer">Sitz der Gesellschaft ist Butzbach</p>
+            <p class="text-footer">Amtsgericht Gießen HRB10371</p>
+            <p class="text-footer">Sitz der Gesellschaft ist Pohlheim</p>
             <p class="text-footer">Geschäftsführung: Micha Augstein</p>
             <p class="text-footer">UST-ID: DE312186140</p>
           </div>
