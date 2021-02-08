@@ -30,6 +30,8 @@ $countries = include('../resources/views/step/components/countries.php');
     <div class="out">
       <section class="firmen page">
         <div class="header">
+		<div class="lines">
+        </div>
           <div class="header__logo"><img src="https://go.parcel.one/docs/img/logo.png" alt="parcel.one"></div>
         </div>
         <div class="main">
