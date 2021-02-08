@@ -30,9 +30,6 @@ $countries = include('../resources/views/step/components/countries.php');
     <div class="out">
       <section class="firmen page">
         <div class="header">
-          <div class="lines">
-            <img src="https://go.parcel.one/docs/img/slogan.png" alt="">
-          </div>
           <div class="header__logo"><img src="https://go.parcel.one/docs/img/logo.png" alt="parcel.one"></div>
         </div>
         <div class="main">
@@ -120,15 +117,12 @@ $countries = include('../resources/views/step/components/countries.php');
           <p class="text lastschrift__text">Ich bestätige/Wir bestätigen gegenüber meinem/unseren oben genannten Zahlungsdienstleister die Erteilung des oben aufgeführten SEPA-Firmenlastschriftmandats an den oben genannten Zahlungsempfänger.</p>
           <div class="row lastschrift__bottom" style="margin-top: 122px;">
             <div class="frame frame_another">
-              <h2 class="subtitle">Firmenstempel und Unterschrift(en)</h2>
-            </div>
-            <div class="frame frame_another">
               <h2 class="subtitle">Ort, Datum</h2>
             </div>
+			<div class="frame frame_another">
+              <h2 class="subtitle">Firmenstempel und Unterschrift(en)</h2>
+            </div>
           </div>
-        </div>
-        <div class="zusammenfassung__footer footer">
-          <img src="https://go.parcel.one/docs/img/footer.png" alt="">
         </div>
       </section>
     </div>

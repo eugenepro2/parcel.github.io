@@ -29,9 +29,6 @@ $countries = include('../resources/views/step/components/countries.php');
 <div class="out">
     <section class="lastschrift page">
         <div class="header">
-            <div class="lines">
-                <img src="https://go.parcel.one/docs/img/slogan.png" alt="">
-            </div>
             <div class="header__logo"><img src="https://go.parcel.one/docs/img/logo.png" alt="parcel.one"></div>
         </div>
         <div class="main">
@@ -119,21 +116,18 @@ $countries = include('../resources/views/step/components/countries.php');
             <p class="text lastschrift__text">Ich bestätige/Wir bestätigen gegenüber meinem/unseren oben genannten Zahlungsdienstleister die Erteilung des oben aufgeführten SEPA-Lastschriftmandats an den oben genannten Zahlungsempfänger.</p>
             <div class="row lastschrift__bottom" style="margin-top: 137px;">
                 <div class="frame frame_another">
-                    <h2 class="subtitle">Unterschrift(en) des/der Kontoinhabers/Kontoinhaber</h2>
-                    <p class="text">Dokument wurde elektronisch signiert</p>
-                    <p class="text">IP-Adresse: <?= $_SERVER['REMOTE_ADDR'] ?></p>
-                </div>
-                <div class="frame frame_another">
                     <h2 class="subtitle">Ort, Datum</h2>
                     <?php foreach($fields as $field)
                         if($field['field_id'] == 5): ?>
                             <p class="text"><?= $field['value']?>, <?= date('d.m.Y')?></p>
                         <?php endif; ?>
                 </div>
+				<div class="frame frame_another">
+                    <h2 class="subtitle">Unterschrift(en) des/der Kontoinhabers/Kontoinhaber</h2>
+                    <p class="text">Dokument wurde elektronisch signiert</p>
+                    <p class="text">IP-Adresse: <?= $_SERVER['REMOTE_ADDR'] ?></p>
+                </div>
             </div>
-        </div>
-        <div class="zusammenfassung__footer footer">
-            <img src="https://go.parcel.one/docs/img/footer.png" alt="">
         </div>
     </section>
 </div>
