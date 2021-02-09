@@ -111,10 +111,10 @@ $countries = include('../resources/views/step/components/countries.php');
                 </div>
             </div>
             <h2 class="subtitle lastschrift__subtitle">SEPA-Lastschrift</h2>
-            <p class="text"><b>1.1 SEPA-Lastschrift-Mandat an den Zahlungsempfänger</b></p>
-            <p class="text lastschrift__text">Ich ermächtige (Wir ermächtigen) PARCEL.ONE GmbH, Zahlungen von meinem (unserem) Konto mittels Lastschrift einzuziehen. Zugleich weise ich mein (weisen wir unser) Kreditinstitut an, die von PARCEL.ONE GmbH auf mein (unser) Konto gezogenen Lastschriften einzulösen.</p>
-            <p class="text lastschrift__text"><b>Hinweis:</b>Ich kann (Wir können) innerhalb von acht Wochen, beginnend mit dem Belastungsdatum, die Erstattung des belasteten Betrages verlanden. Es gelten dabei die mit meinem (unserem) Kreditinstitut vereinbarten Bedingungen.</p>
-            <p class="text"><b>1.1 Bestätigung des SEPA-Mandats gegenüber dem Zahlungsdienstleister d. Zahlers</b></p>
+            <p class="text"><b>1. SEPA-Lastschrift-Mandat an den Zahlungsempfänger</b></p>
+            <p class="text lastschrift__text">Ich/Wir ermächtige(n) den oben genannten Zahlungsempfänger, Zahlungen von meinem/unserem Konto mittels Lastschrift einzuziehen. Zugleich weise ich meinen/weisen wir unseren oben genannten Zahlungsdienstleister an, die vom oben genannten Zahlungsempfänger auf mein/unser Konto gezogenen Lastschriften einzulösen.</p>
+            <p class="text lastschrift__text"><b>Hinweis:</b> Ich kann/wir können innerhalb von acht Wochen, beginnend mit dem Belastungsdatum, die Erstattung des belasteten Betrages verlangen. Es gelten dabei die mit meinem/unserem Kreditinstitut vereinbarten Bedingungen.</p>
+            <p class="text"><b>2. Bestätigung des SEPA-Mandats gegenüber dem Zahlungsdienstleister d. Zahlers</b></p>
             <p class="text lastschrift__text">Ich bestätige/Wir bestätigen gegenüber meinem/unseren oben genannten Zahlungsdienstleister die Erteilung des oben aufgeführten SEPA-Lastschriftmandats an den oben genannten Zahlungsempfänger.</p>
             <div class="row lastschrift__bottom" style="margin-top: 137px;">
                 <div class="frame frame_another">
